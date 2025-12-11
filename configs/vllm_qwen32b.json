@@ -1,0 +1,9 @@
+{
+    "model": "vllm",
+    "engine": "/models/Qwen-32B-large-DPO-GRPO-all-rewards",
+    "base_url": "http://172.17.0.1:8000/v1",
+    "results_save_dir": "results2",
+    "description_path": "description.json",
+    "batch_size": 4,
+    "log_to_wandb": false
+}

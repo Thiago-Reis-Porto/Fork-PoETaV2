@@ -20,7 +20,7 @@ setuptools.setup(
     python_requires='>=3.9',
     install_requires=[
         "black",
-        "datasets",
+        "datasets<3.0",
         "huggingface-hub<1.0",
         "click>=7.1",
         "scikit-learn>=0.24.1",

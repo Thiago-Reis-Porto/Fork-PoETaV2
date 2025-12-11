@@ -65,7 +65,7 @@ class HateBR_Binary(PromptSelectionTask):
         Henrico Brum. The dataset is originally in TSV format, and comes with 
         a parsing code that converts to a JSON file.
         """
-        dataset = load_dataset(self.DATASET_PATH, )
+        dataset = load_dataset(self.DATASET_PATH, trust_remote_code=True)
 
         self.dataset = dataset
 

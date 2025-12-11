@@ -101,7 +101,13 @@ class BLUEX(MultipleChoicePromptSelectionTask):
     manual_examples = manual_examples
 
     def download(self, data_dir=None, cache_dir=None, download_mode=None):
-        dataset = load_dataset(self.DATASET_PATH)["questions"]
+        # trust_remote_code is required because the dataset repo defines custom
+        # feature dataclasses that HF can't reconstruct from the cached schema
+        # alone, which otherwise triggers a TypeError while loading.
+        dataset = load_dataset(
+            self.DATASET_PATH,
+            trust_remote_code=True,
+        )["questions"]
 
         self.dataset = collections.defaultdict(list)
 

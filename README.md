@@ -116,4 +116,46 @@ task_config="configs/poeta_v2_full.json"
 python scripts/bulk_evaluation.py --model_config $model_config --task_config $task_config --experiment_name $experiment_label
 ```
 
+## Docker support
+
+We ship a ready-to-use container setup so you can run PoETa V2 without touching your host Python.
+
+1. Copy the sample environment file and adjust secrets (OpenAI, Maritaca, wandb, etc.):
+
+```bash
+cp .env.example .env
+```
+
+2. Build the image (Python 3.10 slim + all repo extras) and start an idle container so you can run any script later:
+
+```bash
+docker compose build
+docker compose up -d poeta
+docker compose exec poeta python main.py --help  # or any other command
+```
+
+Prefer a single-shot container instead? You can still run and discard it with:
+
+```bash
+docker compose run --rm poeta python main.py --model gpt --model_args pretrained=$YOUR_MODEL_PATH --tasks assin_rte_greedy --num_fewshot 2 --prompt_modes dynamic-random --output_path $OUTPUT_PATH --description_dict_path description.json --no_cache
+```
+
+3. Run the bulk evaluation helper (reads `MODEL_CONFIG`, `TASK_CONFIG`, and `EXPERIMENT_LABEL` from `.env`):
+
+```bash
+docker compose run --rm bulk-eval
+```
+
+4. Need GPUs? Enable the `gpu` profile (requires the NVIDIA Container Toolkit):
+
+```bash
+docker compose --profile gpu run --rm poeta-gpu --model gpt --model_args pretrained=$YOUR_MODEL_PATH --tasks assin_rte_greedy
+```
+
+### Docker extras
+
+- Hugging Face caches live in the named volume `poeta_cache`; evaluation outputs default to the `poeta_results` volume.
+- You can still mount additional host paths (e.g., datasets) with `-v /data:/workspace/data` when invoking `docker compose run` or add them under `services.poeta.volumes`.
+- Environment variables from `.env` (WANDB, OpenAI, Maritaca, etc.) are automatically injected. Leave them blank if you do not need the corresponding integration.
+
 

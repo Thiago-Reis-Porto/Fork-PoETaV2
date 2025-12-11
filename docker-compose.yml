@@ -1,0 +1,66 @@
+x-poeta-base: &poeta-base
+  image: poeta-v2:latest
+  working_dir: /soberania/PoETaV2
+  stdin_open: true
+  tty: true
+  restart: unless-stopped
+  volumes:
+    - .:/soberania/PoETaV2
+    - poeta_cache:/root/.cache/huggingface
+    - poeta_results:/soberania/PoETaV2/results
+  environment:
+    HF_HOME: ${HF_HOME:-/root/.cache/huggingface}
+    TRANSFORMERS_CACHE: ${TRANSFORMERS_CACHE:-/root/.cache/huggingface}
+    WANDB_API_KEY: ${WANDB_API_KEY:-}
+    WANDB_MODE: ${WANDB_MODE:-offline}
+    MARITALK_API_SECRET_KEY: ${MARITALK_API_SECRET_KEY:-}
+    OPENAI_API_SECRET_KEY: ${OPENAI_API_SECRET_KEY:-}
+    EXPERIMENT_LABEL: ${EXPERIMENT_LABEL:-poeta_v2_full_model}
+    MODEL_CONFIG: ${MODEL_CONFIG:-configs/hf_model_template.json}
+    TASK_CONFIG: ${TASK_CONFIG:-configs/poeta_v2_full.json}
+    OUTPUT_PATH: ${OUTPUT_PATH:-results/poeta_v2.json}
+
+services:
+  poeta:
+    <<: *poeta-base
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: poeta-v2-cli
+    entrypoint: ["/bin/sh", "-c"]
+    command: ["tail -f /dev/null"]
+
+  bulk-eval:
+    <<: *poeta-base
+    depends_on:
+      - poeta
+    container_name: poeta-v2-bulk
+    entrypoint: ["python", "scripts/bulk_evaluation.py"]
+    command:
+      - "--model_config"
+      - "${MODEL_CONFIG:-configs/hf_model_template.json}"
+      - "--task_config"
+      - "${TASK_CONFIG:-configs/poeta_v2_full.json}"
+      - "--experiment_name"
+      - "${EXPERIMENT_LABEL:-poeta_v2_full_model}"
+
+  poeta-gpu:
+    <<: *poeta-base
+    depends_on:
+      - poeta
+    container_name: poeta-v2-gpu
+    profiles:
+      - gpu
+    entrypoint: ["/bin/sh", "-c"]
+    command: ["tail -f /dev/null"]
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+volumes:
+  poeta_cache:
+  poeta_results:
