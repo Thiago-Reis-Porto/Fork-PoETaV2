@@ -1,0 +1,26 @@
+{
+  "results": {
+    "hatebr_binary_greedy": {
+      "dynamic-random": {
+        "acc": 0.9057142857142857,
+        "acc_stderr": 0.007812853834381895,
+        "f1-macro": 90.6994030859331,
+        "f1-weighted": 90.6994030859331,
+        "num_examples": 1400
+      }
+    }
+  },
+  "versions": {
+    "hatebr_binary_greedy": 0
+  },
+  "config": {
+    "model": "vllm",
+    "model_args": "engine=Qwen3-32B-sft-thinking-ex-tucano-sabio,base_url=http://172.17.0.1:8000/v1",
+    "num_fewshot": 2,
+    "batch_size": 4,
+    "device": null,
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000
+  }
+}

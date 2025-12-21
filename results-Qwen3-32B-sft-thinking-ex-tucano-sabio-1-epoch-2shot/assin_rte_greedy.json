@@ -1,0 +1,25 @@
+{
+  "results": {
+    "assin_rte_greedy": {
+      "dynamic-random": {
+        "acc": 93.1781045751634,
+        "acc_stderr": 0.5096740006730784,
+        "f1": 93.1729906157344,
+        "num_examples": 2448
+      }
+    }
+  },
+  "versions": {
+    "assin_rte_greedy": 0
+  },
+  "config": {
+    "model": "vllm",
+    "model_args": "engine=Qwen3-32B-sft-thinking-ex-tucano-sabio-1-epoch,base_url=http://172.17.0.1:8000/v1",
+    "num_fewshot": 2,
+    "batch_size": 4,
+    "device": null,
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000
+  }
+}

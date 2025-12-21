@@ -1,0 +1,62 @@
+{
+  "results": {
+    "bluex_launch_version_greedy": {
+      "dynamic-random": {
+        "acc": 0.7830188679245284,
+        "acc_stderr": 0.01635724792509482,
+        "2021": 0.7972972972972973,
+        "2021_stderr": 0.033157459531501295,
+        "unknown_pred": 0.0015723270440251573,
+        "unknown_pred_stderr": 0.0015723270440251582,
+        "UNICAMP": 0.7810650887573964,
+        "UNICAMP_stderr": 0.022526108550187388,
+        "physics": 0.7681159420289855,
+        "physics_stderr": 0.05117930441535768,
+        "2019": 0.7528089887640449,
+        "2019_stderr": 0.04598512793186769,
+        "USP": 0.785234899328859,
+        "USP_stderr": 0.023828868848284356,
+        "history": 0.905511811023622,
+        "history_stderr": 0.026058568209814864,
+        "2020": 0.7657657657657657,
+        "2020_stderr": 0.040380976365670944,
+        "2023": 0.8505747126436781,
+        "2023_stderr": 0.038443158107632096,
+        "mathematics": 0.46296296296296297,
+        "mathematics_stderr": 0.04820403072760628,
+        "english": 0.8775510204081632,
+        "english_stderr": 0.0473143800790597,
+        "2018": 0.7345132743362832,
+        "2018_stderr": 0.04172652506843082,
+        "portuguese": 0.7610062893081762,
+        "portuguese_stderr": 0.03392804345289632,
+        "geography": 0.9354838709677419,
+        "geography_stderr": 0.031454833121021805,
+        "2022": 0.8068181818181818,
+        "2022_stderr": 0.04232640046033406,
+        "BK": 0.8314606741573034,
+        "BK_stderr": 0.039905260174908225,
+        "biology": 0.9,
+        "biology_stderr": 0.036115755925730735,
+        "chemistry": 0.85,
+        "chemistry_stderr": 0.05717718748968655,
+        "philosophy": 1.0,
+        "philosophy_stderr": 0.0,
+        "num_examples": 636
+      }
+    }
+  },
+  "versions": {
+    "bluex_launch_version_greedy": 0
+  },
+  "config": {
+    "model": "vllm",
+    "model_args": "engine=Qwen3-32B,base_url=http://172.17.0.1:8000/v1",
+    "num_fewshot": 1,
+    "batch_size": 4,
+    "device": null,
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000
+  }
+}

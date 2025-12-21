@@ -1,0 +1,24 @@
+{
+  "results": {
+    "repro_greedy": {
+      "dynamic-random": {
+        "acc": 0.9424928116014502,
+        "acc_stderr": 0.002603211120359981,
+        "num_examples": 7999
+      }
+    }
+  },
+  "versions": {
+    "repro_greedy": 0
+  },
+  "config": {
+    "model": "vllm",
+    "model_args": "engine=Qwen3-32B-sft-thinking-ex-tucano-sabio,base_url=http://172.17.0.1:8000/v1",
+    "num_fewshot": 2,
+    "batch_size": 4,
+    "device": null,
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000
+  }
+}

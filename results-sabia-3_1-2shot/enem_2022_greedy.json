@@ -1,0 +1,36 @@
+{
+  "results": {
+    "enem_2022_greedy": {
+      "dynamic-random": {
+        "acc": 0.788135593220339,
+        "acc_stderr": 0.03777778933227661,
+        "2022": 0.788135593220339,
+        "2022_stderr": 0.03777778933227661,
+        "unknown_pred": 0.0,
+        "unknown_pred_stderr": 0.0,
+        "human-sciences": 0.972972972972973,
+        "human-sciences_stderr": 0.027027027027027025,
+        "mathematics": 0.2727272727272727,
+        "mathematics_stderr": 0.09718590614997252,
+        "natural-sciences": 0.8076923076923077,
+        "natural-sciences_stderr": 0.07882269819968922,
+        "languages": 0.9090909090909091,
+        "languages_stderr": 0.050819726761358854,
+        "num_examples": 118
+      }
+    }
+  },
+  "versions": {
+    "enem_2022_greedy": 0
+  },
+  "config": {
+    "model": "maritalk",
+    "model_args": "engine=sabia-3.1,base_url=https://chat.maritaca.ai/api",
+    "num_fewshot": 1,
+    "batch_size": 4,
+    "device": null,
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000
+  }
+}

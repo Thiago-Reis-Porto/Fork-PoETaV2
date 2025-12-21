@@ -1,0 +1,27 @@
+{
+  "results": {
+    "assin_sts_greedy": {
+      "dynamic-random": {
+        "mse": 0.8028818272953714,
+        "mse_stderr": 0.026861403972867775,
+        "pearson": 0.7272623730737551,
+        "unknown_pred": 0.0008169934640522876,
+        "unknown_pred_stderr": 0.0005775835637222861,
+        "num_examples": 2448
+      }
+    }
+  },
+  "versions": {
+    "assin_sts_greedy": 0
+  },
+  "config": {
+    "model": "maritalk",
+    "model_args": "engine=sabia-3.1,base_url=https://chat.maritaca.ai/api",
+    "num_fewshot": 2,
+    "batch_size": 4,
+    "device": null,
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000
+  }
+}

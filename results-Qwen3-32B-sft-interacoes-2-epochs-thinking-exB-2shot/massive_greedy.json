@@ -1,0 +1,26 @@
+{
+  "results": {
+    "massive_greedy": {
+      "dynamic-random": {
+        "acc": 68.52723604572965,
+        "acc_stderr": 0.8517293155366166,
+        "f1-macro": 66.70862974037095,
+        "f1-weighted": 68.91698543425669,
+        "num_examples": 2974
+      }
+    }
+  },
+  "versions": {
+    "massive_greedy": 0
+  },
+  "config": {
+    "model": "vllm",
+    "model_args": "engine=Qwen3-32B-sft-interacoes-2-epochs-thinking-ex,base_url=http://172.17.0.1:8000/v1",
+    "num_fewshot": 2,
+    "batch_size": 4,
+    "device": null,
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000
+  }
+}

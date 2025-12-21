@@ -1,0 +1,26 @@
+{
+  "results": {
+    "hatebr_binary_greedy": {
+      "dynamic-random": {
+        "acc": 0.9171428571428571,
+        "acc_stderr": 0.007370120924436096,
+        "f1-macro": 91.71185001306506,
+        "f1-weighted": 91.71185001306506,
+        "num_examples": 1400
+      }
+    }
+  },
+  "versions": {
+    "hatebr_binary_greedy": 0
+  },
+  "config": {
+    "model": "vllm",
+    "model_args": "engine=Qwen-32B-large-DPO-GRPO-all-rewards,base_url=http://172.17.0.1:8000/v1",
+    "num_fewshot": 5,
+    "batch_size": 4,
+    "device": null,
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000
+  }
+}

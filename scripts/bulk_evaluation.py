@@ -55,7 +55,11 @@ def eval_hf_checkpoint_or_api(args, model_config, model_name_or_path=None, check
         task_name = task_config['lm_eval_task']
         limit = task_config.get("limit", None)
         response_format = task_config.get("response_format", None)
-        num_fewshot = task_config["num_fewshot"]
+        
+        ### CHANGED: make num_fewshot 2, unless task_config['num_fewshot'] < 2, then use that value
+        num_fewshot = 2 if task_config.get('num_fewshot', 2) >= 2 else task_config.get('num_fewshot', 2)
+        ### END CHANGED SECTION
+        
         prompt_mode = task_configs["prompt_mode"]
 
         print(f"**** Running evaluation on {task_name} ****")

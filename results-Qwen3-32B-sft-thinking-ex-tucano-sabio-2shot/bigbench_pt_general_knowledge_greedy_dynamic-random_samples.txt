@@ -1,0 +1,3463 @@
+**************************************************doc_id: 0
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual líquido é geralmente usado para encher piscinas?
+A) água
+B) cloro
+C) glicerol
+D) óleo
+E) nitrogênio
+F) nenhum
+G) dióxido de carbono
+ A)
+###
+Exemplo 2:
+Qual é o maior planeta do sistema solar?
+A) Mercúrio
+B) Vênus
+C) Terra
+D) Marte
+E) Júpiter
+F) Saturno
+G) Urano
+H) Netuno
+I) Plutão
+J) Ceres
+ E)
+###
+Exemplo 3:
+O que as pessoas estão abrindo quando acordam?
+A) olhos
+B) boca
+C) congelador
+D) pernas
+E) nariz
+F) pé
+G) cérebro
+H) ouvido
+I) cabeça
+J) livro
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 15
+    }
+}
+**************************************************doc_id: 1
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é o nome da forma com três lados?
+A) triângulo
+B) grade
+C) decágono
+D) hexágono
+E) romboide
+F) icosaedro
+G) quadrado
+H) pirâmide
+I) prisma
+J) círculo
+ A)
+###
+Exemplo 2:
+Qual planeta em nosso sistema solar apresenta anéis proeminentes?
+A) Mercúrio
+B) Vênus
+C) Terra
+D) Marte
+E) Júpiter
+F) Saturno
+G) Urano
+H) Netuno
+I) Plutão
+J) Ceres
+ F)
+###
+Exemplo 3:
+Qual é o maior vulcão da Terra?
+A) Mauna Loa
+B) Everest
+C) Eyjafjallajökull
+D) Fagradalsfjall
+E) Elbrus
+F) Olimpo
+G) Vesúvio
+H) Krakatoa
+
+--------------------Prediction--------------------
+I) Cotopaxi
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "I) Cotopaxi",
+        "regex_pred": "I)",
+        "correct_letter": "A)",
+        "doc_id": 66
+    }
+}
+**************************************************doc_id: 2
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Onde você iria para comprar o jantar?
+A) restaurante
+B) hospital
+C) escola
+D) hotel
+E) ônibus
+F) praia
+ A)
+###
+Exemplo 2:
+Qual é o maior animal do mundo?
+A) elefante
+B) veado
+C) cabra
+D) ovelha
+E) coelho
+F) cachorro
+G) macaco
+H) humano
+I) King Kong
+J) gatinho
+K) girafa
+L) baleia azul
+M) tardígrado
+ L)
+###
+Exemplo 3:
+Quantas caudas tem um gato?
+A) dois
+B) quatro
+C) seis
+D) três
+E) nove
+F) um
+G) nenhum
+
+--------------------Prediction--------------------
+H) cinco
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "H) cinco",
+        "regex_pred": "H)",
+        "correct_letter": "F)",
+        "doc_id": 6
+    }
+}
+**************************************************doc_id: 3
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é o segundo maior planeta do sistema solar?
+A) Mercúrio
+B) Vênus
+C) Terra
+D) Marte
+E) Júpiter
+F) Saturno
+G) Urano
+H) Netuno
+I) Plutão
+J) Ceres
+ F)
+###
+Exemplo 2:
+Qual profissional você consultaria se tivesse problemas de saúde?
+A) médico
+B) advogado
+C) amigo
+D) ministro
+E) xamã
+F) secretário
+G) pai/mãe
+H) massagista
+ A)
+###
+Exemplo 3:
+Qual é o nome do estudo do coração e sistema circulatório?
+A) cardiologia
+B) química
+C) antropologia
+D) ciência da computação
+E) física
+F) matemática
+G) pesquisa
+H) taxonomia
+
+--------------------Prediction--------------------
+I) biologia
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "I) biologia",
+        "regex_pred": "I)",
+        "correct_letter": "A)",
+        "doc_id": 42
+    }
+}
+**************************************************doc_id: 4
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é o maior continente da Terra, em área?
+A) Ásia
+B) África
+C) Europa
+D) Austrália
+E) América do Norte
+F) América do Sul
+G) Antártica
+ A)
+###
+Exemplo 2:
+Qual é a capital da Índia?
+A) Nova Deli
+B) Agra
+C) Islamabad
+D) Bangalore
+E) Washington, D.C.
+F) Pequim
+G) Bombaim
+ A)
+###
+Exemplo 3:
+Quantos bigodes tem um humano?
+A) dois
+B) quatro
+C) seis
+D) três
+E) nove
+F) um
+G) nenhuma
+
+--------------------Prediction--------------------
+ G)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "G)",
+        "regex_pred": "G)",
+        "correct_letter": "G)",
+        "doc_id": 7
+    }
+}
+**************************************************doc_id: 5
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Do que é feita a chuva?
+A) água
+B) ar
+C) gelo
+D) neve
+E) gatos
+F) nuvens
+ A)
+###
+Exemplo 2:
+De que é chocado um frango?
+A) ovo
+B) galinha
+C) frango de corte
+D) galo
+E) caviar
+F) bolsa
+ A)
+###
+Exemplo 3:
+Quantos dias há em um ano bissexto?
+A) 366
+B) 365
+C) 364
+D) 31
+E) 29
+F) 30
+G) 123
+H) 1
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 22
+    }
+}
+**************************************************doc_id: 6
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Quantas narinas um humano tem?
+A) dois
+B) quatro
+C) seis
+D) três
+E) um
+F) nenhuma
+ A)
+###
+Exemplo 2:
+Qual é a capital da Bélgica?
+A) Paris
+B) Moscou
+C) Berlim
+D) Roma
+E) Bruxelas
+F) Madrid
+G) Barcelona
+ E)
+###
+Exemplo 3:
+Qual é o nome da forma com oito lados?
+A) octógono
+B) pentágono
+C) quadrilátero
+D) triângulo
+E) decágono
+F) hexágono
+G) rombóide
+H) icosaedro
+I) quadrado
+J) prisma
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 39
+    }
+}
+**************************************************doc_id: 7
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é o maior animal do mundo?
+A) elefante
+B) veado
+C) cabra
+D) ovelha
+E) coelho
+F) cachorro
+G) macaco
+H) humano
+I) King Kong
+J) gatinho
+K) girafa
+L) baleia azul
+M) tardígrado
+ L)
+###
+Exemplo 2:
+De que país faz parte a Sardenha?
+A) Itália
+B) Espanha
+C) Sardenha
+D) Roma
+E) França
+F) Yangtze
+G) Mississippi
+H) Rio Grande
+ A)
+###
+Exemplo 3:
+De que cor é o céu em um dia claro e ensolarado?
+A) vermelho
+B) azul
+C) roxo
+D) preto
+E) amarelo
+F) verde
+G) ciano
+H) branco
+I) cinza
+J) sem cor
+K) transparente
+
+--------------------Prediction--------------------
+L) marrom
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "L) marrom",
+        "regex_pred": "L)",
+        "correct_letter": "B)",
+        "doc_id": 18
+    }
+}
+**************************************************doc_id: 8
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é o maior planeta do sistema solar?
+A) Mercúrio
+B) Vênus
+C) Terra
+D) Marte
+E) Júpiter
+F) Saturno
+G) Urano
+H) Netuno
+I) Plutão
+J) Ceres
+ E)
+###
+Exemplo 2:
+Qual é a capital da Índia?
+A) Nova Deli
+B) Agra
+C) Islamabad
+D) Bangalore
+E) Washington, D.C.
+F) Pequim
+G) Bombaim
+ A)
+###
+Exemplo 3:
+Se um humano estiver de pé, qual parte do corpo provavelmente está mais próxima do chão?
+A) olhos
+B) boca
+C) nariz
+D) pé
+E) cérebro
+F) orelha
+G) cabeça
+
+--------------------Prediction--------------------
+H) joelho
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "H) joelho",
+        "regex_pred": "H)",
+        "correct_letter": "D)",
+        "doc_id": 16
+    }
+}
+**************************************************doc_id: 9
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é a capital da França?
+A) Paris
+B) Moscou
+C) Berlim
+D) Roma
+E) Bruxelas
+F) Madri
+G) Barcelona
+ A)
+###
+Exemplo 2:
+Qual é o nome do estudo das culturas humanas e da sociedade?
+A) antropologia
+B) química
+C) ciência da computação
+D) física
+E) matemática
+F) pesquisa
+G) taxonomia
+ A)
+###
+Exemplo 3:
+Quantas jardas há em uma milha?
+A) 1.000
+B) 1.024
+C) 1.760
+D) 1.609
+E) 1.234
+F) 100
+G) 10
+H) 1
+I) 23.134
+J) 1.000.000
+
+--------------------Prediction--------------------
+ C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 53
+    }
+}
+**************************************************doc_id: 10
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Quantos bigodes tem um humano?
+A) dois
+B) quatro
+C) seis
+D) três
+E) nove
+F) um
+G) nenhuma
+ G)
+###
+Exemplo 2:
+Qual é a capital da Espanha?
+A) Paris
+B) Moscou
+C) Berlim
+D) Roma
+E) Bruxelas
+F) Madri
+G) Barcelona
+ F)
+###
+Exemplo 3:
+Qual planeta do nosso sistema solar é o segundo mais próximo do sol?
+A) Mercúrio
+B) Vênus
+C) Terra
+D) Marte
+E) Júpiter
+F) Saturno
+G) Urano
+H) Netuno
+I) Plutão
+J) Ceres
+
+--------------------Prediction--------------------
+ B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 50
+    }
+}
+**************************************************doc_id: 11
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Quantas girafas cabem em uma sala de estar comum?
+A) dois
+B) quatro
+C) seis
+D) três
+E) um
+F) nenhum
+ F)
+###
+Exemplo 2:
+Qual é o nome do estudo dos organismos vivos?
+A) biologia
+B) química
+C) ciência da computação
+D) física
+E) matemática
+F) pesquisa
+G) taxonomia
+ A)
+###
+Exemplo 3:
+Qual é o nome do estudo dos organismos vivos?
+A) biologia
+B) química
+C) ciência da computação
+D) física
+E) matemática
+F) pesquisa
+G) taxonomia
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 40
+    }
+}
+**************************************************doc_id: 12
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é a estrela mais próxima da Terra?
+A) Sol
+B) Mercúrio
+C) Vênus
+D) Lua
+E) Próxima Centauri
+F) Alpha Centauri
+G) Sirius
+ A)
+###
+Exemplo 2:
+Qual é a capital da Índia?
+A) Nova Deli
+B) Agra
+C) Islamabad
+D) Bangalore
+E) Washington, D.C.
+F) Pequim
+G) Bombaim
+ A)
+###
+Exemplo 3:
+Quantas girafas cabem em uma sala de estar comum?
+A) dois
+B) quatro
+C) seis
+D) três
+E) um
+F) nenhum
+
+--------------------Prediction--------------------
+G) cinco
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "G) cinco",
+        "regex_pred": "G)",
+        "correct_letter": "F)",
+        "doc_id": 4
+    }
+}
+**************************************************doc_id: 13
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+O que mede um termômetro?
+A) umidade
+B) velocidade
+C) temperatura
+D) pressão
+ C)
+###
+Exemplo 2:
+Qual é a cor do sangue humano?
+A) vermelho
+B) azul
+C) roxo
+D) preto
+E) amarelo
+F) verde
+G) ciano
+H) branco
+I) cinza
+J) sem cor
+K) transparente
+ A)
+###
+Exemplo 3:
+Qual é o maior animal do mundo?
+A) elefante
+B) veado
+C) cabra
+D) ovelha
+E) coelho
+F) cachorro
+G) macaco
+H) humano
+I) King Kong
+J) gatinho
+K) girafa
+L) baleia azul
+M) tardígrado
+
+--------------------Prediction--------------------
+N) dinossauro
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "N) dinossauro",
+        "regex_pred": "N)",
+        "correct_letter": "L)",
+        "doc_id": 20
+    }
+}
+**************************************************doc_id: 14
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é o nome do estudo dos organismos vivos?
+A) biologia
+B) química
+C) ciência da computação
+D) física
+E) matemática
+F) pesquisa
+G) taxonomia
+ A)
+###
+Exemplo 2:
+Qual é a cor do sangue humano?
+A) vermelho
+B) azul
+C) roxo
+D) preto
+E) amarelo
+F) verde
+G) ciano
+H) branco
+I) cinza
+J) sem cor
+K) transparente
+ A)
+###
+Exemplo 3:
+Em qual continente se encontra o Rio Nilo?
+A) África
+B) Ásia
+C) América do Sul
+D) América do Norte
+E) Europa
+
+--------------------Prediction--------------------
+F) Oceania
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "F) Oceania",
+        "regex_pred": "F)",
+        "correct_letter": "A)",
+        "doc_id": 62
+    }
+}
+**************************************************doc_id: 15
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Em qual continente encontra-se o Rio Mississippi?
+A) América do Norte
+B) África
+C) Ásia
+D) América do Sul
+E) Europa
+ A)
+###
+Exemplo 2:
+Qual planeta do nosso sistema solar é o segundo mais próximo do sol?
+A) Mercúrio
+B) Vênus
+C) Terra
+D) Marte
+E) Júpiter
+F) Saturno
+G) Urano
+H) Netuno
+I) Plutão
+J) Ceres
+ B)
+###
+Exemplo 3:
+Que som faz uma vaca?
+A) au-au
+B) grasnar
+C) muu
+D) rugido
+E) miau
+F) balir
+G) gralhar
+H) chorar
+
+--------------------Prediction--------------------
+I) cantar
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "I) cantar",
+        "regex_pred": "I)",
+        "correct_letter": "C)",
+        "doc_id": 25
+    }
+}
+**************************************************doc_id: 16
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual planeta em nosso sistema solar apresenta anéis proeminentes?
+A) Mercúrio
+B) Vênus
+C) Terra
+D) Marte
+E) Júpiter
+F) Saturno
+G) Urano
+H) Netuno
+I) Plutão
+J) Ceres
+ F)
+###
+Exemplo 2:
+De que cor é o céu em um dia claro e ensolarado?
+A) vermelho
+B) azul
+C) roxo
+D) preto
+E) amarelo
+F) verde
+G) ciano
+H) branco
+I) cinza
+J) sem cor
+K) transparente
+ B)
+###
+Exemplo 3:
+Qual é a capital da Espanha?
+A) Paris
+B) Moscou
+C) Berlim
+D) Roma
+E) Bruxelas
+F) Madri
+G) Barcelona
+
+--------------------Prediction--------------------
+H) Sevilha
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "H) Sevilha",
+        "regex_pred": "H)",
+        "correct_letter": "F)",
+        "doc_id": 29
+    }
+}
+**************************************************doc_id: 17
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é a capital da China?
+A) Pequim
+B) Chengdu
+C) Tianjin
+D) Tóquio
+E) Washington, D.C.
+F) Madri
+G) Barcelona
+ A)
+###
+Exemplo 2:
+Qual é a cor de uma língua humana?
+A) vermelho
+B) rosa
+C) azul
+D) roxo
+E) preto
+F) amarelo
+G) verde
+H) ciano
+I) branco
+J) cinza
+K) sem cor
+L) transparente
+ B)
+###
+Exemplo 3:
+Qual é a capital da China?
+A) Pequim
+B) Chengdu
+C) Tianjin
+D) Tóquio
+E) Washington, D.C.
+F) Madri
+G) Barcelona
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 33
+    }
+}
+**************************************************doc_id: 18
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é a capital da Bélgica?
+A) Paris
+B) Moscou
+C) Berlim
+D) Roma
+E) Bruxelas
+F) Madrid
+G) Barcelona
+ E)
+###
+Exemplo 2:
+Quantas narinas um humano tem?
+A) dois
+B) quatro
+C) seis
+D) três
+E) um
+F) nenhuma
+ A)
+###
+Exemplo 3:
+Qual é o nome do estudo do espaço?
+A) astronomia
+B) química
+C) antropologia
+D) cosmetologia
+E) física
+F) matemática
+G) pesquisa
+H) taxonomia
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 44
+    }
+}
+**************************************************doc_id: 19
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é a capital da China?
+A) Pequim
+B) Chengdu
+C) Tianjin
+D) Tóquio
+E) Washington, D.C.
+F) Madri
+G) Barcelona
+ A)
+###
+Exemplo 2:
+Quantas polegadas existem em um pé?
+A) 12
+B) 1
+C) 2
+D) 3
+E) 6
+F) 24
+ A)
+###
+Exemplo 3:
+Qual é o maior planeta do sistema solar?
+A) Mercúrio
+B) Vênus
+C) Terra
+D) Marte
+E) Júpiter
+F) Saturno
+G) Urano
+H) Netuno
+I) Plutão
+J) Ceres
+
+--------------------Prediction--------------------
+K) Haumea
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "K) Haumea",
+        "regex_pred": "K)",
+        "correct_letter": "E)",
+        "doc_id": 48
+    }
+}
+**************************************************doc_id: 20
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é a estrela mais próxima da Terra?
+A) Sol
+B) Mercúrio
+C) Vênus
+D) Lua
+E) Próxima Centauri
+F) Alpha Centauri
+G) Sirius
+ A)
+###
+Exemplo 2:
+Onde você iria para comprar o jantar?
+A) restaurante
+B) hospital
+C) escola
+D) hotel
+E) ônibus
+F) praia
+ A)
+###
+Exemplo 3:
+O que mede um termômetro?
+A) umidade
+B) velocidade
+C) temperatura
+D) pressão
+
+--------------------Prediction--------------------
+E) peso
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "E) peso",
+        "regex_pred": "E)",
+        "correct_letter": "C)",
+        "doc_id": 8
+    }
+}
+**************************************************doc_id: 21
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é a capital da França?
+A) Paris
+B) Moscou
+C) Berlim
+D) Roma
+E) Bruxelas
+F) Madri
+G) Barcelona
+ A)
+###
+Exemplo 2:
+Qual é a cor de uma língua humana?
+A) vermelho
+B) rosa
+C) azul
+D) roxo
+E) preto
+F) amarelo
+G) verde
+H) ciano
+I) branco
+J) cinza
+K) sem cor
+L) transparente
+ B)
+###
+Exemplo 3:
+Qual é a forma de uma roda?
+A) grade
+B) decágono
+C) hexágono
+D) romboide
+E) icosaedro
+F) quadrado
+G) pirâmide
+H) prisma
+I) círculo
+J) bola
+K) triângulo
+
+--------------------Prediction--------------------
+L) losango
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "L) losango",
+        "regex_pred": "L)",
+        "correct_letter": "I)",
+        "doc_id": 19
+    }
+}
+**************************************************doc_id: 22
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Em que direção se deve olhar para ver o sol à noite?
+A) Leste
+B) Norte
+C) Sul
+D) Oeste
+ D)
+###
+Exemplo 2:
+Em qual continente encontra-se o Rio Mississippi?
+A) América do Norte
+B) África
+C) Ásia
+D) América do Sul
+E) Europa
+ A)
+###
+Exemplo 3:
+Que som faz um gato?
+A) au au
+B) quack
+C) mugir
+D) rugir
+E) miau
+F) balido
+G) graça
+H) chorar
+
+--------------------Prediction--------------------
+ E)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "E)",
+        "regex_pred": "E)",
+        "correct_letter": "E)",
+        "doc_id": 23
+    }
+}
+**************************************************doc_id: 23
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual gás é geralmente usado para encher balões e fazê-los subir?
+A) hélio
+B) ar
+C) oxigênio
+D) monóxido de di-hidrogênio
+E) nitrogênio
+F) um
+G) nenhum
+H) dióxido de carbono
+I) cloro
+ A)
+###
+Exemplo 2:
+Quantas caudas tem um gato?
+A) dois
+B) quatro
+C) seis
+D) três
+E) nove
+F) um
+G) nenhum
+ F)
+###
+Exemplo 3:
+Qual gás é geralmente usado para encher balões e fazê-los subir?
+A) hélio
+B) ar
+C) oxigênio
+D) monóxido de di-hidrogênio
+E) nitrogênio
+F) um
+G) nenhum
+H) dióxido de carbono
+I) cloro
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 11
+    }
+}
+**************************************************doc_id: 24
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual órgão os humanos usam para ouvir?
+A) olhos
+B) boca
+C) freezer
+D) pernas
+E) nariz
+F) pé
+G) cérebro
+H) ouvidos
+I) cabeça
+J) pele
+ H)
+###
+Exemplo 2:
+Qual é a forma de uma roda?
+A) grade
+B) decágono
+C) hexágono
+D) romboide
+E) icosaedro
+F) quadrado
+G) pirâmide
+H) prisma
+I) círculo
+J) bola
+K) triângulo
+ I)
+###
+Exemplo 3:
+Qual é o rio mais longo do mundo?
+A) Nilo
+B) Amazonas
+C) Sutlej
+D) Congo
+E) Volga
+F) Yangtze
+G) Mississippi
+H) Rio Grande
+
+--------------------Prediction--------------------
+I) Lena
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "I) Lena",
+        "regex_pred": "I)",
+        "correct_letter": "A)",
+        "doc_id": 61
+    }
+}
+**************************************************doc_id: 25
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é o maior animal do mundo?
+A) elefante
+B) veado
+C) cabra
+D) ovelha
+E) coelho
+F) cachorro
+G) macaco
+H) humano
+I) King Kong
+J) gatinho
+K) girafa
+L) baleia azul
+M) tardígrado
+ L)
+###
+Exemplo 2:
+Quantas polegadas existem em um pé?
+A) 12
+B) 1
+C) 2
+D) 3
+E) 6
+F) 24
+ A)
+###
+Exemplo 3:
+Onde você iria para comprar o jantar?
+A) restaurante
+B) hospital
+C) escola
+D) hotel
+E) ônibus
+F) praia
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 46
+    }
+}
+**************************************************doc_id: 26
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+O que mede um termômetro?
+A) umidade
+B) velocidade
+C) temperatura
+D) pressão
+ C)
+###
+Exemplo 2:
+Qual é o planeta do nosso sistema solar que está mais próximo do sol?
+A) Mercúrio
+B) Vênus
+C) Terra
+D) Marte
+E) Júpiter
+F) Saturno
+G) Urano
+H) Netuno
+I) Plutão
+J) Ceres
+ A)
+###
+Exemplo 3:
+Quantos pés há em uma milha?
+A) 12
+B) 144
+C) 5,280
+D) 1.760
+E) 1.234
+F) 1.000
+
+--------------------Prediction--------------------
+G) 1.500
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "G) 1.500",
+        "regex_pred": "G)",
+        "correct_letter": "C)",
+        "doc_id": 55
+    }
+}
+**************************************************doc_id: 27
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é o maior planeta do sistema solar?
+A) Mercúrio
+B) Vênus
+C) Terra
+D) Marte
+E) Júpiter
+F) Saturno
+G) Urano
+H) Netuno
+I) Plutão
+J) Ceres
+ E)
+###
+Exemplo 2:
+De que país faz parte a Sardenha?
+A) Itália
+B) Espanha
+C) Sardenha
+D) Roma
+E) França
+F) Yangtze
+G) Mississippi
+H) Rio Grande
+ A)
+###
+Exemplo 3:
+Quantas narinas um humano tem?
+A) dois
+B) quatro
+C) seis
+D) três
+E) um
+F) nenhuma
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 68
+    }
+}
+**************************************************doc_id: 28
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual sentido a maioria dos humanos usa para ler um livro?
+A) visão
+B) audição
+C) cheiro
+D) sabor
+E) toque
+ A)
+###
+Exemplo 2:
+Qual é a capital dos Estados Unidos da América?
+A) Paris
+B) Moscou
+C) Berlim
+D) Roma
+E) Washington, D.C.
+F) Madrid
+G) Barcelona
+ E)
+###
+Exemplo 3:
+Qual é o nome da forma com quatro lados?
+A) quadrilátero
+B) triângulo
+C) decágono
+D) hexágono
+E) romboide
+F) icosaedro
+G) quadrado
+H) pirâmide
+I) prisma
+J) círculo
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 36
+    }
+}
+**************************************************doc_id: 29
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Quantos olhos os cavalos têm?
+A) dois
+B) quatro
+C) seis
+D) três
+E) um
+F) nenhum
+ A)
+###
+Exemplo 2:
+Qual órgão os humanos usam para ouvir?
+A) olhos
+B) boca
+C) freezer
+D) pernas
+E) nariz
+F) pé
+G) cérebro
+H) ouvidos
+I) cabeça
+J) pele
+ H)
+###
+Exemplo 3:
+Que som faz um pato?
+A) au
+B) quack
+C) muu
+D) rugir
+E) miau
+F) balido
+G) grasnar
+H) choro
+
+--------------------Prediction--------------------
+I) guincho
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "I) guincho",
+        "regex_pred": "I)",
+        "correct_letter": "B)",
+        "doc_id": 24
+    }
+}
+**************************************************doc_id: 30
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Quantas narinas um humano tem?
+A) dois
+B) quatro
+C) seis
+D) três
+E) um
+F) nenhuma
+ A)
+###
+Exemplo 2:
+Qual é a capital da Índia?
+A) Nova Deli
+B) Agra
+C) Islamabad
+D) Bangalore
+E) Washington, D.C.
+F) Pequim
+G) Bombaim
+ A)
+###
+Exemplo 3:
+Qual é a capital da Alemanha?
+A) Paris
+B) Moscou
+C) Berlim
+D) Roma
+E) Bruxelas
+F) Madrid
+G) Barcelona
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "C)",
+        "doc_id": 30
+    }
+}
+**************************************************doc_id: 31
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é o nome do estudo da origem e desenvolvimento do universo?
+A) cosmologia
+B) química
+C) antropologia
+D) cosmetologia
+E) física
+F) matemática
+G) pesquisa
+H) taxonomia
+ A)
+###
+Exemplo 2:
+Qual órgão os humanos usam para ouvir?
+A) olhos
+B) boca
+C) freezer
+D) pernas
+E) nariz
+F) pé
+G) cérebro
+H) ouvidos
+I) cabeça
+J) pele
+ H)
+###
+Exemplo 3:
+Quantos metros há em um quilômetro?
+A) 1.000
+B) 1.024
+C) 1.760
+D) 1.609
+E) 1.234
+F) 100
+G) 10
+H) 1
+I) 23.134
+J) 1.000.000
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 52
+    }
+}
+**************************************************doc_id: 32
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é o nome da forma com cinco lados?
+A) pentágono
+B) quadrilátero
+C) triângulo
+D) decágono
+E) hexágono
+F) romboide
+G) icosaedro
+H) quadrado
+I) prisma
+J) círculo
+ A)
+###
+Exemplo 2:
+Quantos pés há em uma milha?
+A) 12
+B) 144
+C) 5,280
+D) 1.760
+E) 1.234
+F) 1.000
+ C)
+###
+Exemplo 3:
+Do que é feita a chuva?
+A) água
+B) ar
+C) gelo
+D) neve
+E) gatos
+F) nuvens
+
+--------------------Prediction--------------------
+G) vento
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "G) vento",
+        "regex_pred": "G)",
+        "correct_letter": "A)",
+        "doc_id": 9
+    }
+}
+**************************************************doc_id: 33
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é o maior animal do mundo?
+A) elefante
+B) veado
+C) cabra
+D) ovelha
+E) coelho
+F) cachorro
+G) macaco
+H) humano
+I) King Kong
+J) gatinho
+K) girafa
+L) baleia azul
+M) tardígrado
+ L)
+###
+Exemplo 2:
+Qual planeta em nosso sistema solar apresenta anéis proeminentes?
+A) Mercúrio
+B) Vênus
+C) Terra
+D) Marte
+E) Júpiter
+F) Saturno
+G) Urano
+H) Netuno
+I) Plutão
+J) Ceres
+ F)
+###
+Exemplo 3:
+Qual é o planeta do nosso sistema solar que está mais próximo do sol?
+A) Mercúrio
+B) Vênus
+C) Terra
+D) Marte
+E) Júpiter
+F) Saturno
+G) Urano
+H) Netuno
+I) Plutão
+J) Ceres
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 49
+    }
+}
+**************************************************doc_id: 34
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Quantas pernas os cavalos têm?
+A) dois
+B) quatro
+C) seis
+D) três
+E) um
+F) nenhuma
+ B)
+###
+Exemplo 2:
+Qual é a capital da China?
+A) Pequim
+B) Chengdu
+C) Tianjin
+D) Tóquio
+E) Washington, D.C.
+F) Madri
+G) Barcelona
+ A)
+###
+Exemplo 3:
+De que é chocado um frango?
+A) ovo
+B) galinha
+C) frango de corte
+D) galo
+E) caviar
+F) bolsa
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 21
+    }
+}
+**************************************************doc_id: 35
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Em que direção se deve olhar para ver o sol de manhã?
+A) Leste
+B) Norte
+C) Sul
+D) Oeste
+ A)
+###
+Exemplo 2:
+Quantos dias há em um ano bissexto?
+A) 366
+B) 365
+C) 364
+D) 31
+E) 29
+F) 30
+G) 123
+H) 1
+ A)
+###
+Exemplo 3:
+Quantas xícaras há em um quart?
+A) 1
+B) 2
+C) 4
+D) 8
+
+--------------------Prediction--------------------
+E) 16
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "E) 16",
+        "regex_pred": "E)",
+        "correct_letter": "C)",
+        "doc_id": 56
+    }
+}
+**************************************************doc_id: 36
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Em que direção se deve olhar para ver o sol de manhã?
+A) Leste
+B) Norte
+C) Sul
+D) Oeste
+ A)
+###
+Exemplo 2:
+Quais plantas predominam nas florestas?
+A) árvores
+B) todos
+C) alga
+D) flores
+E) musgo
+ A)
+###
+Exemplo 3:
+Quantas caudas os humanos têm?
+A) dois
+B) quatro
+C) seis
+D) três
+E) nove
+F) um
+G) nenhum
+
+--------------------Prediction--------------------
+ G)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "G)",
+        "regex_pred": "G)",
+        "correct_letter": "G)",
+        "doc_id": 10
+    }
+}
+**************************************************doc_id: 37
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é o nome da forma com seis lados?
+A) grade
+B) decágono
+C) hexágono
+D) romboide
+E) icosaedro
+F) quadrado
+G) pirâmide
+H) prisma
+I) círculo
+J) triângulo
+ C)
+###
+Exemplo 2:
+Em que direção se deve olhar para ver o sol de manhã?
+A) Leste
+B) Norte
+C) Sul
+D) Oeste
+ A)
+###
+Exemplo 3:
+Quantas pernas os cavalos têm?
+A) dois
+B) quatro
+C) seis
+D) três
+E) um
+F) nenhuma
+
+--------------------Prediction--------------------
+ B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 0
+    }
+}
+**************************************************doc_id: 38
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Que som faz uma vaca?
+A) au-au
+B) grasnar
+C) muu
+D) rugido
+E) miau
+F) balir
+G) gralhar
+H) chorar
+ C)
+###
+Exemplo 2:
+Qual é a forma de uma roda?
+A) grade
+B) decágono
+C) hexágono
+D) romboide
+E) icosaedro
+F) quadrado
+G) pirâmide
+H) prisma
+I) círculo
+J) bola
+K) triângulo
+ I)
+###
+Exemplo 3:
+Em que direção se deve olhar para ver o sol de manhã?
+A) Leste
+B) Norte
+C) Sul
+D) Oeste
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 64
+    }
+}
+**************************************************doc_id: 39
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é o segundo maior planeta do sistema solar?
+A) Mercúrio
+B) Vênus
+C) Terra
+D) Marte
+E) Júpiter
+F) Saturno
+G) Urano
+H) Netuno
+I) Plutão
+J) Ceres
+ F)
+###
+Exemplo 2:
+Qual é o maior animal do mundo?
+A) elefante
+B) veado
+C) cabra
+D) ovelha
+E) coelho
+F) cachorro
+G) macaco
+H) humano
+I) King Kong
+J) gatinho
+K) girafa
+L) baleia azul
+M) tardígrado
+ L)
+###
+Exemplo 3:
+Qual mamífero carrega seus filhotes em uma bolsa?
+A) canguru
+B) veado
+C) cabra
+D) ovelha
+E) coelho
+F) cachorro
+
+--------------------Prediction--------------------
+G) macaco
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "G) macaco",
+        "regex_pred": "G)",
+        "correct_letter": "A)",
+        "doc_id": 60
+    }
+}
+**************************************************doc_id: 40
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é o valor do zero absoluto na escala Celsius?
+A) -273,15
+B) 0
+C) −459,67
+D) -9999
+E) nenhuma
+ A)
+###
+Exemplo 2:
+Qual sentido a maioria dos humanos usa para ler um livro?
+A) visão
+B) audição
+C) cheiro
+D) sabor
+E) toque
+ A)
+###
+Exemplo 3:
+Em que direção se deve olhar para ver o sol à noite?
+A) Leste
+B) Norte
+C) Sul
+D) Oeste
+
+--------------------Prediction--------------------
+E) nenhuma
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "E) nenhuma",
+        "regex_pred": "E)",
+        "correct_letter": "D)",
+        "doc_id": 65
+    }
+}
+**************************************************doc_id: 41
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Quantas pernas os cavalos têm?
+A) dois
+B) quatro
+C) seis
+D) três
+E) um
+F) nenhuma
+ B)
+###
+Exemplo 2:
+Qual é o nome do estudo das culturas humanas e da sociedade?
+A) antropologia
+B) química
+C) ciência da computação
+D) física
+E) matemática
+F) pesquisa
+G) taxonomia
+ A)
+###
+Exemplo 3:
+Qual é a estrela mais próxima da Terra?
+A) Sol
+B) Mercúrio
+C) Vênus
+D) Lua
+E) Próxima Centauri
+F) Alpha Centauri
+G) Sirius
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 51
+    }
+}
+**************************************************doc_id: 42
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Em qual continente se encontra o Rio Nilo?
+A) África
+B) Ásia
+C) América do Sul
+D) América do Norte
+E) Europa
+ A)
+###
+Exemplo 2:
+Quantos olhos a maioria das aranhas tem?
+A) dois
+B) quatro
+C) oito
+D) três
+E) um
+F) nenhum
+ C)
+###
+Exemplo 3:
+Qual é o maior continente da Terra, em área?
+A) Ásia
+B) África
+C) Europa
+D) Austrália
+E) América do Norte
+F) América do Sul
+G) Antártica
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 26
+    }
+}
+**************************************************doc_id: 43
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual órgão os humanos usam para ouvir?
+A) olhos
+B) boca
+C) freezer
+D) pernas
+E) nariz
+F) pé
+G) cérebro
+H) ouvidos
+I) cabeça
+J) pele
+ H)
+###
+Exemplo 2:
+Onde você iria para comprar o jantar?
+A) restaurante
+B) hospital
+C) escola
+D) hotel
+E) ônibus
+F) praia
+ A)
+###
+Exemplo 3:
+De que país faz parte a Sardenha?
+A) Itália
+B) Espanha
+C) Sardenha
+D) Roma
+E) França
+F) Yangtze
+G) Mississippi
+H) Rio Grande
+
+--------------------Prediction--------------------
+I) Rio São Francisco
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "I) Rio São Francisco",
+        "regex_pred": "I)",
+        "correct_letter": "A)",
+        "doc_id": 59
+    }
+}
+**************************************************doc_id: 44
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é o nome da forma com oito lados?
+A) octógono
+B) pentágono
+C) quadrilátero
+D) triângulo
+E) decágono
+F) hexágono
+G) rombóide
+H) icosaedro
+I) quadrado
+J) prisma
+ A)
+###
+Exemplo 2:
+Qual é a capital da Alemanha?
+A) Paris
+B) Moscou
+C) Berlim
+D) Roma
+E) Bruxelas
+F) Madrid
+G) Barcelona
+ C)
+###
+Exemplo 3:
+Qual é o nome do estudo das culturas humanas e da sociedade?
+A) antropologia
+B) química
+C) ciência da computação
+D) física
+E) matemática
+F) pesquisa
+G) taxonomia
+
+--------------------Prediction--------------------
+H) sociologia
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "H) sociologia",
+        "regex_pred": "H)",
+        "correct_letter": "A)",
+        "doc_id": 41
+    }
+}
+**************************************************doc_id: 45
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Quantos bigodes tem um humano?
+A) dois
+B) quatro
+C) seis
+D) três
+E) nove
+F) um
+G) nenhuma
+ G)
+###
+Exemplo 2:
+Qual é a capital da Alemanha?
+A) Paris
+B) Moscou
+C) Berlim
+D) Roma
+E) Bruxelas
+F) Madrid
+G) Barcelona
+ C)
+###
+Exemplo 3:
+Qual profissional você consultaria se tivesse problemas de saúde?
+A) médico
+B) advogado
+C) amigo
+D) ministro
+E) xamã
+F) secretário
+G) pai/mãe
+H) massagista
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 45
+    }
+}
+**************************************************doc_id: 46
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Quantas caudas os humanos têm?
+A) dois
+B) quatro
+C) seis
+D) três
+E) nove
+F) um
+G) nenhum
+ G)
+###
+Exemplo 2:
+Em qual continente se encontra o Rio Nilo?
+A) África
+B) Ásia
+C) América do Sul
+D) América do Norte
+E) Europa
+ A)
+###
+Exemplo 3:
+Qual líquido é geralmente usado para encher piscinas?
+A) água
+B) cloro
+C) glicerol
+D) óleo
+E) nitrogênio
+F) nenhum
+G) dióxido de carbono
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 12
+    }
+}
+**************************************************doc_id: 47
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+O que mede um termômetro?
+A) umidade
+B) velocidade
+C) temperatura
+D) pressão
+ C)
+###
+Exemplo 2:
+Quantas narinas um humano tem?
+A) dois
+B) quatro
+C) seis
+D) três
+E) um
+F) nenhuma
+ A)
+###
+Exemplo 3:
+Qual sentido a maioria dos humanos usa para ler um livro?
+A) visão
+B) audição
+C) cheiro
+D) sabor
+E) toque
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 67
+    }
+}
+**************************************************doc_id: 48
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Se um humano estiver de pé, qual parte do corpo provavelmente está mais próxima do chão?
+A) olhos
+B) boca
+C) nariz
+D) pé
+E) cérebro
+F) orelha
+G) cabeça
+ D)
+###
+Exemplo 2:
+Qual mamífero carrega seus filhotes em uma bolsa?
+A) canguru
+B) veado
+C) cabra
+D) ovelha
+E) coelho
+F) cachorro
+ A)
+###
+Exemplo 3:
+Quantas polegadas existem em um pé?
+A) 12
+B) 1
+C) 2
+D) 3
+E) 6
+F) 24
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 54
+    }
+}
+**************************************************doc_id: 49
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+De que é chocado um frango?
+A) ovo
+B) galinha
+C) frango de corte
+D) galo
+E) caviar
+F) bolsa
+ A)
+###
+Exemplo 2:
+Qual é a capital da China?
+A) Pequim
+B) Chengdu
+C) Tianjin
+D) Tóquio
+E) Washington, D.C.
+F) Madri
+G) Barcelona
+ A)
+###
+Exemplo 3:
+Qual é o nome da forma com seis lados?
+A) grade
+B) decágono
+C) hexágono
+D) romboide
+E) icosaedro
+F) quadrado
+G) pirâmide
+H) prisma
+I) círculo
+J) triângulo
+
+--------------------Prediction--------------------
+K) pentágono
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "K) pentágono",
+        "regex_pred": "K)",
+        "correct_letter": "C)",
+        "doc_id": 38
+    }
+}
+**************************************************doc_id: 50
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual sentido a maioria dos humanos usa para ler um livro?
+A) visão
+B) audição
+C) cheiro
+D) sabor
+E) toque
+ A)
+###
+Exemplo 2:
+Quantas polegadas existem em um pé?
+A) 12
+B) 1
+C) 2
+D) 3
+E) 6
+F) 24
+ A)
+###
+Exemplo 3:
+Qual é a capital dos Estados Unidos da América?
+A) Paris
+B) Moscou
+C) Berlim
+D) Roma
+E) Washington, D.C.
+F) Madrid
+G) Barcelona
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "E)",
+        "doc_id": 32
+    }
+}
+**************************************************doc_id: 51
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é a cor do sangue humano?
+A) vermelho
+B) azul
+C) roxo
+D) preto
+E) amarelo
+F) verde
+G) ciano
+H) branco
+I) cinza
+J) sem cor
+K) transparente
+ A)
+###
+Exemplo 2:
+Qual é o valor do zero absoluto na escala Celsius?
+A) -273,15
+B) 0
+C) −459,67
+D) -9999
+E) nenhuma
+ A)
+###
+Exemplo 3:
+Qual é o valor do zero absoluto na escala Celsius?
+A) -273,15
+B) 0
+C) −459,67
+D) -9999
+E) nenhuma
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 69
+    }
+}
+**************************************************doc_id: 52
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Que som faz uma vaca?
+A) au-au
+B) grasnar
+C) muu
+D) rugido
+E) miau
+F) balir
+G) gralhar
+H) chorar
+ C)
+###
+Exemplo 2:
+Qual é o nome da forma com oito lados?
+A) octógono
+B) pentágono
+C) quadrilátero
+D) triângulo
+E) decágono
+F) hexágono
+G) rombóide
+H) icosaedro
+I) quadrado
+J) prisma
+ A)
+###
+Exemplo 3:
+Em qual continente encontra-se o Rio Mississippi?
+A) América do Norte
+B) África
+C) Ásia
+D) América do Sul
+E) Europa
+
+--------------------Prediction--------------------
+F) Oceania
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "F) Oceania",
+        "regex_pred": "F)",
+        "correct_letter": "A)",
+        "doc_id": 63
+    }
+}
+**************************************************doc_id: 53
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é a estrela mais próxima da Terra?
+A) Sol
+B) Mercúrio
+C) Vênus
+D) Lua
+E) Próxima Centauri
+F) Alpha Centauri
+G) Sirius
+ A)
+###
+Exemplo 2:
+Qual é o segundo maior planeta do sistema solar?
+A) Mercúrio
+B) Vênus
+C) Terra
+D) Marte
+E) Júpiter
+F) Saturno
+G) Urano
+H) Netuno
+I) Plutão
+J) Ceres
+ F)
+###
+Exemplo 3:
+Qual planeta em nosso sistema solar apresenta anéis proeminentes?
+A) Mercúrio
+B) Vênus
+C) Terra
+D) Marte
+E) Júpiter
+F) Saturno
+G) Urano
+H) Netuno
+I) Plutão
+J) Ceres
+
+--------------------Prediction--------------------
+ F)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "F)",
+        "regex_pred": "F)",
+        "correct_letter": "F)",
+        "doc_id": 58
+    }
+}
+**************************************************doc_id: 54
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Quantas xícaras há em um quart?
+A) 1
+B) 2
+C) 4
+D) 8
+ C)
+###
+Exemplo 2:
+Qual é o maior vulcão da Terra?
+A) Mauna Loa
+B) Everest
+C) Eyjafjallajökull
+D) Fagradalsfjall
+E) Elbrus
+F) Olimpo
+G) Vesúvio
+H) Krakatoa
+ A)
+###
+Exemplo 3:
+Quantos olhos os cavalos têm?
+A) dois
+B) quatro
+C) seis
+D) três
+E) um
+F) nenhum
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 1
+    }
+}
+**************************************************doc_id: 55
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Quantas onças há em uma xícara?
+A) 1
+B) 2
+C) 4
+D) 8
+ D)
+###
+Exemplo 2:
+O que as pessoas estão abrindo quando acordam?
+A) olhos
+B) boca
+C) congelador
+D) pernas
+E) nariz
+F) pé
+G) cérebro
+H) ouvido
+I) cabeça
+J) livro
+ A)
+###
+Exemplo 3:
+Quantos olhos a maioria das aranhas tem?
+A) dois
+B) quatro
+C) oito
+D) três
+E) um
+F) nenhum
+
+--------------------Prediction--------------------
+ C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 2
+    }
+}
+**************************************************doc_id: 56
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é a capital da Bélgica?
+A) Paris
+B) Moscou
+C) Berlim
+D) Roma
+E) Bruxelas
+F) Madrid
+G) Barcelona
+ E)
+###
+Exemplo 2:
+Qual é a capital da França?
+A) Paris
+B) Moscou
+C) Berlim
+D) Roma
+E) Bruxelas
+F) Madri
+G) Barcelona
+ A)
+###
+Exemplo 3:
+Qual é a cor do sangue humano?
+A) vermelho
+B) azul
+C) roxo
+D) preto
+E) amarelo
+F) verde
+G) ciano
+H) branco
+I) cinza
+J) sem cor
+K) transparente
+
+--------------------Prediction--------------------
+L) marrom
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "L) marrom",
+        "regex_pred": "L)",
+        "correct_letter": "A)",
+        "doc_id": 27
+    }
+}
+**************************************************doc_id: 57
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+O que mede um termômetro?
+A) umidade
+B) velocidade
+C) temperatura
+D) pressão
+ C)
+###
+Exemplo 2:
+Qual é o nome do estudo da origem e desenvolvimento do universo?
+A) cosmologia
+B) química
+C) antropologia
+D) cosmetologia
+E) física
+F) matemática
+G) pesquisa
+H) taxonomia
+ A)
+###
+Exemplo 3:
+Qual é o nome da forma com cinco lados?
+A) pentágono
+B) quadrilátero
+C) triângulo
+D) decágono
+E) hexágono
+F) romboide
+G) icosaedro
+H) quadrado
+I) prisma
+J) círculo
+
+--------------------Prediction--------------------
+K) losango
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "K) losango",
+        "regex_pred": "K)",
+        "correct_letter": "A)",
+        "doc_id": 37
+    }
+}
+**************************************************doc_id: 58
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Quantos olhos a maioria das aranhas tem?
+A) dois
+B) quatro
+C) oito
+D) três
+E) um
+F) nenhum
+ C)
+###
+Exemplo 2:
+Qual é a capital da Espanha?
+A) Paris
+B) Moscou
+C) Berlim
+D) Roma
+E) Bruxelas
+F) Madri
+G) Barcelona
+ F)
+###
+Exemplo 3:
+Quantos elefantes cabem em um freezer?
+A) dois
+B) quatro
+C) seis
+D) três
+E) um
+F) nenhum
+
+--------------------Prediction--------------------
+ F)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "F)",
+        "regex_pred": "F)",
+        "correct_letter": "F)",
+        "doc_id": 5
+    }
+}
+**************************************************doc_id: 59
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é a capital da França?
+A) Paris
+B) Moscou
+C) Berlim
+D) Roma
+E) Bruxelas
+F) Madri
+G) Barcelona
+ A)
+###
+Exemplo 2:
+Quantas pernas os cavalos têm?
+A) dois
+B) quatro
+C) seis
+D) três
+E) um
+F) nenhuma
+ B)
+###
+Exemplo 3:
+Qual é a capital da Índia?
+A) Nova Deli
+B) Agra
+C) Islamabad
+D) Bangalore
+E) Washington, D.C.
+F) Pequim
+G) Bombaim
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 34
+    }
+}
+**************************************************doc_id: 60
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Do que é feita a chuva?
+A) água
+B) ar
+C) gelo
+D) neve
+E) gatos
+F) nuvens
+ A)
+###
+Exemplo 2:
+Quantos bigodes tem um humano?
+A) dois
+B) quatro
+C) seis
+D) três
+E) nove
+F) um
+G) nenhuma
+ G)
+###
+Exemplo 3:
+Quantas onças há em uma xícara?
+A) 1
+B) 2
+C) 4
+D) 8
+
+--------------------Prediction--------------------
+E) 16
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "E) 16",
+        "regex_pred": "E)",
+        "correct_letter": "D)",
+        "doc_id": 57
+    }
+}
+**************************************************doc_id: 61
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é a capital da Espanha?
+A) Paris
+B) Moscou
+C) Berlim
+D) Roma
+E) Bruxelas
+F) Madri
+G) Barcelona
+ F)
+###
+Exemplo 2:
+O que mede um termômetro?
+A) umidade
+B) velocidade
+C) temperatura
+D) pressão
+ C)
+###
+Exemplo 3:
+Qual é o segundo maior planeta do sistema solar?
+A) Mercúrio
+B) Vênus
+C) Terra
+D) Marte
+E) Júpiter
+F) Saturno
+G) Urano
+H) Netuno
+I) Plutão
+J) Ceres
+
+--------------------Prediction--------------------
+ F)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "F)",
+        "regex_pred": "F)",
+        "correct_letter": "F)",
+        "doc_id": 47
+    }
+}
+**************************************************doc_id: 62
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Quantas girafas cabem em uma sala de estar comum?
+A) dois
+B) quatro
+C) seis
+D) três
+E) um
+F) nenhum
+ F)
+###
+Exemplo 2:
+Qual é o nome do estudo do coração e sistema circulatório?
+A) cardiologia
+B) química
+C) antropologia
+D) ciência da computação
+E) física
+F) matemática
+G) pesquisa
+H) taxonomia
+ A)
+###
+Exemplo 3:
+Qual é o nome do estudo da origem e desenvolvimento do universo?
+A) cosmologia
+B) química
+C) antropologia
+D) cosmetologia
+E) física
+F) matemática
+G) pesquisa
+H) taxonomia
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 43
+    }
+}
+**************************************************doc_id: 63
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Do que é feita a chuva?
+A) água
+B) ar
+C) gelo
+D) neve
+E) gatos
+F) nuvens
+ A)
+###
+Exemplo 2:
+Em que direção se deve olhar para ver o sol à noite?
+A) Leste
+B) Norte
+C) Sul
+D) Oeste
+ D)
+###
+Exemplo 3:
+Quais plantas predominam nas florestas?
+A) árvores
+B) todos
+C) alga
+D) flores
+E) musgo
+
+--------------------Prediction--------------------
+F) grama
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "F) grama",
+        "regex_pred": "F)",
+        "correct_letter": "A)",
+        "doc_id": 13
+    }
+}
+**************************************************doc_id: 64
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é a capital da Alemanha?
+A) Paris
+B) Moscou
+C) Berlim
+D) Roma
+E) Bruxelas
+F) Madrid
+G) Barcelona
+ C)
+###
+Exemplo 2:
+Qual é o nome da forma com três lados?
+A) triângulo
+B) grade
+C) decágono
+D) hexágono
+E) romboide
+F) icosaedro
+G) quadrado
+H) pirâmide
+I) prisma
+J) círculo
+ A)
+###
+Exemplo 3:
+Qual é a cor de uma língua humana?
+A) vermelho
+B) rosa
+C) azul
+D) roxo
+E) preto
+F) amarelo
+G) verde
+H) ciano
+I) branco
+J) cinza
+K) sem cor
+L) transparente
+
+--------------------Prediction--------------------
+M) marrom
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "M) marrom",
+        "regex_pred": "M)",
+        "correct_letter": "B)",
+        "doc_id": 17
+    }
+}
+**************************************************doc_id: 65
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Em qual continente se encontra o Rio Nilo?
+A) África
+B) Ásia
+C) América do Sul
+D) América do Norte
+E) Europa
+ A)
+###
+Exemplo 2:
+Qual é a cor do sangue humano?
+A) vermelho
+B) azul
+C) roxo
+D) preto
+E) amarelo
+F) verde
+G) ciano
+H) branco
+I) cinza
+J) sem cor
+K) transparente
+ A)
+###
+Exemplo 3:
+Qual é a capital da França?
+A) Paris
+B) Moscou
+C) Berlim
+D) Roma
+E) Bruxelas
+F) Madri
+G) Barcelona
+
+--------------------Prediction--------------------
+H) Genebra
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "H) Genebra",
+        "regex_pred": "H)",
+        "correct_letter": "A)",
+        "doc_id": 28
+    }
+}
+**************************************************doc_id: 66
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual é o valor do zero absoluto na escala Celsius?
+A) -273,15
+B) 0
+C) −459,67
+D) -9999
+E) nenhuma
+ A)
+###
+Exemplo 2:
+Se um humano estiver de pé, qual parte do corpo provavelmente está mais próxima do chão?
+A) olhos
+B) boca
+C) nariz
+D) pé
+E) cérebro
+F) orelha
+G) cabeça
+ D)
+###
+Exemplo 3:
+Qual é a capital da Bélgica?
+A) Paris
+B) Moscou
+C) Berlim
+D) Roma
+E) Bruxelas
+F) Madrid
+G) Barcelona
+
+--------------------Prediction--------------------
+ E)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "E)",
+        "regex_pred": "E)",
+        "correct_letter": "E)",
+        "doc_id": 31
+    }
+}
+**************************************************doc_id: 67
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual mamífero carrega seus filhotes em uma bolsa?
+A) canguru
+B) veado
+C) cabra
+D) ovelha
+E) coelho
+F) cachorro
+ A)
+###
+Exemplo 2:
+Qual é a capital da Bélgica?
+A) Paris
+B) Moscou
+C) Berlim
+D) Roma
+E) Bruxelas
+F) Madrid
+G) Barcelona
+ E)
+###
+Exemplo 3:
+Qual é o nome da forma com três lados?
+A) triângulo
+B) grade
+C) decágono
+D) hexágono
+E) romboide
+F) icosaedro
+G) quadrado
+H) pirâmide
+I) prisma
+J) círculo
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 35
+    }
+}
+**************************************************doc_id: 68
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Qual mamífero carrega seus filhotes em uma bolsa?
+A) canguru
+B) veado
+C) cabra
+D) ovelha
+E) coelho
+F) cachorro
+ A)
+###
+Exemplo 2:
+Quantos metros há em um quilômetro?
+A) 1.000
+B) 1.024
+C) 1.760
+D) 1.609
+E) 1.234
+F) 100
+G) 10
+H) 1
+I) 23.134
+J) 1.000.000
+ A)
+###
+Exemplo 3:
+Quantos olhos tem um tiranossauro?
+A) dois
+B) quatro
+C) oito
+D) três
+E) um
+F) nenhuma
+
+--------------------Prediction--------------------
+G) cinco
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "G) cinco",
+        "regex_pred": "G)",
+        "correct_letter": "A)",
+        "doc_id": 3
+    }
+}
+**************************************************doc_id: 69
+------------------------prompt------------------------------------
+Escolha a alternativa correta para as perguntas a seguir
+
+Exemplo 1:
+Que som faz um pato?
+A) au
+B) quack
+C) muu
+D) rugir
+E) miau
+F) balido
+G) grasnar
+H) choro
+ B)
+###
+Exemplo 2:
+Qual líquido é geralmente usado para encher piscinas?
+A) água
+B) cloro
+C) glicerol
+D) óleo
+E) nitrogênio
+F) nenhum
+G) dióxido de carbono
+ A)
+###
+Exemplo 3:
+Qual órgão os humanos usam para ouvir?
+A) olhos
+B) boca
+C) freezer
+D) pernas
+E) nariz
+F) pé
+G) cérebro
+H) ouvidos
+I) cabeça
+J) pele
+
+--------------------Prediction--------------------
+ H)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "H)",
+        "regex_pred": "H)",
+        "correct_letter": "H)",
+        "doc_id": 14
+    }
+}

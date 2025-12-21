@@ -1,0 +1,25 @@
+{
+  "results": {
+    "assin_rte_greedy": {
+      "dynamic-random": {
+        "acc": 93.30065359477125,
+        "acc_stderr": 0.5054073758425367,
+        "f1": 93.29714597112847,
+        "num_examples": 2448
+      }
+    }
+  },
+  "versions": {
+    "assin_rte_greedy": 0
+  },
+  "config": {
+    "model": "vllm",
+    "model_args": "engine=Qwen3-32B-sft-think-base-mico-conservador,base_url=http://172.17.0.1:8000/v1",
+    "num_fewshot": 2,
+    "batch_size": 4,
+    "device": null,
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000
+  }
+}

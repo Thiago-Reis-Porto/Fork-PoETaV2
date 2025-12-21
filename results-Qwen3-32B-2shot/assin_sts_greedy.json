@@ -1,0 +1,27 @@
+{
+  "results": {
+    "assin_sts_greedy": {
+      "dynamic-random": {
+        "mse": 1.1814285992478952,
+        "mse_stderr": 0.03818453325663629,
+        "pearson": 0.697910033056353,
+        "unknown_pred": 0.0,
+        "unknown_pred_stderr": 0.0,
+        "num_examples": 2448
+      }
+    }
+  },
+  "versions": {
+    "assin_sts_greedy": 0
+  },
+  "config": {
+    "model": "vllm",
+    "model_args": "engine=Qwen3-32B,base_url=http://172.17.0.1:8000/v1",
+    "num_fewshot": 2,
+    "batch_size": 4,
+    "device": null,
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000
+  }
+}

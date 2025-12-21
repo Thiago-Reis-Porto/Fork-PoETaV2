@@ -1,0 +1,3564 @@
+**************************************************doc_id: 0
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Sempre que aspiro, espirro menos.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Toda maçã é uma fruta.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Toda maçã é uma fruta.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 72
+    }
+}
+**************************************************doc_id: 1
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Cada vez que você come alface, está consumindo um vegetal.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 2:
+Puxar o cordão abre as persianas.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+Passar o aspirador reduz a quantidade que eu espirro.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 60
+    }
+}
+**************************************************doc_id: 2
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Sempre que aspiro, espirro menos.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Se você toca uma tulipa, você toca uma planta.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Sempre que você franze a testa, você faz uma expressão facial.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "C)",
+        "doc_id": 90
+    }
+}
+**************************************************doc_id: 3
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+O café me energiza.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Ingerir cálcio fortalece seus ossos.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+A máquina desliga sempre que eu aperto o botão vermelho.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 9
+    }
+}
+**************************************************doc_id: 4
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Quando a criança dobra suas roupas, a criança se move.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 2:
+Beber esse líquido perturba meu estômago.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+O sol aquece a pedra.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 33
+    }
+}
+**************************************************doc_id: 5
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Quando uma cidade tem mais cidadãos do que a média, há mais acidentes de trânsito.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+O sol aquece a pedra.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+Se eu fizer yoga pela manhã, fico mais calmo à tarde.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 26
+    }
+}
+**************************************************doc_id: 6
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Quando não tomo café de manhã, fico com dor de cabeça.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Se eu sorrir por muito tempo, os músculos do meu rosto começam a doer.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Sempre que eu giro o botão, um som é produzido.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 1
+    }
+}
+**************************************************doc_id: 7
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Quando você tem uma bola verde, você tem uma esfera verde.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 2:
+Se você abraça um filhote, você abraça um animal.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Quando uma criança sorri, uma pessoa sorri.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ B)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "C)",
+        "doc_id": 74
+    }
+}
+**************************************************doc_id: 8
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Gostar de rosa significa gostar de uma cor.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 2:
+O sol aquece a pedra.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+Cada vez que como sementes de gergelim, meu rosto incha.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 15
+    }
+}
+**************************************************doc_id: 9
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Quando você tem uma bola verde, você tem uma esfera verde.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 2:
+Quando uma criança sorri, uma pessoa sorri.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+A radiação danifica o tecido celular.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 62
+    }
+}
+**************************************************doc_id: 10
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Usar óculos de sol melhora o metabolismo.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Quando uma criança sorri, uma pessoa sorri.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Se você está triste, você está sentindo uma emoção.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 79
+    }
+}
+**************************************************doc_id: 11
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Jogar sal derramado sobre o ombro evita má sorte.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Esses produtos químicos decompõem a matéria orgânica.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+Toda vez que entro na sala, a máquina liga.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 10
+    }
+}
+**************************************************doc_id: 12
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Toda vez que eu toco essa nota, o cachorro se assusta.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Quando não tomo café de manhã, fico com dor de cabeça.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Usar protetor solar protege a pele dos danos causados pelo sol.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 52
+    }
+}
+**************************************************doc_id: 13
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Beber este chá acalma meus nervos.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+O café me energiza.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+Segurar uma xícara significa que você está segurando um objeto.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 89
+    }
+}
+**************************************************doc_id: 14
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Sempre que esses produtos químicos são inflamados, eles combustam.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Se você está cheirando a flor, você está sentindo a flor.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Jogar sal derramado sobre o ombro evita má sorte.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 51
+    }
+}
+**************************************************doc_id: 15
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Sempre que há um barulho alto, o cão se assusta.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Se eu plantar estas sementes, tulipas crescem.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Cada vez que você come alface, está consumindo um vegetal.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 91
+    }
+}
+**************************************************doc_id: 16
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Quando um gato não come brócolis, o gato também não come cenoura.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Se você está vestindo uma camisa, você está vestindo roupas.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Lavar as mãos reduz o risco de infecção.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 49
+    }
+}
+**************************************************doc_id: 17
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Quando eu uso essas luvas, o tempo fica mais quente.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Se você vê a árvore, você sente a árvore.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Barulhos altos assustam o cachorro.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 41
+    }
+}
+**************************************************doc_id: 18
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Usar óculos de sol melhora o metabolismo.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Andar em círculo significa andar em uma forma.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Todo cachorro é um mamífero.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 66
+    }
+}
+**************************************************doc_id: 19
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Após comer pão, eu me sinto cheio.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Lavar as mãos reduz o risco de infecção.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+Sempre que bebo café, fico energizado.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 30
+    }
+}
+**************************************************doc_id: 20
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Aplicar aloe acalma uma queimadura de sol.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Andar em círculo significa andar em uma forma.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Olhar para uma luz brilhante faz meus olhos lacrimejarem.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 56
+    }
+}
+**************************************************doc_id: 21
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Fazer ioga pela manhã me acalma.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Nadar é uma atividade.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Toda pedra é um objeto físico.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 73
+    }
+}
+**************************************************doc_id: 22
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Quando bebo este chá, me sinto menos nervoso.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Todo objeto físico existe no espaço.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+A máquina é ativada por movimento.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 45
+    }
+}
+**************************************************doc_id: 23
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Sempre que eu giro o botão, um som é produzido.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Se você vê a árvore, você sente a árvore.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Quando bebo este chá, me sinto menos nervoso.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 32
+    }
+}
+**************************************************doc_id: 24
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Se você possui um livro, você tem uma posse.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 2:
+Se eu plantar estas sementes, tulipas crescem.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Quando a criança dobra suas roupas, a criança se move.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "C)",
+        "doc_id": 82
+    }
+}
+**************************************************doc_id: 25
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Se você vê a árvore, você sente a árvore.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 2:
+Gostar de rosa significa gostar de uma cor.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Gostar de rosa significa gostar de uma cor.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 68
+    }
+}
+**************************************************doc_id: 26
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Se você está cheirando a flor, você está sentindo a flor.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 2:
+Acionar os freios reduz a velocidade do carro.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+Se você já foi a um museu, você já foi a um lugar.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 93
+    }
+}
+**************************************************doc_id: 27
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Se eu estou levantando meu braço, estou levantando um membro.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 2:
+Quando a criança dobra suas roupas, a criança se move.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Após comer pão, eu me sinto cheio.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 8
+    }
+}
+**************************************************doc_id: 28
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Comer pão me sacia.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Se eu plantar estas sementes, tulipas crescem.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Aplausos acendem as luzes.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ C)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "A)",
+        "doc_id": 37
+    }
+}
+**************************************************doc_id: 29
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Aplausos acendem as luzes.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+O fogo derrete o gelo.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+Se você está falando, você está vocalizando.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "C)",
+        "doc_id": 78
+    }
+}
+**************************************************doc_id: 30
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Quando eu uso essas luvas, o tempo fica mais quente.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Beber esse líquido perturba meu estômago.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+O café me energiza.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 63
+    }
+}
+**************************************************doc_id: 31
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Se eu pisar no freio, o carro diminui a velocidade.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Se você possui um livro, você tem uma posse.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Toda ação produz uma reação igual e oposta.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 47
+    }
+}
+**************************************************doc_id: 32
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Se você possui um livro, você tem uma posse.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 2:
+O sol aquece a pedra.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+Pressionar o botão vermelho desliga a máquina.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 44
+    }
+}
+**************************************************doc_id: 33
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Sorrir por muito tempo cansa os músculos do meu rosto.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Cada vez que você toca seu violão, está tocando um instrumento.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Puxar a alavanca libera uma bola.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 42
+    }
+}
+**************************************************doc_id: 34
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Se o sol brilha sobre a pedra, a pedra se aquece.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Sorrir por muito tempo cansa os músculos do meu rosto.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+Cada vez que você toca seu violão, está tocando um instrumento.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 97
+    }
+}
+**************************************************doc_id: 35
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Quando os animais se escondem, uma tempestade segue.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Se você está vestindo uma camisa, você está vestindo roupas.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Ingerir cálcio fortalece seus ossos.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 50
+    }
+}
+**************************************************doc_id: 36
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Adicionar gelo resfria o chá.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Cada vez que Emma come brócolis, Emma come um vegetal.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Se você tem três maçãs, você tem um número de maçãs.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 84
+    }
+}
+**************************************************doc_id: 37
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Sorrir por muito tempo cansa os músculos do meu rosto.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Sempre que você chuta uma porta, você faz contato físico com uma porta.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Os pássaros levantam voo se houver um barulho alto.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 12
+    }
+}
+**************************************************doc_id: 38
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Cada vez que bebo esse líquido, sinto náuseas.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Quando um gato não come brócolis, o gato também não come cenoura.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Adicionar água dissolve o sal.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 36
+    }
+}
+**************************************************doc_id: 39
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Toda ação produz uma reação igual e oposta.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Cada vez que você toca seu violão, está tocando um instrumento.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Sempre que olho para uma luz forte, meus olhos começam a lacrimejar.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 23
+    }
+}
+**************************************************doc_id: 40
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Quando eu uso essas luvas, o tempo fica mais quente.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Quando você pinta um caracol, você pinta um animal.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+O alimento da planta nutre a planta.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 39
+    }
+}
+**************************************************doc_id: 41
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Nadar é uma atividade.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 2:
+Se eu pisar no freio, o carro diminui a velocidade.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Puxar o cordão abre as persianas.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 40
+    }
+}
+**************************************************doc_id: 42
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Andar em círculo significa andar em uma forma.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 2:
+Barulhos altos assustam o cachorro.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+Quando uma cidade tem mais cidadãos do que a média, há mais acidentes de trânsito.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 18
+    }
+}
+**************************************************doc_id: 43
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+A radiação danifica o tecido celular.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Sempre que adiciono água ao sal, o sal se dissolve.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Beber este chá acalma meus nervos.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 65
+    }
+}
+**************************************************doc_id: 44
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Se eu plantar estas sementes, tulipas crescem.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Esses produtos químicos decompõem a matéria orgânica.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+Beber esse líquido perturba meu estômago.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 58
+    }
+}
+**************************************************doc_id: 45
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+O alimento da planta nutre a planta.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Sempre que bebo café, fico energizado.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Andar em círculo significa andar em uma forma.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 76
+    }
+}
+**************************************************doc_id: 46
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Cada vez que puxo a alavanca, uma bola é liberada.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Sempre que bebo café, fico energizado.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Cada vez que puxo a alavanca, uma bola é liberada.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 7
+    }
+}
+**************************************************doc_id: 47
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Toda maçã é uma fruta.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 2:
+Toda vez que entro na sala, a máquina liga.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Acionar os freios reduz a velocidade do carro.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 34
+    }
+}
+**************************************************doc_id: 48
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Toda vez que entro na sala, a máquina liga.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Se você já foi a um museu, você já foi a um lugar.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Se você está vestindo uma camisa, você está vestindo roupas.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ B)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "C)",
+        "doc_id": 80
+    }
+}
+**************************************************doc_id: 49
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+A radiação danifica o tecido celular.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Após comer pão, eu me sinto cheio.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Esses produtos químicos decompõem a matéria orgânica.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 46
+    }
+}
+**************************************************doc_id: 50
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Cada vez que você toca seu violão, está tocando um instrumento.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 2:
+Gostar de rosa significa gostar de uma cor.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Sempre que adiciono água ao sal, o sal se dissolve.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 2
+    }
+}
+**************************************************doc_id: 51
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Se eu estou levantando meu braço, estou levantando um membro.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 2:
+Se chover, o chão fica molhado.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Se chover, o chão fica molhado.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 16
+    }
+}
+**************************************************doc_id: 52
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Se chover, o chão fica molhado.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Se você tem três maçãs, você tem um número de maçãs.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Adicionar gelo resfria o chá.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 38
+    }
+}
+**************************************************doc_id: 53
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Passar o aspirador reduz a quantidade que eu espirro.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Todo objeto físico existe no espaço.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+O fogo derrete o gelo.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 55
+    }
+}
+**************************************************doc_id: 54
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Se houver nuvens no céu, a temperatura do ar esfria.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+O sol aquece a pedra.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+Nadar é uma atividade.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 67
+    }
+}
+**************************************************doc_id: 55
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Nadar é uma atividade.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 2:
+Sempre que você chuta uma porta, você faz contato físico com uma porta.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Se o sol brilha sobre a pedra, a pedra se aquece.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 22
+    }
+}
+**************************************************doc_id: 56
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Usar óculos de sol melhora o metabolismo.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Sempre que aspiro, espirro menos.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Fazer ioga pela manhã me acalma.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 59
+    }
+}
+**************************************************doc_id: 57
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Quando você pinta um caracol, você pinta um animal.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 2:
+Se você está cheirando a flor, você está sentindo a flor.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Quando agarro a pedra, sinto pressão na minha mão.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 24
+    }
+}
+**************************************************doc_id: 58
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Se você já foi a um museu, você já foi a um lugar.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 2:
+Sempre que um animal é um lagarto, é um réptil.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+As persianas se abrem sempre que puxo o cordão.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 5
+    }
+}
+**************************************************doc_id: 59
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Cada vez que bebo esse líquido, sinto náuseas.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Cada vez que você come alface, está consumindo um vegetal.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Sempre que há um barulho alto, o cão se assusta.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 6
+    }
+}
+**************************************************doc_id: 60
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+O alimento da planta nutre a planta.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Jogar sal derramado sobre o ombro evita má sorte.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+Se houver nuvens no céu, a temperatura do ar esfria.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 21
+    }
+}
+**************************************************doc_id: 61
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Se Boo é um gato, Boo é um felino.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 2:
+Se você toca uma tulipa, você toca uma planta.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Aplicar aloe acalma uma queimadura de sol.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 48
+    }
+}
+**************************************************doc_id: 62
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Toda ação produz uma reação igual e oposta.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Olhar para uma luz brilhante faz meus olhos lacrimejarem.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+Tocar essa nota assusta o cachorro.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 61
+    }
+}
+**************************************************doc_id: 63
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Todo cachorro é um mamífero.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 2:
+Tocar no fogão queima minha mão.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+Se eu estou levantando meu braço, estou levantando um membro.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ B)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "C)",
+        "doc_id": 98
+    }
+}
+**************************************************doc_id: 64
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Cada vez que como sementes de gergelim, meu rosto incha.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Se eu sorrir por muito tempo, os músculos do meu rosto começam a doer.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Quando um gato não come brócolis, o gato também não come cenoura.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 19
+    }
+}
+**************************************************doc_id: 65
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Toda vez que eu toco essa nota, o cachorro se assusta.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Após comer pão, eu me sinto cheio.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Todo objeto físico existe no espaço.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 70
+    }
+}
+**************************************************doc_id: 66
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Comer pão me sacia.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Sempre que adiciono água ao sal, o sal se dissolve.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Comer pão me sacia.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 43
+    }
+}
+**************************************************doc_id: 67
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Se você bebe uma coca, você bebe uma bebida.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 2:
+Todo objeto físico existe no espaço.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Se Boo é um gato, Boo é um felino.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 85
+    }
+}
+**************************************************doc_id: 68
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Cada vez que o sol se põe, fica mais frio.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Se você bebe uma coca, você bebe uma bebida.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Quando eu uso essas luvas, o tempo fica mais quente.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 20
+    }
+}
+**************************************************doc_id: 69
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Toda vez que eu toco essa nota, o cachorro se assusta.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Se eu pisar no freio, o carro diminui a velocidade.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Se eu pisar no freio, o carro diminui a velocidade.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 0
+    }
+}
+**************************************************doc_id: 70
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+A máquina desliga sempre que eu aperto o botão vermelho.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Sempre que você franze a testa, você faz uma expressão facial.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Quando você tem uma bola verde, você tem uma esfera verde.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 95
+    }
+}
+**************************************************doc_id: 71
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Se você está vestindo uma camisa, você está vestindo roupas.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 2:
+Cada vez que puxo a alavanca, uma bola é liberada.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Tocar no fogão queima minha mão.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 57
+    }
+}
+**************************************************doc_id: 72
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Cada vez que o sol se põe, fica mais frio.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Após comer pão, eu me sinto cheio.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Se você possui um livro, você tem uma posse.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ B)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "C)",
+        "doc_id": 92
+    }
+}
+**************************************************doc_id: 73
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Se eu adicionar gelo, o chá esfria.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Puxar a alavanca libera uma bola.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+Comer uma maçã por dia mantém o médico longe.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 53
+    }
+}
+**************************************************doc_id: 74
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+A máquina desliga sempre que eu aperto o botão vermelho.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Beber este chá acalma meus nervos.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+Sempre que um animal é um lagarto, é um réptil.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 88
+    }
+}
+**************************************************doc_id: 75
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Sempre que bebo café, fico energizado.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Girar o botão faz um som.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+Cada vez que bebo esse líquido, sinto náuseas.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 25
+    }
+}
+**************************************************doc_id: 76
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Se Boo é um gato, Boo é um felino.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 2:
+A radiação danifica o tecido celular.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+Se você abraça um filhote, você abraça um animal.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 71
+    }
+}
+**************************************************doc_id: 77
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Sempre que aspiro, espirro menos.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Quando você pinta um caracol, você pinta um animal.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Se você toca uma tulipa, você toca uma planta.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 83
+    }
+}
+**************************************************doc_id: 78
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Se chover, o chão fica molhado.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Se você possui um livro, você tem uma posse.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Sempre que você chuta uma porta, você faz contato físico com uma porta.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 77
+    }
+}
+**************************************************doc_id: 79
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Toda pedra é um objeto físico.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 2:
+Passar o aspirador reduz a quantidade que eu espirro.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+Sorrir por muito tempo cansa os músculos do meu rosto.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 64
+    }
+}
+**************************************************doc_id: 80
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Se eu sorrir por muito tempo, os músculos do meu rosto começam a doer.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Passar o aspirador reduz a quantidade que eu espirro.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+Cada vez que o sol se põe, fica mais frio.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 29
+    }
+}
+**************************************************doc_id: 81
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Usar protetor solar protege a pele dos danos causados pelo sol.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Quando agarro a pedra, sinto pressão na minha mão.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Sempre que aspiro, espirro menos.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ C)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "B)",
+        "doc_id": 27
+    }
+}
+**************************************************doc_id: 82
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Os pássaros levantam voo se houver um barulho alto.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Se você tem três maçãs, você tem um número de maçãs.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Se você vê a árvore, você sente a árvore.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "C)",
+        "doc_id": 87
+    }
+}
+**************************************************doc_id: 83
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+O fogo derrete o gelo.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+A máquina é ativada por movimento.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+Se você está cheirando a flor, você está sentindo a flor.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "C)",
+        "doc_id": 96
+    }
+}
+**************************************************doc_id: 84
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Usar óculos de sol melhora o metabolismo.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Usar protetor solar protege a pele dos danos causados pelo sol.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+Se eu adicionar gelo, o chá esfria.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 4
+    }
+}
+**************************************************doc_id: 85
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Fazer ioga pela manhã me acalma.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Se você já foi a um museu, você já foi a um lugar.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Usar óculos de sol melhora o metabolismo.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 54
+    }
+}
+**************************************************doc_id: 86
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Sempre que há um barulho alto, o cão se assusta.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Ser solteiro é estar solteiro.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Se você bebe uma coca, você bebe uma bebida.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 75
+    }
+}
+**************************************************doc_id: 87
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Se você toca uma tulipa, você toca uma planta.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 2:
+Quando a criança dobra suas roupas, a criança se move.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Sempre que esses produtos químicos são inflamados, eles combustam.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 11
+    }
+}
+**************************************************doc_id: 88
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Os pássaros levantam voo se houver um barulho alto.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Cada vez que puxo a alavanca, uma bola é liberada.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Quando você pinta um caracol, você pinta um animal.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 69
+    }
+}
+**************************************************doc_id: 89
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Jogar sal derramado sobre o ombro evita má sorte.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Se você já foi a um museu, você já foi a um lugar.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Ser solteiro é estar solteiro.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 86
+    }
+}
+**************************************************doc_id: 90
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Comer pão me sacia.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Quando os animais se escondem, uma tempestade segue.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Quando os animais se escondem, uma tempestade segue.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 13
+    }
+}
+**************************************************doc_id: 91
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Se eu sorrir por muito tempo, os músculos do meu rosto começam a doer.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Quando agarro a pedra, sinto pressão na minha mão.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Quando não tomo café de manhã, fico com dor de cabeça.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 17
+    }
+}
+**************************************************doc_id: 92
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Quando agarro a pedra, sinto pressão na minha mão.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Gostar de rosa significa gostar de uma cor.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Toda vez que eu toco essa nota, o cachorro se assusta.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 28
+    }
+}
+**************************************************doc_id: 93
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Tocar no fogão queima minha mão.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Quando não tomo café de manhã, fico com dor de cabeça.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Se eu sorrir por muito tempo, os músculos do meu rosto começam a doer.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 31
+    }
+}
+**************************************************doc_id: 94
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Usar óculos de sol melhora o metabolismo.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Sempre que olho para uma luz forte, meus olhos começam a lacrimejar.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Girar o botão faz um som.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 35
+    }
+}
+**************************************************doc_id: 95
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Girar o botão faz um som.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Fazer ioga pela manhã me acalma.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 3:
+Sempre que você come uma uva, você come um pedaço de fruta.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "C)",
+        "doc_id": 94
+    }
+}
+**************************************************doc_id: 96
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Se eu sorrir por muito tempo, os músculos do meu rosto começam a doer.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+A máquina desliga sempre que eu aperto o botão vermelho.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Se Billy bater palmas, as luzes acendem.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 3
+    }
+}
+**************************************************doc_id: 97
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Olhar para uma luz brilhante faz meus olhos lacrimejarem.
+A) Causal
+B) Correlativa
+C) Neutra
+ A)
+###
+Exemplo 2:
+Todo objeto físico existe no espaço.
+A) Causal
+B) Correlativa
+C) Neutra
+ C)
+###
+Exemplo 3:
+Se eu plantar estas sementes, tulipas crescem.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 14
+    }
+}
+**************************************************doc_id: 98
+------------------------prompt------------------------------------
+Determine se uma sentença dada afirma uma relação causal, correlativa ou neutra entre dois eventos. Se a sentença afirmar uma relação causal, responda causal. Se a sentença afirmar uma relação correlativa, responda correlativa. Se a sentença não afirmar nem uma relação causal nem uma relação correlativa entre dois eventos, responda neutra
+
+Exemplo 1:
+Os pássaros levantam voo se houver um barulho alto.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 2:
+Sempre que há um barulho alto, o cão se assusta.
+A) Causal
+B) Correlativa
+C) Neutra
+ B)
+###
+Exemplo 3:
+Cada vez que Emma come brócolis, Emma come um vegetal.
+A) Causal
+B) Correlativa
+C) Neutra
+
+--------------------Prediction--------------------
+ B)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "C)",
+        "doc_id": 81
+    }
+}

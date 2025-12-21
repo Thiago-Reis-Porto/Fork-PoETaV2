@@ -1,8 +1,8 @@
 {
     "model": "vllm",
-    "engine": "/models/Qwen-32B-large-DPO-GRPO-all-rewards",
+    "engine": "Qwen3-32B-sft-think-base-mico-conservador",
     "base_url": "http://172.17.0.1:8000/v1",
-    "results_save_dir": "results2",
+    "results_save_dir": "results-Qwen3-32B-sft-think-base-mico-conservador-2shot",
     "description_path": "description.json",
     "batch_size": 4,
     "log_to_wandb": false

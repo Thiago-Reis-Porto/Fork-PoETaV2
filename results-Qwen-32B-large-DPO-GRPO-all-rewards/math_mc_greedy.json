@@ -1,0 +1,24 @@
+{
+  "results": {
+    "math_mc_greedy": {
+      "dynamic-random": {
+        "acc": 0.7466666666666667,
+        "acc_stderr": 0.025152082937711918,
+        "num_examples": 300
+      }
+    }
+  },
+  "versions": {
+    "math_mc_greedy": 0
+  },
+  "config": {
+    "model": "vllm",
+    "model_args": "engine=Qwen-32B-large-DPO-GRPO-all-rewards,base_url=http://172.17.0.1:8000/v1",
+    "num_fewshot": 5,
+    "batch_size": 4,
+    "device": null,
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000
+  }
+}

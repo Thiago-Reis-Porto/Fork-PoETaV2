@@ -1,0 +1,2320 @@
+**************************************************doc_id: 0
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "uma grande perca para a dramaturgia brasileira vá com deus nelson #VideoShowAoVivo".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "lucero arregaça a boca pra sorrir 😂 😂 😂 😂 😂 😂 😂 😂 😂 😂 😂 😂 😂 😂".
+Resposta: positiva
+###
+Exemplo 3:
+Mensagem: "mala da comida requentada".
+Resposta:
+--------------------Prediction--------------------
+ neutra
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "neutra",
+        "negativa"
+    ],
+    "f1-weighted": [
+        "neutra",
+        "negativa"
+    ]
+}
+**************************************************doc_id: 1
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "preciso dormir e tem USERNAME amanhã to virada em zumbo de sono".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "acordei peguei o celular pra ver o instagram e vi q o USERNAME estava no #EDeCasa liguei a tv desesperado".
+Resposta: positiva
+###
+Exemplo 3:
+Mensagem: "sou de alagoas e nunca ouvir falar desse MC o.O".
+Resposta:
+--------------------Prediction--------------------
+ neutra
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "neutra",
+        "negativa"
+    ],
+    "f1-weighted": [
+        "neutra",
+        "negativa"
+    ]
+}
+**************************************************doc_id: 2
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "que linda essa história do #AdoteUmPequenoTorcedor no . parabéns pra USERNAME e USERNAME que trabalharam muito nisso".
+Resposta: positiva
+###
+Exemplo 2:
+Mensagem: "#ProgramaEncontro convidados falando sobre a importância da famíliaum tapa na cara da fátima bernardes".
+Resposta: positiva
+###
+Exemplo 3:
+Mensagem: "que tipo de pai deixa uma filha de NUMBER anos namorar e ainda apoia #Encontro".
+Resposta:
+--------------------Prediction--------------------
+ negativa
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "negativa",
+        "negativa"
+    ],
+    "f1-weighted": [
+        "negativa",
+        "negativa"
+    ]
+}
+**************************************************doc_id: 3
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "quando chamam a mirian a gente ja fica se lasca se lasca se lasca ahahaha".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "oi migas boa tarde qual dos dois apresentadores vcs acham q é o melhor de cama ?".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "só vai #FicaYuko #ficavitorB".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "positiva",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 4
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "consolidados - GLOBO ( 11 / 05 ): #JornalHoje NUMBER #VídeoShowAoVivo NUMBER #SessãoDaTarde NUMBER #SenhoraDoDestino NUMBER".
+Resposta: neutra
+###
+Exemplo 2:
+Mensagem: "não aceito o vermelho ganhar essa prova".
+Resposta: negativa
+###
+Exemplo 3:
+Mensagem: "joão vicente é um homão da porra".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 5
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "O parente USERNAME estará hoje na serei só 👁 & 👂 🏻 😍".
+Resposta: neutra
+###
+Exemplo 2:
+Mensagem: "alguém nesse universo NÃO gosta do zeca pagodinho acho que não é possível E só um detalhe é BOTAFOGUENSE #conversacombial".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "O de hj terminou fiquem agora c / as notícias mais bombásticas do momento no #SBTNotícias 😱 🌍 🔥 c / USERNAME 🏵 no USERNAME".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "positiva",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 6
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "não sei pq eu olho pra fátima e lembro da dona florinda rs s2".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "todo dia um macho escroto passando vergonha em rede nacional".
+Resposta: negativa
+###
+Exemplo 3:
+Mensagem: "que roupa é essa tie #Encontro".
+Resposta:
+--------------------Prediction--------------------
+ negativa
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "negativa",
+        "negativa"
+    ],
+    "f1-weighted": [
+        "negativa",
+        "negativa"
+    ]
+}
+**************************************************doc_id: 7
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "E douglas saiu a la gisele do programa #MasterChefBR".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "poxa injusto o vitor cozinhar essa sardinha em posta achei sacanagem O cara está com o dedo decepado e com pontos #MasterChefBR".
+Resposta: negativa
+###
+Exemplo 3:
+Mensagem: "vou sair do armário só estou esperando o marido dela sair de casa !".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "positiva",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 8
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "vcs são otimistas ? #Encontro".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "só sai miriam".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "vitor se deu mau hoje 😨".
+Resposta:
+--------------------Prediction--------------------
+ negativa
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "negativa",
+        "negativa"
+    ],
+    "f1-weighted": [
+        "negativa",
+        "negativa"
+    ]
+}
+**************************************************doc_id: 9
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "É hj q a mirian sai em tenho fé ! !".
+Resposta: positiva
+###
+Exemplo 2:
+Mensagem: "hoje tem 👏 🏻 🍽".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "lindo tema do".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 10
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "será q é pedir muito paola e fogaça juntos na #Previa haha".
+Resposta: neutra
+###
+Exemplo 2:
+Mensagem: "queria experimentar isso tudo aí pois nunca comi nenhum desses ingredientes #MasterChefBR".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "todos os meus favoritos na prova de eliminação".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "positiva",
+        "negativa"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "negativa"
+    ]
+}
+**************************************************doc_id: 11
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "pra mim é a claudia raia linda e ótima atriz".
+Resposta: positiva
+###
+Exemplo 2:
+Mensagem: "nabby clifford todo meu respeito a esse sr gente somos todos iguais porém até o dicionário áureo tem suas diferenças 👏 🏼".
+Resposta: positiva
+###
+Exemplo 3:
+Mensagem: "A gente na revolução e ana maria ensinando a passar roupa no tá só uns dez anos atrasada essa pauta .".
+Resposta:
+--------------------Prediction--------------------
+ negativa
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "negativa",
+        "negativa"
+    ],
+    "f1-weighted": [
+        "negativa",
+        "negativa"
+    ]
+}
+**************************************************doc_id: 12
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "USERNAME tá nada super cool #MaisVoce".
+Resposta: positiva
+###
+Exemplo 2:
+Mensagem: "há alguns meses tentei me inscrever numa capelania prisional O de hoje com o USERNAME só aumentou minha vontade".
+Resposta: positiva
+###
+Exemplo 3:
+Mensagem: "fogaça faz os melhores pratos do mundo e derrama água da jarra pra encher o copo kkk".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 13
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "não acredito que a miriam ficou com aquele requentado que ela fez no".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "vanessa da mata no meu deezer pra já 😍".
+Resposta: positiva
+###
+Exemplo 3:
+Mensagem: "A sophia abrahão tá me representando muito bem hj no eu tô em lágrimas aqui".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 14
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "por onde apresentamos a peça temos recebido vários relatos de abusos pessoas se abrindo pela primeira vez #HospitalDeBonecas".
+Resposta: neutra
+###
+Exemplo 2:
+Mensagem: "to aqui com tanta fome que comeria fácil o trem de abobrinha que a thais não quis #maisvoce".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "peguei o finalzinho do com a yuko na eliminação e band mostra tua cara com essa audiência toda que vcs querem levar".
+Resposta:
+--------------------Prediction--------------------
+ negativa
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "negativa",
+        "negativa"
+    ],
+    "f1-weighted": [
+        "negativa",
+        "negativa"
+    ]
+}
+**************************************************doc_id: 15
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "prova em equipe adorooo vem treta".
+Resposta: positiva
+###
+Exemplo 2:
+Mensagem: "quem nesse planeta usa só meia hora de redes sociais merece um prêmio 🤔 🤔 🤔 🤔 🤔 🤔".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "se eu sou lutadora já quero meu prato bem cheio".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "positiva",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 16
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "victor B não 💔 😭".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "educa e entretém mas o #ProgramadoJô faz muita falta".
+Resposta: positiva
+###
+Exemplo 3:
+Mensagem: "orquídea lembra o filme da anaconda e a orquídea sangrenta tipo #encontro".
+Resposta:
+--------------------Prediction--------------------
+ negativa
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "negativa",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "negativa",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 17
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "n acredito q o bruno B saiu decepcionada estou".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "já estou com meu avental de comentar".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "lua blanco maravilhosa no 😍 😍 👏 👏 👏".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 18
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "sabe de nda inocente E o tchan ✌ 🏽 👏 🏽 👏 🏽".
+Resposta: positiva
+###
+Exemplo 2:
+Mensagem: "consolidados - GLOBO ( 11 / 05 ): #JornalHoje NUMBER #VídeoShowAoVivo NUMBER #SessãoDaTarde NUMBER #SenhoraDoDestino NUMBER".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "boa tarde so p quem deixou de estudar p assistir o ep de".
+Resposta:
+--------------------Prediction--------------------
+ negativa
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "negativa",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "negativa",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 19
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "cuecão de couro hahaha".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "#MaisVocê acordar ligar a TV e vê essas gostosuras solta os cachorros mmeninas".
+Resposta: positiva
+###
+Exemplo 3:
+Mensagem: "hoje tem bene barbosa e dia NUMBER tem olavo de carvalho no !".
+Resposta:
+--------------------Prediction--------------------
+ neutra
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "neutra",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "neutra",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 20
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "acho a educação importante sim para formar novas gerações e vejo como solução de tudo mas e as gerações de agora como ficam #AltasHoras".
+Resposta: neutra
+###
+Exemplo 2:
+Mensagem: "essa juliana é muito top !".
+Resposta: positiva
+###
+Exemplo 3:
+Mensagem: "gente chocada com a pergunta indiscreta do serginho para a laís que deselegante by sandra annenberg".
+Resposta:
+--------------------Prediction--------------------
+ negativa
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "negativa",
+        "negativa"
+    ],
+    "f1-weighted": [
+        "negativa",
+        "negativa"
+    ]
+}
+**************************************************doc_id: 21
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "tava aqui lembrando da miriam falando Ó lá o indivíduo [ fabrizio ] só sabe fazer moqueca zzz".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "MOZÃO * tum dum dum * MOZÃO * tum dum dum * USERNAME <3".
+Resposta: positiva
+###
+Exemplo 3:
+Mensagem: "hoje o foi bem interessante cultura brasileira presente e também a chance para o vitor B que mostrou determinação !".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 22
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "tomara q esqueçam o sal da canja de galinha da equipe vermelha e percam #MasterChefBR".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "quanto tempo que não assisto o".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "cheguei assistir p / entreter pq TV p / indignar já estou assistindo d + #ForaTemer #ForaTodos".
+Resposta:
+--------------------Prediction--------------------
+ negativa
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "negativa",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "negativa",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 23
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "por que o termina tão tarde deveria ser um programa pra toda família mas só os fortes sobrevivem 🙁".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "porra que medo kkk".
+Resposta: negativa
+###
+Exemplo 3:
+Mensagem: "qualquer adolescente se apaixona por mulher mais velha joão vicente não foge à regra É o amor platônico #Encontro".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 24
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "' ' temos que ser gestor da nossa própria mente como se a sociedade mata o indivíduo todo dia nos colocando coletivistas #ConversaComBial".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "bom dia twitter bom dia amigos porém o dia amanheceu sem brilho com a saída do USERNAME ontem do ! 😢 💔 😢 💔 😢 💔".
+Resposta: negativa
+###
+Exemplo 3:
+Mensagem: "agora tem o casal USERNAME e USERNAME 😘 no com o USERNAME no USERNAME".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "positiva",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 25
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "começou #MaiaraeMaraisaNoBial 😍 😍 😍".
+Resposta: positiva
+###
+Exemplo 2:
+Mensagem: "TAVA TOCANDO SLIPKNOT NO GENTE DO CEU".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "PORRA QUE NERVOUSO MANOOO ! ! #MasterChefBR".
+Resposta:
+--------------------Prediction--------------------
+ negativa
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "negativa",
+        "negativa"
+    ],
+    "f1-weighted": [
+        "negativa",
+        "negativa"
+    ]
+}
+**************************************************doc_id: 26
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "' ' temos que ser gestor da nossa própria mente como se a sociedade mata o indivíduo todo dia nos colocando coletivistas #ConversaComBial".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "eu tenho que comentar as coisas e não dar spoiler para os blogueiros fundo de que só assistem no youtube".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "pq se esse cara ou a miriam ganharem eu não assisto mais".
+Resposta:
+--------------------Prediction--------------------
+ negativa
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "negativa",
+        "negativa"
+    ],
+    "f1-weighted": [
+        "negativa",
+        "negativa"
+    ]
+}
+**************************************************doc_id: 27
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "termina com ele amiga #Encontro que cara idiota ! deve ser eleitor do bolsonaro".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "ontem vi na rua um casal onde a menina tem down e o rapaz é normal e ele a tratava com tanto carinho deu até vontade de chorar".
+Resposta: positiva
+###
+Exemplo 3:
+Mensagem: "E esse cabelo maravilhoso da vanessa da mata #altashoras".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 28
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "vcs falando aí de vestidos de noiva pq o vale a pena não passa o beijo do vampiro tem novela que já foi NUMBER ou até NUMBER vezes".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "educação mandou lembranças #MaisVocê".
+Resposta: negativa
+###
+Exemplo 3:
+Mensagem: "vendo e memoria nacional é um quadro sensasional 🤣 🤣 otaviano costa o apresentador mas engraçado e do lado dele só o joaquim".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 29
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "sabe de quem deu saudade do USERNAME".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "deus me livre se cozinhar sob pressão com alguém contando o tempo #MasterChefBR".
+Resposta: negativa
+###
+Exemplo 3:
+Mensagem: "O martin da primeira temporada do é muito fofooo".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 30
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "nao é possível que a mirian e leo ficam e o vitor B sai #MasterChefBR".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "O cristóvão é um dos meus personagens preferidos em #CarinhaDeAnjo".
+Resposta: positiva
+###
+Exemplo 3:
+Mensagem: "vitor no : sou daqueles que comem um dogão depois da balada estou cada vez mais certa de que fomos feitos um pro outro".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 31
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "#VcFezSeuTwitterPQ - N tem status d relacionamento - N tem stories - tem treta entre famosos - sobre outras o twitter tomba".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "bruce representa os gordinhos correndo da esteira rs #Edecasa".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "augusto cury é o cara 😉 entrevista myito boa do".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 32
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "onde eh esse lugar que vocês estão vendo as roupas da manu 🤑 🤑 ? ?".
+Resposta: neutra
+###
+Exemplo 2:
+Mensagem: "victor não é aquele mega chef mas gente torço pelas superações fofas curto rs #MasterChefBR".
+Resposta: positiva
+###
+Exemplo 3:
+Mensagem: "ansiosos no brasil vocês não estão sozinhos ❤ ️".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 33
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "obrigada USERNAME por descobrir e lançar minhas riquezas pro mundo #MaiaraeMaraisaNoBial USERNAME".
+Resposta: positiva
+###
+Exemplo 2:
+Mensagem: "já já tem e a gente ta como já fritando o ovo pra colocar no pão pra assistir comendo".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "ana luiza e vitor B no mesmo time eu quero".
+Resposta:
+--------------------Prediction--------------------
+ neutra
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "neutra",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "neutra",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 34
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "assistindo".
+Resposta: neutra
+###
+Exemplo 2:
+Mensagem: "quem nesse planeta usa só meia hora de redes sociais merece um prêmio 🤔 🤔 🤔 🤔 🤔 🤔".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "galera do tem uma parte do livro de harry potter em que hagrid pede para os alunos darem torrões de açúcar aos baby unicórnios".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "positiva",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 35
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "eu amava o leonardo da temporada passada mas em compensação ao dessa temporada meu deus a cada programa eu odeio mais ele 😤".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "redemption song única coisa boa".
+Resposta: positiva
+###
+Exemplo 3:
+Mensagem: "eu amo ver o encontro ❤ ❤".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 36
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "começou o melhor programa USERNAME".
+Resposta: positiva
+###
+Exemplo 2:
+Mensagem: "pega um pote de hellmann's um saco de bisnaguinha sai um patezão show #MasterChefBR".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "joinha sacanagem né USERNAME só porque ele tava sem meio dedo kkk".
+Resposta:
+--------------------Prediction--------------------
+ negativa
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "negativa",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "negativa",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 37
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "mentira que deixaram o victor terminar aaa".
+Resposta: neutra
+###
+Exemplo 2:
+Mensagem: "aaa próxima prova não vai ter o douglas na equipe vermelha próxima prova :c".
+Resposta: negativa
+###
+Exemplo 3:
+Mensagem: "o que você tem de mais segreto no seu celular - meus nudes kkk".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "positiva",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 38
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "#CharlieHunnam no 😱 começa logo ! !".
+Resposta: neutra
+###
+Exemplo 2:
+Mensagem: "começou o melhor programa USERNAME".
+Resposta: positiva
+###
+Exemplo 3:
+Mensagem: "USERNAME está linda com essa blusa parecendo um esquilo voador mas está linda 😂 😂 😂 #VideoShowComSophiaAbrahao".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 39
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "isso é o que eu chamo de coragem vitor B parabéns".
+Resposta: positiva
+###
+Exemplo 2:
+Mensagem: "O tema do de hj é como se vestir mal".
+Resposta: negativa
+###
+Exemplo 3:
+Mensagem: "só eu que tô shippando o chef convidado com douglas scr".
+Resposta:
+--------------------Prediction--------------------
+ neutra
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "neutra",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "neutra",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 40
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "tomara q esqueçam o sal da canja de galinha da equipe vermelha e percam #MasterChefBR".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "mulher rica tem tudo pra engravidar e não consegue pobre gozou na coxa já vem logo gêmeos !".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "to muito chocado com esse rumor que saiu sobre o".
+Resposta:
+--------------------Prediction--------------------
+ negativa
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "negativa",
+        "negativa"
+    ],
+    "f1-weighted": [
+        "negativa",
+        "negativa"
+    ]
+}
+**************************************************doc_id: 41
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "fazia um belo de um patê 😋".
+Resposta: positiva
+###
+Exemplo 2:
+Mensagem: "queria comer esse prato de victor V agora #MasterChefBR".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "não acredito que o danilo fez o charlie hunnam falar de hooligans adoro esse filme".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 42
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "olha só NUMBER anos só de carreira no salto alto 😍 😍 😍 😍 😍 😍 😍 😍 😐 😍 😍 😍 😍 😍 😍 😍".
+Resposta: positiva
+###
+Exemplo 2:
+Mensagem: "eu olho pro teclado olho pra tv pro teclado pra tv eu só queria o fogaça aqui comigo".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "rauuulll fala de quando ele trabalhou no juliaaa 😂 😂 😂 #fogaçanaprevia".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "positiva",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 43
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "robinson monteiro o cantor da versão da música".
+Resposta: neutra
+###
+Exemplo 2:
+Mensagem: "que gracinha o thomas e que linda a mãe do USERNAME".
+Resposta: positiva
+###
+Exemplo 3:
+Mensagem: "É por isso que o brasil tá essa merda machismo x feminismo direito x esquerda gay x hetero ao invés de ajuda mútua e empatia".
+Resposta:
+--------------------Prediction--------------------
+ negativa
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "negativa",
+        "negativa"
+    ],
+    "f1-weighted": [
+        "negativa",
+        "negativa"
+    ]
+}
+**************************************************doc_id: 44
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "aff já vai chorar miriam".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "meu deus meu coração não aguenta ! #MasterChefBR".
+Resposta: negativa
+###
+Exemplo 3:
+Mensagem: "quem é o maior embuste dessa edição".
+Resposta:
+--------------------Prediction--------------------
+ negativa
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "negativa",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "negativa",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 45
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "bruce representa os gordinhos correndo da esteira rs #Edecasa".
+Resposta: neutra
+###
+Exemplo 2:
+Mensagem: "minha mãe me falou desse vitor B do e eu comecei a assistir ONTEM por causa dele adivinha quem foi eliminado ? ? ¯ \ _ ( ツ ) _ / ¯".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "aceitem minha amiga ela é dez na cuzinha USERNAME".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "positiva",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 46
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "USERNAME vou pegar esse voo só pra comer a comida da USERNAME USERNAME e USERNAME".
+Resposta: positiva
+###
+Exemplo 2:
+Mensagem: "maluma o justin bieber latino maluma é homem não um moleque".
+Resposta: negativa
+###
+Exemplo 3:
+Mensagem: "minha quarta-feira está mais iluminada com a USERNAME #SandyNoEncontro".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 47
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "yuri de #AForçaDoQuerer é cosplayer isso mesmo #Encontro".
+Resposta: neutra
+###
+Exemplo 2:
+Mensagem: "o filho da ana paula arósio era o zac de rock story parece muito haha".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "adorando esse encontro com fátima nessa tarde #VideoShowAoVivo".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 48
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "É hj q a mirian sai em tenho fé ! !".
+Resposta: positiva
+###
+Exemplo 2:
+Mensagem: "mestre mando é o melhor quadro do kk".
+Resposta: positiva
+###
+Exemplo 3:
+Mensagem: "USERNAME espero q tenha os bastidores do parto da anna hein #VídeoShowAoVivo".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "positiva",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 49
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "esse negócio com ervilhas ficou estranho #MasterchefBr".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "tapoha q prova difícil".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "quero ver o fogaça cozinhando".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "positiva",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 50
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "master chef muito longo sao NUMBER dias q tal final de semana".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "sandy e tão linda ❤ ️".
+Resposta: positiva
+###
+Exemplo 3:
+Mensagem: "voz lindaaa USERNAME".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 51
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "machistas não passaram".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "maria a gente pode ver o de ontem que eu perdi kkk minha irmã é muito engraçada mesmo kk o youtube já tá aberto há horas".
+Resposta: negativa
+###
+Exemplo 3:
+Mensagem: "será que posso colocar a cerveja no freezer para assistir de camarote e tomando umas a saída da miriam do ?".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "positiva",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 52
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "primeira vez que vejo e não me dá fome".
+Resposta: positiva
+###
+Exemplo 2:
+Mensagem: "USERNAME USERNAME léo lins já é um mito nas entrevistas das estrelas de hollywood".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "USERNAME ou talvez joana".
+Resposta:
+--------------------Prediction--------------------
+ neutra
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "neutra",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "neutra",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 53
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "fiquei nervoso com o telefone do moço tocando lá no programa . definitivamente qualquer coisa me irrita rsrs".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "não acredito que a miriam ficou com aquele requentado que ela fez no".
+Resposta: negativa
+###
+Exemplo 3:
+Mensagem: "laís é uma sapona e parece ser super fofa".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 54
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "será q sou pessimista #Encontro".
+Resposta: neutra
+###
+Exemplo 2:
+Mensagem: "falando nisso hoje tem já estou com fome melhor mudar de assunto .".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "cooorre ver meu divo USERNAME no !".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 55
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "acho q eh o fim da linha p o vigor b #MasterChefBR".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "só sai miriam".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "será que ravióli de sardinha em conserva fica bom vou tentar fazer isso em casa #MasterChefBR".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "positiva",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 56
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "queria comer esse prato de victor V agora #MasterChefBR".
+Resposta: neutra
+###
+Exemplo 2:
+Mensagem: "que feio o leonardo nao perde oportunidade de falar dos colegas la do mezzanino".
+Resposta: negativa
+###
+Exemplo 3:
+Mensagem: "a musa e totia".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "positiva",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 57
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "esses dois vitor's hoje me mataram #MasterChefBR".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "já estou com meu avental de comentar".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "to achando q o problema é o avental azul".
+Resposta:
+--------------------Prediction--------------------
+ neutra
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "neutra",
+        "negativa"
+    ],
+    "f1-weighted": [
+        "neutra",
+        "negativa"
+    ]
+}
+**************************************************doc_id: 58
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "qq ta acontecendo no cheguei so agr".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "mulher rica tem tudo pra engravidar e não consegue pobre gozou na coxa já vem logo gêmeos !".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "COMO ASSIM A EQUIPE AZUL PERDEU ? só tem gente que eu gosto na prova de eliminação 😭 😭 😭".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "positiva",
+        "negativa"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "negativa"
+    ]
+}
+**************************************************doc_id: 59
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "não assisto muito por que eu estou na faculdade esse horário e antes era por que eu ficava passando vontade com essas comidas kkk".
+Resposta: positiva
+###
+Exemplo 2:
+Mensagem: "que homem ! 👏 👏 USERNAME".
+Resposta: positiva
+###
+Exemplo 3:
+Mensagem: "fiquei triste que o victor B saiu não queria mas nem achei que o prato dele tava tão ruim assim de verdade".
+Resposta:
+--------------------Prediction--------------------
+ negativa
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "negativa",
+        "negativa"
+    ],
+    "f1-weighted": [
+        "negativa",
+        "negativa"
+    ]
+}
+**************************************************doc_id: 60
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "com um assunto muito interessante e importante ansiedade".
+Resposta: neutra
+###
+Exemplo 2:
+Mensagem: "cosplay tem alguma coisa haver com hashtag ahahahhaha irmãs galvão".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "🎶 coloca um vestido e um batom vermelho E experimenta se olha no espelho 🎶 #MaiaraeMaraisaNoBial".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "positiva",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 61
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "que homão esse ator charlie hunnam 😍".
+Resposta: positiva
+###
+Exemplo 2:
+Mensagem: "vanessa da mata seu filho de NUMBER anos pode casar comigo #AltasHoras".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "#EquipeAzul pq gostei mais do cardápio e pq a miriam tá no vermelho".
+Resposta:
+--------------------Prediction--------------------
+ neutra
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "neutra",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "neutra",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 62
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "bom dia twitter bom dia amigos porém o dia amanheceu sem brilho com a saída do USERNAME ontem do ! 😢 💔 😢 💔 😢 💔".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "chorando com as cenas da mãe do serginho".
+Resposta: negativa
+###
+Exemplo 3:
+Mensagem: "queria esse sorvete".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 63
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "mano o filho do serginho é mto fofooo".
+Resposta: positiva
+###
+Exemplo 2:
+Mensagem: "fogaça aconselhando a mirian que coisa mais nhoim 😊".
+Resposta: positiva
+###
+Exemplo 3:
+Mensagem: "que incrivel esse video inedito da hebe <3".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 64
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "nunca vi ninguém comer sardinha pós-balada".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "podia passar à tarde toda né".
+Resposta: positiva
+###
+Exemplo 3:
+Mensagem: "charlie hunnam agora no . vem gnt".
+Resposta:
+--------------------Prediction--------------------
+ neutra
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "neutra",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "neutra",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 65
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "fogaça aconselhando a mirian que coisa mais nhoim 😊".
+Resposta: positiva
+###
+Exemplo 2:
+Mensagem: "já quero compra esse livro de eduardo cunha pseudônimo".
+Resposta: positiva
+###
+Exemplo 3:
+Mensagem: "mirian vai ficar bem por último kkk ja tô rindo".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 66
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "sequência pra passar roupa eu uso roupa sem passar tenho sequência pra lavar louça pq louça não dá pra usar sem lavar #MaisVoce".
+Resposta: neutra
+###
+Exemplo 2:
+Mensagem: "boa tarde eu acho que é o zac de rock story".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "com a minha arma na mão inibirar o ladrão".
+Resposta:
+--------------------Prediction--------------------
+ negativa
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "negativa",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "negativa",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 67
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "eu perdi meu crush no douglas vc n ganhou o USERNAME mas ganhou meu coração ❤".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "USERNAME colocando pilha pro policial ganhar um selinho igual ele ganhou #Encontro".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "pra quem trabalha ou estudatem dia q to com sono q nao consigo ver master chef".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "positiva",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 68
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "alguém nesse universo NÃO gosta do zeca pagodinho acho que não é possível E só um detalhe é BOTAFOGUENSE #conversacombial".
+Resposta: neutra
+###
+Exemplo 2:
+Mensagem: "atum > sardinha".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "só instiga mais a fome assistir".
+Resposta:
+--------------------Prediction--------------------
+ negativa
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "negativa",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "negativa",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 69
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "não sei pq eu olho pra fátima e lembro da dona florinda rs s2".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "eu vejo outros master chef tem mais mistura miscigençao".
+Resposta: negativa
+###
+Exemplo 3:
+Mensagem: "MR catra é demais vei kkk que isso".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 70
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "boa tarde eu acho que é o zac de rock story".
+Resposta: neutra
+###
+Exemplo 2:
+Mensagem: "mas é linda essa sandy né".
+Resposta: positiva
+###
+Exemplo 3:
+Mensagem: "vamos tentar contar quantas pessoas choraram nesse episódio #MasterchefBR".
+Resposta:
+--------------------Prediction--------------------
+ negativa
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "negativa",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "negativa",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 71
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "aqui no MS falamos eita pega para demonstrar surpresasustoadmiração #VideoShowAoVivo".
+Resposta: neutra
+###
+Exemplo 2:
+Mensagem: "existe sim muito preconceito com mulheres que namoram com homens mais novos".
+Resposta: negativa
+###
+Exemplo 3:
+Mensagem: "O nelson xavier fez uma linda participação na reta final de #AnjoMau #VideoShowAoVivo USERNAME".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 72
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "tapoha q prova difícil".
+Resposta: neutra
+###
+Exemplo 2:
+Mensagem: "como esquecer o pronunciamento de temer reprise do #ForaTemer #ForaTodososcorruptos #RenunciaTemer #ForaAecio USERNAME".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "O garotinho de terra nostra parece o nicolas prattes #VídeoShowAoVivo".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "positiva",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 73
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "queria comer esse prato de victor V agora #MasterChefBR".
+Resposta: neutra
+###
+Exemplo 2:
+Mensagem: "marcelo kkk".
+Resposta: neutra
+###
+Exemplo 3:
+Mensagem: "chorando d + assistindo o de ontem 1° ) a prova e o discurso da USERNAME 🇧🇷2° ) pelo o q aconteceu com USERNAME 😭 😭 😭".
+Resposta:
+--------------------Prediction--------------------
+ negativa
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "negativa",
+        "negativa"
+    ],
+    "f1-weighted": [
+        "negativa",
+        "negativa"
+    ]
+}
+**************************************************doc_id: 74
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "A pessoa corta o dedo rapando mandioca vacilo dele".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "cadê a graça #DomingoLegal".
+Resposta: negativa
+###
+Exemplo 3:
+Mensagem: "CHARLIE HUNNAM QUE HOMÃO DA PORRA BICHO".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 75
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "chorando muito com esse de hj".
+Resposta: neutra
+###
+Exemplo 2:
+Mensagem: "agora esse spoiler que a nayana sai no próximo programa não surpreende pois acho que ela até está durando muito haha".
+Resposta: negativa
+###
+Exemplo 3:
+Mensagem: "já estou no aguardo 😁".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "positiva",
+        "positiva"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "positiva"
+    ]
+}
+**************************************************doc_id: 76
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "chorando muito com esse de hj".
+Resposta: neutra
+###
+Exemplo 2:
+Mensagem: "A insonia me permitindo assistir uma otima entrevista com drauzio varella no".
+Resposta: positiva
+###
+Exemplo 3:
+Mensagem: "USERNAME USERNAME USERNAME bom dia xande".
+Resposta:
+--------------------Prediction--------------------
+ positiva
+####################################################################################################
+Metrics: {
+    "acc": 0.0,
+    "f1-macro": [
+        "positiva",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "positiva",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 77
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "eu quero chocolateee aliás quero tuuudo barba doce hamburgue doce e de sal".
+Resposta: positiva
+###
+Exemplo 2:
+Mensagem: "quando alguém fala que a comida é desconstruída é porque não sabe fazer o negócio".
+Resposta: negativa
+###
+Exemplo 3:
+Mensagem: "vai começar e nem jantei m".
+Resposta:
+--------------------Prediction--------------------
+ neutra
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "neutra",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "neutra",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 78
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "paola é foda 👏 👏".
+Resposta: positiva
+###
+Exemplo 2:
+Mensagem: "gente ridículo essas expressões misturadas de tudo que é lugar com sotaque nordestino nessa novela da globo".
+Resposta: negativa
+###
+Exemplo 3:
+Mensagem: "USERNAME USERNAME suenia vem aqui me abraçar".
+Resposta:
+--------------------Prediction--------------------
+ neutra
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "neutra",
+        "neutra"
+    ],
+    "f1-weighted": [
+        "neutra",
+        "neutra"
+    ]
+}
+**************************************************doc_id: 79
+------------------------prompt------------------------------------
+Classifique a mensagem como "positiva", "neutra" ou "negativa".
+
+Exemplo 1:
+Mensagem: "ah eu não daria pra ser participante descobri que o programa todo é gravado sim eu n sabia".
+Resposta: negativa
+###
+Exemplo 2:
+Mensagem: "acho q eh o fim da linha p o vigor b #MasterChefBR".
+Resposta: negativa
+###
+Exemplo 3:
+Mensagem: "sophia não tem opinião pra nada parece um robô #VideoShowAoVivo".
+Resposta:
+--------------------Prediction--------------------
+ negativa
+####################################################################################################
+Metrics: {
+    "acc": 100.0,
+    "f1-macro": [
+        "negativa",
+        "negativa"
+    ],
+    "f1-weighted": [
+        "negativa",
+        "negativa"
+    ]
+}

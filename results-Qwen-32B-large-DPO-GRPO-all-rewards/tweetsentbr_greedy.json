@@ -1,0 +1,26 @@
+{
+  "results": {
+    "tweetsentbr_greedy": {
+      "dynamic-random": {
+        "acc": 65.0,
+        "acc_stderr": 5.366327268666194,
+        "f1-macro": 63.519813519813525,
+        "f1-weighted": 60.944055944055954,
+        "num_examples": 80
+      }
+    }
+  },
+  "versions": {
+    "tweetsentbr_greedy": 0
+  },
+  "config": {
+    "model": "vllm",
+    "model_args": "engine=Qwen-32B-large-DPO-GRPO-all-rewards,base_url=http://172.17.0.1:8000/v1",
+    "num_fewshot": 30,
+    "batch_size": 4,
+    "device": null,
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000
+  }
+}

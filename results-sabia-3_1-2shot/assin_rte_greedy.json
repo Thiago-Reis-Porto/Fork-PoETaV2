@@ -1,0 +1,25 @@
+{
+  "results": {
+    "assin_rte_greedy": {
+      "dynamic-random": {
+        "acc": 92.6470588235294,
+        "acc_stderr": 0.5276298770624559,
+        "f1": 92.64033372371989,
+        "num_examples": 2448
+      }
+    }
+  },
+  "versions": {
+    "assin_rte_greedy": 0
+  },
+  "config": {
+    "model": "maritalk",
+    "model_args": "engine=sabia-3.1,base_url=https://chat.maritaca.ai/api",
+    "num_fewshot": 2,
+    "batch_size": 4,
+    "device": null,
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000
+  }
+}

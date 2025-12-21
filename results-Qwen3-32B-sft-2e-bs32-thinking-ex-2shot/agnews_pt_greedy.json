@@ -1,0 +1,26 @@
+{
+  "results": {
+    "agnews_pt_greedy": {
+      "dynamic-random": {
+        "acc": 83.77631578947368,
+        "acc_stderr": 0.4229189533112038,
+        "f1-macro": 83.65651387049616,
+        "f1-weighted": 83.65651387049616,
+        "num_examples": 7600
+      }
+    }
+  },
+  "versions": {
+    "agnews_pt_greedy": 0
+  },
+  "config": {
+    "model": "vllm",
+    "model_args": "engine=Qwen3-32B-sft-2e-bs32-thinking-ex,base_url=http://172.17.0.1:8000/v1",
+    "num_fewshot": 2,
+    "batch_size": 4,
+    "device": null,
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000
+  }
+}

@@ -1,0 +1,3305 @@
+**************************************************doc_id: 0
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+import re
+
+def test_regular_expression(test_str):
+    if re.match(r'^\d{4}-\d{3}$', test_str):
+        return True
+    else:
+        return False
+
+A) retorna verdadeiro se uma string contiver o caractere 'd'
+B) retorna verdadeiro se um número for do tipo yyyy-yyy, caso contrário falso
+C) retorna a string 'r'^\d{4}-\d{3}$''
+D) retorna valor em 'test_str'
+ B)
+###
+Exemplo 2:
+def recur_fibo(n):
+    if n <= 1:
+        return n
+    else:
+        return(recur_fibo(n-1) + recur_fibo(n-2))
+
+nterms = 10
+
+for i in range(nterms):
+    print(recur_fibo(i))
+
+A) imprime os primeiros dez números de Fibonacci
+B) retorna recursão
+C) imprime número menor que 10
+D) exibe os primeiros 100 números primos
+ A)
+###
+Exemplo 3:
+num = 5
+factorial = 1
+for i in range(1,num + 1):
+    factorial = factorial*i
+print('The factorial of',num,'is',factorial)
+
+A) imprime 'O fatorial de 10 é 3628800'
+B) imprime o fatorial do número 5
+C) verifica se um número é positivo ou negativo
+D) verifica se 20 é um número negativo
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 38
+    }
+}
+**************************************************doc_id: 1
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+no_terms = 5
+n1, n2 = 0, 1
+count = 0
+while count < no_terms:
+    print(n1)
+    nth = n1 + n2
+    n1 = n2
+    n2 = nth
+    count += 1
+
+A) imprime a soma dos cinco primeiros números
+B) imprime os primeiros 5 números de Fibonacci
+C) exibe os primeiros 5 números primos
+D) exibe a soma de dois números
+ B)
+###
+Exemplo 2:
+fruits = ['Apple','Orange','Guava','Banana']
+fruits.insert(1, 'Grape')
+
+A) insere 1 na lista frutas
+B) insere Uva na lista frutas na segunda posição
+C) cria uma lista de maçãs
+D) retorna uma lista de frutas
+ B)
+###
+Exemplo 3:
+j,b = False,True
+if j and b:
+    print('pass')
+else:
+    print('fail')
+
+A) já que tanto a quanto b são verdadeiros, imprime 'pass'
+B) as impressões falham porque j é falso
+C) combina a e b
+D) imprime o valor de a e b
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 23
+    }
+}
+**************************************************doc_id: 2
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+class Bank(object):
+    def __init__(self, initial_balance=0):
+        self.balance = initial_balance
+    def deposit(self, amount):
+        self.balance += amount
+    def withdraw(self, amount):
+        self.balance -= amount
+my_account = Bank(15)
+
+A) cria uma classe Carro e inicializa
+B) classe de objetos
+C) cria um objeto my_account da classe Bank
+D) declara uma variável
+ C)
+###
+Exemplo 2:
+j,b = False,True
+if j and b:
+    print('pass')
+else:
+    print('fail')
+
+A) já que tanto a quanto b são verdadeiros, imprime 'pass'
+B) as impressões falham porque j é falso
+C) combina a e b
+D) imprime o valor de a e b
+ B)
+###
+Exemplo 3:
+try:
+    n = int(input())
+    m = int(input())
+    integer_sum = int(n) + int(m)
+    print(integer_sum)
+except:
+    print('error')
+
+A) imprime número entre 5 e 6
+B) imprime a soma de dois números de entrada somente se forem inteiros, caso contrário, gera um erro
+C) tente entrada e exceto erro
+D) insere a string 'try'
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 54
+    }
+}
+**************************************************doc_id: 3
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+num = 20
+factorial = 1
+
+if num < 0:
+    print('Sorry, factorial does not exist for negative numbers')
+elif num == 0:
+    print('The factorial of 0 is 1')
+else:
+    for i in range(1,num + 1):
+        factorial = factorial*i
+    print('The factorial of',num,'is',factorial)
+
+A) exibe 'O fatorial de 20 é 0'
+B) imprime o fatorial do número 20
+C) verifica se um número é positivo ou negativo
+D) verifica se 20 é um número negativo
+ B)
+###
+Exemplo 2:
+numbers_list = [2, 6, 8, 10, 11, 4, 12, 7, 13, 17, 0, 3, 21]
+remainder_list = list(map(lambda num: num % 2, numbers_list))
+print(remainder_list)
+
+A) retorna uma lista de números ímpares
+B) imprime uma lista dos restos dos números na lista numbers_list quando divididos por 2
+C) retorna múltiplos de 3
+D) imprime fatores de 2
+ B)
+###
+Exemplo 3:
+numbers_list = [2, 6, 8, 10, 11, 4, 12, 7, 13, 17, 0, 3, 21]
+filtered_list = list(filter(lambda num: (num > 7), numbers_list))
+print(filtered_list)
+
+A) imprime números de 2 a 6
+B) retorna uma lista filtrada
+C) imprime uma lista de números maiores que 7 de numbers_list
+D) imprime lambda
+
+--------------------Prediction--------------------
+C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 11
+    }
+}
+**************************************************doc_id: 4
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+def natural_sum_recursive(n):
+    if n <= 1:
+        return n
+    else:
+        return n + natural_sum_recursive(n-1)
+
+num = 16
+print(natural_sum_recursive(num))
+
+A) retorna natural_sum_recursive
+B) imprime string natural
+C) imprime a soma dos primeiros 16 números naturais
+D) imprime os primeiros 16 números naturais
+ C)
+###
+Exemplo 2:
+a = {'x':20,'y':30,'z':40,'s':50}
+more_than = [(k, v) for k, v in a.items() if v >= 30]
+print(more_than)
+
+A) imprime uma lista de tuplas de chave, valor do dicionário a com valores maiores ou iguais a 30
+B) imprime um dicionário de valores
+C) imprime v
+D) inicializa uma lista com valores maiores que 30
+ A)
+###
+Exemplo 3:
+a = 'x'
+b = 'xyz'
+c = a==b
+print(c)
+
+A) imprime a string 'b'
+B) verifica se a é igual a b e imprime False
+C) troca as strings a e b
+D) troca a com c
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 16
+    }
+}
+**************************************************doc_id: 5
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+print([x for x in range(1,531)])
+
+A) imprime uma lista dos primeiros 530 números naturais
+B) calcula os primeiros 10 números primos
+C) imprime valores de 1 a 10
+D) imprime 'hello world' no terminal
+ A)
+###
+Exemplo 2:
+natural_sum = 0
+i = 100
+while(i > 0):
+    natural_sum += i
+    i -= 1
+print('The sum is', natural_sum)
+
+A) imprime a soma dos primeiros 100 números naturais
+B) imprime os números de 1 a 10
+C) imprime números de 10 a 0 em ordem ascendente
+D) imprime o fatorial dos números
+ A)
+###
+Exemplo 3:
+s, t, u, v = True,True,True,True
+if not s or not t:
+    print('yes')
+else: 
+    print('no')
+
+A) imprime se a e c são iguais e imprime 'sim'
+B) verifica se s ou t são False, imprime 'não'
+C) imprime 'sim'
+D) atribui as strings 'True' a a
+
+--------------------Prediction--------------------
+C)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "B)",
+        "doc_id": 20
+    }
+}
+**************************************************doc_id: 6
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+def sum_two(a,b):
+    return a+b
+
+A) retorna a soma de dois números
+B) retorna a e b
+C) retorna 5 e 6
+D) retorna números entre 5 e 6
+ A)
+###
+Exemplo 2:
+def number_vowels(test_str):
+
+    # string of vowels
+    vowels = 'aeiou'
+    test_str = ip_str.casefold()
+    count = {}.fromkeys(vowels,0)
+
+    # count the vowels
+    for char in test_str:
+        if char in count:
+            count[char] += 1
+    return count
+
+A) conta o número de caracteres em uma string
+B) retorna um dicionário com o número de ocorrências de cada vogal em uma string
+C) retorna números complexos
+D) retorna a soma de todos os números
+ B)
+###
+Exemplo 3:
+class Bank(object):
+    def __init__(self, initial_balance=0):
+        self.balance = initial_balance
+    def deposit(self, amount):
+        self.balance += amount
+    def withdraw(self, amount):
+        self.balance -= amount
+my_account = Bank(15)
+
+A) cria uma classe Carro e inicializa
+B) classe de objetos
+C) cria um objeto my_account da classe Bank
+D) declara uma variável
+
+--------------------Prediction--------------------
+C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 55
+    }
+}
+**************************************************doc_id: 7
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+a = 'xyz'
+b = 'xyz'
+c = a is b
+print(c)
+
+A) imprime a string 'b'
+B) verifica se a é idêntico a b e imprime True
+C) troca strings e b
+D) troca a por c
+ B)
+###
+Exemplo 2:
+text = [line.strip() for line in open('File')]
+
+A) inicializa uma lista com valores na linha
+B) lê um arquivo, remove os caracteres de espaço em branco do início e do fim e armazena o resultado em uma lista
+C) remove a linha
+D) imprime valores de 0 a 100
+ B)
+###
+Exemplo 3:
+sum_of_numbers = 0
+for n in range(0, 10):
+    if n % 8 == 0 or n % 5 == 0:
+        sum_of_numbers += n
+print(sum_of_numbers)
+
+A) retorna se um número é múltiplo de 8
+B) retorna a soma de dois números
+C) imprime a soma de todos os números inteiros não negativos menores que 10, que são múltiplos de 8 ou 5
+D) retorna números que são múltiplos de 8 ou 5
+
+--------------------Prediction--------------------
+C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 58
+    }
+}
+**************************************************doc_id: 8
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+try:
+    n = int(input())
+    m = int(input())
+    integer_sum = int(n) + int(m)
+    print(integer_sum)
+except:
+    print('error')
+
+A) imprime número entre 5 e 6
+B) imprime a soma de dois números de entrada somente se forem inteiros, caso contrário, gera um erro
+C) tente entrada e exceto erro
+D) insere a string 'try'
+ B)
+###
+Exemplo 2:
+def sum_two(a,b):
+    return a+b
+
+A) retorna a soma de dois números
+B) retorna a e b
+C) retorna 5 e 6
+D) retorna números entre 5 e 6
+ A)
+###
+Exemplo 3:
+if num > 5:
+    print('negative')
+else:
+    print('positive')
+
+A) verifica se um número é maior que zero
+B) se o número for maior que 5 imprime 'negativo' caso contrário imprime 'positivo'
+C) verifica se um número é positivo ou negativo
+D) atribui 'positivo' ou 'negativo' à variável num
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 33
+    }
+}
+**************************************************doc_id: 9
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+class Bank(object):
+    def __init__(self, initial_balance=0):
+        self.balance = initial_balance
+    def deposit(self, amount):
+        self.balance += amount
+    def withdraw(self, amount):
+        self.balance -= amount
+my_account = Bank(15)
+
+A) cria uma classe Carro e inicializa
+B) classe de objetos
+C) cria um objeto my_account da classe Bank
+D) declara uma variável
+ C)
+###
+Exemplo 2:
+s = 'Learn Build Teach'
+print(s[0:5])
+
+A) imprime valores de 0 a 5
+B) imprime 5 palavras da string s
+C) imprime a lista de strings
+D) imprime 'Learn'
+ D)
+###
+Exemplo 3:
+import pandas as pd
+data = pd.read_csv('file_name.csv')
+
+A) lê um arquivo csv como um dataframe pandas
+B) imprime 'pandas'
+C) cria uma lista de números
+D) atribui valor
+E) retorna um arquivo csv
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 19
+    }
+}
+**************************************************doc_id: 10
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+a, b, c, d = True, False, False, True
+if not a or not c:
+    print('no')
+else: 
+    print('yes')
+
+A) combina as strings a,b,c e d
+B) verifica se a é verdadeira ou não
+C) verifica se um de a ou c é False, então imprime 'não' já que c é False
+D) verifica se c é verdadeiro ou não
+ C)
+###
+Exemplo 2:
+a = 'xyz'
+b = 'xyz'
+c = a==b
+print(c)
+
+A) imprime a string 'b'
+B) verifica se a é igual a b e imprime True
+C) troca strings e b
+D) troca a com c
+ B)
+###
+Exemplo 3:
+def perfect_number(n): 
+    _sum = 1
+    x = 2
+    while x * x <= n: 
+        if n % x == 0: 
+            _sum = _sum + x + n/x
+        x += 1
+      
+    return (True if _sum == n and n!=1 else False)
+
+A) retorna um número perfeito
+B) imprime um número perfeito
+C) calcula os números primos
+D) retorna se um número é perfeito ou não
+
+--------------------Prediction--------------------
+D)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "D)",
+        "regex_pred": "D)",
+        "correct_letter": "D)",
+        "doc_id": 9
+    }
+}
+**************************************************doc_id: 11
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+import random
+print(random.randint(10))
+
+A) imprime a string 'random'
+B) imprime um valor aleatório entre 0 e 9
+C) imprime valores de 0 a 9
+D) imprime '10'
+ B)
+###
+Exemplo 2:
+def recur_fibo(n):
+    if n <= 1:
+        return n
+    else:
+        return(recur_fibo(n-1) + recur_fibo(n-2))
+
+nterms = 10
+
+for i in range(nterms):
+    print(recur_fibo(i))
+
+A) imprime os primeiros dez números de Fibonacci
+B) retorna recursão
+C) imprime número menor que 10
+D) exibe os primeiros 100 números primos
+ A)
+###
+Exemplo 3:
+num = 20
+factorial = 1
+
+if num < 0:
+    print('Sorry, factorial does not exist for negative numbers')
+elif num == 0:
+    print('The factorial of 0 is 1')
+else:
+    for i in range(1,num + 1):
+        factorial = factorial*i
+    print('The factorial of',num,'is',factorial)
+
+A) exibe 'O fatorial de 20 é 0'
+B) imprime o fatorial do número 20
+C) verifica se um número é positivo ou negativo
+D) verifica se 20 é um número negativo
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 36
+    }
+}
+**************************************************doc_id: 12
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+import re
+
+def test_regular_expression(test_str):
+    if re.match(r'^\d{4}-\d{3}$', test_str):
+        return True
+    else:
+        return False
+
+A) retorna verdadeiro se uma string contiver o caractere 'd'
+B) retorna verdadeiro se um número for do tipo yyyy-yyy, caso contrário falso
+C) retorna a string 'r'^\d{4}-\d{3}$''
+D) retorna valor em 'test_str'
+ B)
+###
+Exemplo 2:
+j,b = False,True
+if j and b:
+    print('pass')
+else:
+    print('fail')
+
+A) já que tanto a quanto b são verdadeiros, imprime 'pass'
+B) as impressões falham porque j é falso
+C) combina a e b
+D) imprime o valor de a e b
+ B)
+###
+Exemplo 3:
+if num > 5:
+    print('positive')
+else:
+    print('negative')
+
+A) verifica se um número é maior que zero
+B) se o número for maior que 5 imprime 'positivo' caso contrário imprime 'negativo'
+C) verifica se um número é positivo ou negativo
+D) atribui 'positivo' ou 'negativo' à variável num
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 31
+    }
+}
+**************************************************doc_id: 13
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+x = {5,6,7,8}
+y = {5,6,10,11}
+print(set(x)-set(y))
+
+A) imprime o conjunto de elementos na lista x mas não na lista y
+B) imprime a diferença entre dois conjuntos x e y
+C) calcula a diferença entre dois dicionários x e y
+D) inicializa dois dicionários x e y
+ A)
+###
+Exemplo 2:
+j,b = False,True
+if j and b:
+    print('pass')
+else:
+    print('fail')
+
+A) já que tanto a quanto b são verdadeiros, imprime 'pass'
+B) as impressões falham porque j é falso
+C) combina a e b
+D) imprime o valor de a e b
+ B)
+###
+Exemplo 3:
+def natural_sum_recursive(n):
+    if n <= 1:
+        return n
+    else:
+        return n + natural_sum_recursive(n-1)
+
+num = 16
+print(natural_sum_recursive(num))
+
+A) retorna natural_sum_recursive
+B) imprime string natural
+C) imprime a soma dos primeiros 16 números naturais
+D) imprime os primeiros 16 números naturais
+
+--------------------Prediction--------------------
+C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 45
+    }
+}
+**************************************************doc_id: 14
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+j,b = True,True
+if j and b:
+    print('pass')
+else:
+    print('fail')
+
+A) falhas nas impressões
+B) combina a e b
+C) imprime o valor de a e b
+D) já que tanto j quanto b são verdadeiros, imprime passar
+ D)
+###
+Exemplo 2:
+help(float)
+
+A) digita converte uma string
+B) retorna a documentação para float
+C) imprime 'ajuda'
+D) imprime a string 'float'
+ B)
+###
+Exemplo 3:
+num = int(input('Enter a number: '))
+if num > 5:
+    print('positive')
+elif num == 0:
+    print('zero')
+else:
+    print('negative')
+
+A) se a entrada for maior que 5 imprime 'positivo', 'zero' se for igual a zero e 'negativo' caso contrário
+B) verifica se um número é positivo, negativo ou zero
+C) verifica se um número é maior que zero
+D) verifica se um número é inteiro
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 30
+    }
+}
+**************************************************doc_id: 15
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+natural_sum = 0
+i = 100
+while(i > 0):
+    natural_sum += i
+    i -= 1
+print('The sum is', natural_sum)
+
+A) imprime a soma dos primeiros 100 números naturais
+B) imprime os números de 1 a 10
+C) imprime números de 10 a 0 em ordem ascendente
+D) imprime o fatorial dos números
+ A)
+###
+Exemplo 2:
+a = 'xyz'
+b = 'xyz'
+c = a==b
+print(c)
+
+A) imprime a string 'b'
+B) verifica se a é igual a b e imprime True
+C) troca strings e b
+D) troca a com c
+ B)
+###
+Exemplo 3:
+def number_vowels(test_str):
+
+    # string of vowels
+    vowels = 'aeiou'
+    test_str = ip_str.casefold()
+    count = {}.fromkeys(vowels,0)
+
+    # count the vowels
+    for char in test_str:
+        if char in count:
+            count[char] += 1
+    return count
+
+A) conta o número de caracteres em uma string
+B) retorna um dicionário com o número de ocorrências de cada vogal em uma string
+C) retorna números complexos
+D) retorna a soma de todos os números
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 49
+    }
+}
+**************************************************doc_id: 16
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+def all_factors(x):
+    factors = []
+    for i in range(1, x + 1):
+        if x % i == 0:
+            factors.append(i)
+            
+    return factors
+
+num = 320
+all_factors(num)
+
+A) retorna o valor da variável x
+B) retorna uma lista de todos os fatores de 320
+C) imprime fatores de 10
+D) imprime todos os fatores de 30
+ B)
+###
+Exemplo 2:
+sum_of_numbers = 0
+for n in range(0, 10):
+    if n % 10 == 0 or n % 5 == 0:
+        sum_of_numbers += n
+print(sum_of_numbers)
+
+A) retorna se um número é múltiplo de 8
+B) retorna a soma de dois números
+C) imprime 5
+D) retorna números que são múltiplos de 10 ou 5
+ C)
+###
+Exemplo 3:
+t = [s**2 for s in range(7)]
+
+A) inicializa a lista t com o quadrado dos números de 0 a 6
+B) inicializa a lista t com o quadrado dos números de 0 a 2
+C) calcula múltiplos de 2
+D) preenche a lista t com 10 números
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 3
+    }
+}
+**************************************************doc_id: 17
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+def ascii_value(character):
+    return ord(character)
+ascii_value('a')
+
+A) calcula o valor normal de a
+B) calcula o valor ASCII do caractere 'a'
+C) retorna o caractere 'a'
+D) retorna a soma de dois números
+ B)
+###
+Exemplo 2:
+sum_of_numbers = 0
+num = 10
+while(num > 0):
+    sum_of_numbers += num
+    num -= 1
+print('The sum is', sum_of_numbers)
+
+A) imprime a soma dos primeiros 10 números naturais
+B) imprime os números de 1 a 10
+C) imprime números de 0 a 10 em ordem ascendente
+D) imprime o fatorial dos números
+ A)
+###
+Exemplo 3:
+a = True
+if a is True:
+    print ('pass')
+else:
+    print('fail')
+
+A) imprime passa já que a é Verdadeiro
+B) impressões falham já que a é falha
+C) imprime verdadeiro
+D) verifica se a é igual a b
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 21
+    }
+}
+**************************************************doc_id: 18
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+a = {'x':20,'y':30,'z':40,'s':50}
+more_than = [(k, v) for k, v in a.items() if v >= 30]
+print(more_than)
+
+A) imprime uma lista de tuplas de chave, valor do dicionário a com valores maiores ou iguais a 30
+B) imprime um dicionário de valores
+C) imprime v
+D) inicializa uma lista com valores maiores que 30
+ A)
+###
+Exemplo 2:
+num = 5
+factorial = 1
+for i in range(1,num + 1):
+    factorial = factorial*i
+print('The factorial of',num,'is',factorial)
+
+A) imprime 'O fatorial de 10 é 3628800'
+B) imprime o fatorial do número 5
+C) verifica se um número é positivo ou negativo
+D) verifica se 20 é um número negativo
+ B)
+###
+Exemplo 3:
+def greet(name):
+    print ('Hello', name)
+
+greet('Jack')
+
+A) exibe 'Hello Jack'
+B) imprime 'Hello World!'
+C) imprime 'python 3.7'
+D) cumprimenta Jack
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 50
+    }
+}
+**************************************************doc_id: 19
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+def recur_fibo(n):
+    if n <= 1:
+        return n
+    else:
+        return(recur_fibo(n-1) + recur_fibo(n-2))
+
+nterms = 10
+
+for i in range(nterms):
+    print(recur_fibo(i))
+
+A) imprime os primeiros dez números de Fibonacci
+B) retorna recursão
+C) imprime número menor que 10
+D) exibe os primeiros 100 números primos
+ A)
+###
+Exemplo 2:
+x = {5,6,7,8}
+y = {5,6,10,11}
+print(set(x)-set(y))
+
+A) imprime o conjunto de elementos na lista x mas não na lista y
+B) imprime a diferença entre dois conjuntos x e y
+C) calcula a diferença entre dois dicionários x e y
+D) inicializa dois dicionários x e y
+ A)
+###
+Exemplo 3:
+a = {'x':20,'y':30,'z':40,'s':50}
+more_than = [(k, v) for k, v in a.items() if v >= 30]
+print(more_than)
+
+A) imprime uma lista de tuplas de chave, valor do dicionário a com valores maiores ou iguais a 30
+B) imprime um dicionário de valores
+C) imprime v
+D) inicializa uma lista com valores maiores que 30
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 4
+    }
+}
+**************************************************doc_id: 20
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+if value >= 0:
+    if value == 0:
+        print('Zero')
+    else:
+        print('positive')
+else:
+    print('negative')
+
+A) verifica se um número é maior que 10
+B) imprime 'zero' se o número for igual a zero, 'positivo' se for maior que zero, 'negativo' caso contrário
+C) verifica se um número é primo
+D) verifica se um número é divisível por 10
+ B)
+###
+Exemplo 2:
+def matrix_multiplication(x,y):
+    result = [[0,0,0,0],
+         [0,0,0,0],
+         [0,0,0,0]]
+    for i in range(len(x)):
+        for j in range(len(y[0])):
+            for k in range(len(y)):
+        
+                result[i][j] += x[i][k] * y[k][j]
+    return result
+
+A) retorna a multiplicação de duas matrizes
+B) retorna a soma de duas listas
+C) calcula a subtração de três números
+D) anexa duas listas
+ A)
+###
+Exemplo 3:
+import random
+print(random.randint(10))
+
+A) imprime a string 'random'
+B) imprime um valor aleatório entre 0 e 9
+C) imprime valores de 0 a 9
+D) imprime '10'
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 29
+    }
+}
+**************************************************doc_id: 21
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+def next_integer(a):
+    return a-1
+
+A) uma função que retorna um número um a menos que sua entrada
+B) retorna o número um a mais que a
+C) retorna números de a até 1
+D) retorna string 'a'
+ A)
+###
+Exemplo 2:
+x = {5,6,7,8}
+y = {5,6,10,11}
+print(set(x)-set(y))
+
+A) imprime o conjunto de elementos na lista x mas não na lista y
+B) imprime a diferença entre dois conjuntos x e y
+C) calcula a diferença entre dois dicionários x e y
+D) inicializa dois dicionários x e y
+ A)
+###
+Exemplo 3:
+x = {5,6,7,8}
+y = {5,6,10,11}
+print(set(x)-set(y))
+
+A) imprime o conjunto de elementos na lista x mas não na lista y
+B) imprime a diferença entre dois conjuntos x e y
+C) calcula a diferença entre dois dicionários x e y
+D) inicializa dois dicionários x e y
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 10
+    }
+}
+**************************************************doc_id: 22
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+import random
+print(random.randint(10))
+
+A) imprime a string 'random'
+B) imprime um valor aleatório entre 0 e 9
+C) imprime valores de 0 a 9
+D) imprime '10'
+ B)
+###
+Exemplo 2:
+a, b, c, d = True, False, False, True
+if not a or not c:
+    print('no')
+else: 
+    print('yes')
+
+A) combina as strings a,b,c e d
+B) verifica se a é verdadeira ou não
+C) verifica se um de a ou c é False, então imprime 'não' já que c é False
+D) verifica se c é verdadeiro ou não
+ C)
+###
+Exemplo 3:
+sum_of_numbers = 0
+for n in range(0, 10):
+    if n % 10 == 0 or n % 5 == 0:
+        sum_of_numbers += n
+print(sum_of_numbers)
+
+A) retorna se um número é múltiplo de 8
+B) retorna a soma de dois números
+C) imprime 5
+D) retorna números que são múltiplos de 10 ou 5
+
+--------------------Prediction--------------------
+D)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "D)",
+        "regex_pred": "D)",
+        "correct_letter": "C)",
+        "doc_id": 59
+    }
+}
+**************************************************doc_id: 23
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+a = 'xyz'
+b = 'xyz'
+c = a==b
+print(c)
+
+A) imprime a string 'b'
+B) verifica se a é igual a b e imprime True
+C) troca strings e b
+D) troca a com c
+ B)
+###
+Exemplo 2:
+sum_of_numbers = 0
+for n in range(0, 10):
+    if n % 10 == 0 or n % 5 == 0:
+        sum_of_numbers += n
+print(sum_of_numbers)
+
+A) retorna se um número é múltiplo de 8
+B) retorna a soma de dois números
+C) imprime 5
+D) retorna números que são múltiplos de 10 ou 5
+ C)
+###
+Exemplo 3:
+j,b = True,True
+if j and b:
+    print('pass')
+else:
+    print('fail')
+
+A) falhas nas impressões
+B) combina a e b
+C) imprime o valor de a e b
+D) já que tanto j quanto b são verdadeiros, imprime passar
+
+--------------------Prediction--------------------
+D)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "D)",
+        "regex_pred": "D)",
+        "correct_letter": "D)",
+        "doc_id": 22
+    }
+}
+**************************************************doc_id: 24
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+def recur_fibo(n):
+    if n <= 1:
+        return n
+    else:
+        return(recur_fibo(n-1) + recur_fibo(n-2))
+
+nterms = 10
+
+for i in range(nterms):
+    print(recur_fibo(i))
+
+A) imprime os primeiros dez números de Fibonacci
+B) retorna recursão
+C) imprime número menor que 10
+D) exibe os primeiros 100 números primos
+ A)
+###
+Exemplo 2:
+def all_factors(x):
+    factors = []
+    for i in range(1, x + 1):
+        if x % i == 0:
+            factors.append(i)
+            
+    return factors
+
+num = 320
+all_factors(num)
+
+A) retorna o valor da variável x
+B) retorna uma lista de todos os fatores de 320
+C) imprime fatores de 10
+D) imprime todos os fatores de 30
+ B)
+###
+Exemplo 3:
+sum_of_numbers = 0
+num = 10
+while(num > 0):
+    sum_of_numbers += num
+    num -= 1
+print('The sum is', sum_of_numbers)
+
+A) imprime a soma dos primeiros 10 números naturais
+B) imprime os números de 1 a 10
+C) imprime números de 0 a 10 em ordem ascendente
+D) imprime o fatorial dos números
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 41
+    }
+}
+**************************************************doc_id: 25
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+num1 = 10
+num2 = 14
+num3 = 12
+
+if (num1 >= num2) and (num1 >= num3):
+    largest = num1
+elif (num2 >= num1) and (num2 >= num3):
+    largest = num2
+else:
+    largest = num3
+
+print('The largest number is',largest)
+
+A) imprime 'O maior número é 14'
+B) encontra o menor número entre três números
+C) verifica se um número é primo ou não
+D) imprime número entre 12 e 14
+ A)
+###
+Exemplo 2:
+def sum_two(a,b):
+    return a+b
+
+A) retorna a soma de dois números
+B) retorna a e b
+C) retorna 5 e 6
+D) retorna números entre 5 e 6
+ A)
+###
+Exemplo 3:
+a, b, c, d = True, False, False, True
+if not a or not c:
+    print('no')
+else: 
+    print('yes')
+
+A) combina as strings a,b,c e d
+B) verifica se a é verdadeira ou não
+C) verifica se um de a ou c é False, então imprime 'não' já que c é False
+D) verifica se c é verdadeiro ou não
+
+--------------------Prediction--------------------
+C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 24
+    }
+}
+**************************************************doc_id: 26
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+def ascii_value(character):
+    return ord(character)
+ascii_value('a')
+
+A) calcula o valor normal de a
+B) calcula o valor ASCII do caractere 'a'
+C) retorna o caractere 'a'
+D) retorna a soma de dois números
+ B)
+###
+Exemplo 2:
+s, t, u, v = True,True,True,True
+if not s or not t:
+    print('yes')
+else: 
+    print('no')
+
+A) imprime se a e c são iguais e imprime 'sim'
+B) verifica se s ou t são False, imprime 'não'
+C) imprime 'sim'
+D) atribui as strings 'True' a a
+ B)
+###
+Exemplo 3:
+for i in range(23):
+    print(i)
+
+A) imprime valores de 0 a 22
+B) calcula os 10 primeiros números primos
+C) imprime valores de 1 a 10
+D) imprime 'hello world' no terminal
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 0
+    }
+}
+**************************************************doc_id: 27
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+import re
+
+def test_regular_expression(test_str):
+    if re.match(r'^\d{4}-\d{3}$', test_str):
+        return True
+    else:
+        return False
+
+A) retorna verdadeiro se uma string contiver o caractere 'd'
+B) retorna verdadeiro se um número for do tipo yyyy-yyy, caso contrário falso
+C) retorna a string 'r'^\d{4}-\d{3}$''
+D) retorna valor em 'test_str'
+ B)
+###
+Exemplo 2:
+def number_vowels(test_str):
+
+    # string of vowels
+    vowels = 'aeiou'
+    test_str = ip_str.casefold()
+    count = {}.fromkeys(vowels,0)
+
+    # count the vowels
+    for char in test_str:
+        if char in count:
+            count[char] += 1
+    return count
+
+A) conta o número de caracteres em uma string
+B) retorna um dicionário com o número de ocorrências de cada vogal em uma string
+C) retorna números complexos
+D) retorna a soma de todos os números
+ B)
+###
+Exemplo 3:
+def all_factors(x):
+    factors = []
+    for i in range(1, x + 1):
+        if x % i == 0:
+            factors.append(i)
+            
+    return factors
+
+num = 320
+all_factors(num)
+
+A) retorna o valor da variável x
+B) retorna uma lista de todos os fatores de 320
+C) imprime fatores de 10
+D) imprime todos os fatores de 30
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 44
+    }
+}
+**************************************************doc_id: 28
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+def number_vowels(test_str):
+
+    # string of vowels
+    vowels = 'aeiou'
+    test_str = ip_str.casefold()
+    count = {}.fromkeys(vowels,0)
+
+    # count the vowels
+    for char in test_str:
+        if char in count:
+            count[char] += 1
+    return count
+
+A) conta o número de caracteres em uma string
+B) retorna um dicionário com o número de ocorrências de cada vogal em uma string
+C) retorna números complexos
+D) retorna a soma de todos os números
+ B)
+###
+Exemplo 2:
+t = [s**2 for s in range(7)]
+
+A) inicializa a lista t com o quadrado dos números de 0 a 6
+B) inicializa a lista t com o quadrado dos números de 0 a 2
+C) calcula múltiplos de 2
+D) preenche a lista t com 10 números
+ A)
+###
+Exemplo 3:
+s, t, u, v = True, True, False, False
+if not s or not v:
+    print('no')
+else:
+    print('yes')
+
+A) combina as cadeias a,b,c e d
+B) verifica se a condição not s ou not v é verdadeira e imprime não se for verdadeira, caso contrário imprime sim
+C) verifica se a é verdadeira ou não
+D) verifica se c é verdadeiro ou não
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 25
+    }
+}
+**************************************************doc_id: 29
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+def sum_two(a,b):
+    return a+b
+
+A) retorna a soma de dois números
+B) retorna a e b
+C) retorna 5 e 6
+D) retorna números entre 5 e 6
+ A)
+###
+Exemplo 2:
+import re
+
+def test_regular_expression(test_str):
+    if re.match(r'^\d{3}-\d{4}$', test_str):
+        return True
+    else:
+        return False
+
+A) retorna verdadeiro se uma string tiver o caractere 'd' nela
+B) retorna verdadeiro se um número for do tipo xxx-xxxx, senão falso
+C) retorna string 'r'^\d{3}-\d{4}$'
+D) retorna valor em 'test_str'
+ B)
+###
+Exemplo 3:
+import re
+
+def test_regular_expression(test_str):
+    if re.match(r'^\d{3}-\d{4}$', test_str):
+        return True
+    else:
+        return False
+
+A) retorna verdadeiro se uma string tiver o caractere 'd' nela
+B) retorna verdadeiro se um número for do tipo xxx-xxxx, senão falso
+C) retorna string 'r'^\d{3}-\d{4}$'
+D) retorna valor em 'test_str'
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 52
+    }
+}
+**************************************************doc_id: 30
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+print([x for x in range(1,531)])
+
+A) imprime uma lista dos primeiros 530 números naturais
+B) calcula os primeiros 10 números primos
+C) imprime valores de 1 a 10
+D) imprime 'hello world' no terminal
+ A)
+###
+Exemplo 2:
+def greet(name):
+    print ('Hello', name)
+greet('Linda')
+
+A) exibe 'Olá Linda'
+B) imprime 'Hello World!'
+C) imprime 'python 3.7'
+D) cumprimenta Jack
+ A)
+###
+Exemplo 3:
+a = 'xyz'
+b = 'xyz'
+c = a is b
+print(c)
+
+A) imprime a string 'b'
+B) verifica se a é idêntico a b e imprime True
+C) troca strings e b
+D) troca a por c
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 18
+    }
+}
+**************************************************doc_id: 31
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+s, t, u, v = True,True,True,True
+if not s or not t:
+    print('yes')
+else: 
+    print('no')
+
+A) imprime se a e c são iguais e imprime 'sim'
+B) verifica se s ou t são False, imprime 'não'
+C) imprime 'sim'
+D) atribui as strings 'True' a a
+ B)
+###
+Exemplo 2:
+s, t, u, v = True, True, False, False
+if not s or not v:
+    print('no')
+else:
+    print('yes')
+
+A) combina as cadeias a,b,c e d
+B) verifica se a condição not s ou not v é verdadeira e imprime não se for verdadeira, caso contrário imprime sim
+C) verifica se a é verdadeira ou não
+D) verifica se c é verdadeiro ou não
+ B)
+###
+Exemplo 3:
+x = 5
+y = 10
+x = x ^ y
+y = x ^ y
+x = x ^ y
+
+A) troca x e y
+B) x é igual a x elevado a y
+C) y é igual a y elevado à potência de x
+D) imprime x vezes y
+E) atribui o valor 50 a x e y
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 28
+    }
+}
+**************************************************doc_id: 32
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+a = 'xyz'
+b = 'xyz'
+c = a==b
+print(c)
+
+A) imprime a string 'b'
+B) verifica se a é igual a b e imprime True
+C) troca strings e b
+D) troca a com c
+ B)
+###
+Exemplo 2:
+a = {'x':20,'y':30,'z':40,'s':50}
+more_than = [(k, v) for k, v in a.items() if v >= 30]
+print(more_than)
+
+A) imprime uma lista de tuplas de chave, valor do dicionário a com valores maiores ou iguais a 30
+B) imprime um dicionário de valores
+C) imprime v
+D) inicializa uma lista com valores maiores que 30
+ A)
+###
+Exemplo 3:
+no_terms = 5
+n1, n2 = 0, 1
+count = 0
+while count < no_terms:
+    print(n1)
+    nth = n1 + n2
+    n1 = n2
+    n2 = nth
+    count += 1
+
+A) imprime a soma dos cinco primeiros números
+B) imprime os primeiros 5 números de Fibonacci
+C) exibe os primeiros 5 números primos
+D) exibe a soma de dois números
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 39
+    }
+}
+**************************************************doc_id: 33
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+help(float)
+
+A) digita converte uma string
+B) retorna a documentação para float
+C) imprime 'ajuda'
+D) imprime a string 'float'
+ B)
+###
+Exemplo 2:
+sum_of_numbers = 0
+for n in range(0, 10):
+    if n % 8 == 0 or n % 5 == 0:
+        sum_of_numbers += n
+print(sum_of_numbers)
+
+A) retorna se um número é múltiplo de 8
+B) retorna a soma de dois números
+C) imprime a soma de todos os números inteiros não negativos menores que 10, que são múltiplos de 8 ou 5
+D) retorna números que são múltiplos de 8 ou 5
+ C)
+###
+Exemplo 3:
+x, y = False, True
+z = (x and y and not x) or (not y) or (y and x)
+
+A) imprime o valor de z
+B) imprime se x e y são verdadeiros
+C) verifica as condições e atribui resultados a z
+D) atribui o valor de z a x
+
+--------------------Prediction--------------------
+C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 26
+    }
+}
+**************************************************doc_id: 34
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+num = 20
+factorial = 1
+
+if num < 0:
+    print('Sorry, factorial does not exist for negative numbers')
+elif num == 0:
+    print('The factorial of 0 is 1')
+else:
+    for i in range(1,num + 1):
+        factorial = factorial*i
+    print('The factorial of',num,'is',factorial)
+
+A) exibe 'O fatorial de 20 é 0'
+B) imprime o fatorial do número 20
+C) verifica se um número é positivo ou negativo
+D) verifica se 20 é um número negativo
+ B)
+###
+Exemplo 2:
+fruits = ['Apple','Orange','Guava','Banana']
+fruits.insert(1, 'Grape')
+
+A) insere 1 na lista frutas
+B) insere Uva na lista frutas na segunda posição
+C) cria uma lista de maçãs
+D) retorna uma lista de frutas
+ B)
+###
+Exemplo 3:
+test_str = 'aaabbbaaa'
+
+# make test_string caseless
+test_str = test_str.casefold()
+
+# reverse the string
+rev_str = reversed(test_str)
+
+if list(test_str) == list(rev_str):
+    print('palindrome')
+else:
+    print('not palindrome')
+
+A) imprime 'palíndromo' já que aaabbbaaa é um palíndromo
+B) fatiar a string
+C) verifica se uma string tem vogais
+D) imprime a string 'baTTab' 10 vezes
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 48
+    }
+}
+**************************************************doc_id: 35
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+def natural_sum_recursive(n):
+    if n <= 1:
+        return n
+    else:
+        return n + natural_sum_recursive(n-1)
+
+num = 16
+print(natural_sum_recursive(num))
+
+A) retorna natural_sum_recursive
+B) imprime string natural
+C) imprime a soma dos primeiros 16 números naturais
+D) imprime os primeiros 16 números naturais
+ C)
+###
+Exemplo 2:
+s, t, u, v = True,True,True,True
+if not s or not t:
+    print('yes')
+else: 
+    print('no')
+
+A) imprime se a e c são iguais e imprime 'sim'
+B) verifica se s ou t são False, imprime 'não'
+C) imprime 'sim'
+D) atribui as strings 'True' a a
+ B)
+###
+Exemplo 3:
+numbers_list = [2, 6, 8, 10, 11, 4, 12, 7, 13, 17, 0, 3, 21]
+remainder_list = list(map(lambda num: num % 2, numbers_list))
+print(remainder_list)
+
+A) retorna uma lista de números ímpares
+B) imprime uma lista dos restos dos números na lista numbers_list quando divididos por 2
+C) retorna múltiplos de 3
+D) imprime fatores de 2
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 12
+    }
+}
+**************************************************doc_id: 36
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+help(float)
+
+A) digita converte uma string
+B) retorna a documentação para float
+C) imprime 'ajuda'
+D) imprime a string 'float'
+ B)
+###
+Exemplo 2:
+sum_of_numbers = 0
+num = 10
+while(num > 0):
+    sum_of_numbers += num
+    num -= 1
+print('The sum is', sum_of_numbers)
+
+A) imprime a soma dos primeiros 10 números naturais
+B) imprime os números de 1 a 10
+C) imprime números de 0 a 10 em ordem ascendente
+D) imprime o fatorial dos números
+ A)
+###
+Exemplo 3:
+num1 = 10
+num2 = 14
+num3 = 12
+
+if (num1 >= num2) and (num1 >= num3):
+    largest = num1
+elif (num2 >= num1) and (num2 >= num3):
+    largest = num2
+else:
+    largest = num3
+
+print('The largest number is',largest)
+
+A) imprime 'O maior número é 14'
+B) encontra o menor número entre três números
+C) verifica se um número é primo ou não
+D) imprime número entre 12 e 14
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 35
+    }
+}
+**************************************************doc_id: 37
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+if num > 5:
+    print('positive')
+else:
+    print('negative')
+
+A) verifica se um número é maior que zero
+B) se o número for maior que 5 imprime 'positivo' caso contrário imprime 'negativo'
+C) verifica se um número é positivo ou negativo
+D) atribui 'positivo' ou 'negativo' à variável num
+ B)
+###
+Exemplo 2:
+s, t, u, v = True, True, False, False
+if not s or not v:
+    print('no')
+else:
+    print('yes')
+
+A) combina as cadeias a,b,c e d
+B) verifica se a condição not s ou not v é verdadeira e imprime não se for verdadeira, caso contrário imprime sim
+C) verifica se a é verdadeira ou não
+D) verifica se c é verdadeiro ou não
+ B)
+###
+Exemplo 3:
+natural_sum = 0
+i = 100
+while(i > 0):
+    natural_sum += i
+    i -= 1
+print('The sum is', natural_sum)
+
+A) imprime a soma dos primeiros 100 números naturais
+B) imprime os números de 1 a 10
+C) imprime números de 10 a 0 em ordem ascendente
+D) imprime o fatorial dos números
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 42
+    }
+}
+**************************************************doc_id: 38
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+fruits = ['Apple','Orange','Guava','Banana']
+fruits.insert(1, 'Grape')
+
+A) insere 1 na lista frutas
+B) insere Uva na lista frutas na segunda posição
+C) cria uma lista de maçãs
+D) retorna uma lista de frutas
+ B)
+###
+Exemplo 2:
+sum_of_numbers = 0
+for n in range(0, 10):
+    if n % 8 == 0 or n % 5 == 0:
+        sum_of_numbers += n
+print(sum_of_numbers)
+
+A) retorna se um número é múltiplo de 8
+B) retorna a soma de dois números
+C) imprime a soma de todos os números inteiros não negativos menores que 10, que são múltiplos de 8 ou 5
+D) retorna números que são múltiplos de 8 ou 5
+ C)
+###
+Exemplo 3:
+if num == 5:
+    print('negative')
+else:
+    print('positive')
+
+A) verifica se um número é maior que zero
+B) se o número for igual a 5 imprime 'negativo', caso contrário imprime 'positivo'
+C) verifica se um número é positivo ou negativo
+D) atribui 'positivo' ou 'negativo' à variável num
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 32
+    }
+}
+**************************************************doc_id: 39
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+sum_of_numbers = 0
+num = 10
+while(num > 0):
+    sum_of_numbers += num
+    num -= 1
+print('The sum is', sum_of_numbers)
+
+A) imprime a soma dos primeiros 10 números naturais
+B) imprime os números de 1 a 10
+C) imprime números de 0 a 10 em ordem ascendente
+D) imprime o fatorial dos números
+ A)
+###
+Exemplo 2:
+import random
+print(random.randint(10))
+
+A) imprime a string 'random'
+B) imprime um valor aleatório entre 0 e 9
+C) imprime valores de 0 a 9
+D) imprime '10'
+ B)
+###
+Exemplo 3:
+import re
+
+def test_regular_expression(test_str):
+    if re.match(r'^\d{4}-\d{3}$', test_str):
+        return True
+    else:
+        return False
+
+A) retorna verdadeiro se uma string contiver o caractere 'd'
+B) retorna verdadeiro se um número for do tipo yyyy-yyy, caso contrário falso
+C) retorna a string 'r'^\d{4}-\d{3}$''
+D) retorna valor em 'test_str'
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 53
+    }
+}
+**************************************************doc_id: 40
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+def perfect_number(n): 
+    _sum = 1
+    x = 2
+    while x * x <= n: 
+        if n % x == 0: 
+            _sum = _sum + x + n/x
+        x += 1
+      
+    return (True if _sum == n and n!=1 else False)
+
+A) retorna um número perfeito
+B) imprime um número perfeito
+C) calcula os números primos
+D) retorna se um número é perfeito ou não
+ D)
+###
+Exemplo 2:
+a = 'x'
+b = 'xyz'
+c = a==b
+print(c)
+
+A) imprime a string 'b'
+B) verifica se a é igual a b e imprime False
+C) troca as strings a e b
+D) troca a com c
+ B)
+###
+Exemplo 3:
+help(float)
+
+A) digita converte uma string
+B) retorna a documentação para float
+C) imprime 'ajuda'
+D) imprime a string 'float'
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 13
+    }
+}
+**************************************************doc_id: 41
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+x = [a for a in range(20,50)]
+print(x)
+
+A) exibe 'x'
+B) imprime números entre 30 e 50
+C) imprime uma lista de números começando em 20 e terminando em 49
+D) imprime 'a'
+ C)
+###
+Exemplo 2:
+def next_integer(a):
+    return a-1
+
+A) uma função que retorna um número um a menos que sua entrada
+B) retorna o número um a mais que a
+C) retorna números de a até 1
+D) retorna string 'a'
+ A)
+###
+Exemplo 3:
+def matrix_multiplication(x,y):
+    result = [[0,0,0,0],
+         [0,0,0,0],
+         [0,0,0,0]]
+    for i in range(len(x)):
+        for j in range(len(y[0])):
+            for k in range(len(y)):
+        
+                result[i][j] += x[i][k] * y[k][j]
+    return result
+
+A) retorna a multiplicação de duas matrizes
+B) retorna a soma de duas listas
+C) calcula a subtração de três números
+D) anexa duas listas
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 46
+    }
+}
+**************************************************doc_id: 42
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+test_str = 'baTTab'
+
+# make test_string caseless
+test_str = test_str.casefold()
+
+# reverse the string
+rev_str = reversed(test_str)
+
+if list(test_str) == list(rev_str):
+    print('palindrome')
+else:
+    print('not palindrome')
+
+A) verifica se uma string é um palíndromo
+B) corta a string
+C) verifica se uma string tem vogais
+D) imprime a string 'baTTab' 10 vezes
+ A)
+###
+Exemplo 2:
+num1 = 10
+num2 = 14
+num3 = 12
+
+if (num1 >= num2) and (num1 >= num3):
+    largest = num1
+elif (num2 >= num1) and (num2 >= num3):
+    largest = num2
+else:
+    largest = num3
+
+print('The largest number is',largest)
+
+A) imprime 'O maior número é 14'
+B) encontra o menor número entre três números
+C) verifica se um número é primo ou não
+D) imprime número entre 12 e 14
+ A)
+###
+Exemplo 3:
+import os
+
+path = '/home/tests/bin'
+files = os.listdir(path)
+for file in files:
+    print(file)
+
+A) retorna o diretório atual
+B) retorna o caminho do arquivo
+C) imprime a lista de arquivos em um diretório
+D) abre um arquivo
+
+--------------------Prediction--------------------
+C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 57
+    }
+}
+**************************************************doc_id: 43
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+if value >= 0:
+    if value == 0:
+        print('Zero')
+    else:
+        print('positive')
+else:
+    print('negative')
+
+A) verifica se um número é maior que 10
+B) imprime 'zero' se o número for igual a zero, 'positivo' se for maior que zero, 'negativo' caso contrário
+C) verifica se um número é primo
+D) verifica se um número é divisível por 10
+ B)
+###
+Exemplo 2:
+a = 'x'
+b = 'xyz'
+c = a==b
+print(c)
+
+A) imprime a string 'b'
+B) verifica se a é igual a b e imprime False
+C) troca as strings a e b
+D) troca a com c
+ B)
+###
+Exemplo 3:
+print([x for x in range(1,531)])
+
+A) imprime uma lista dos primeiros 530 números naturais
+B) calcula os primeiros 10 números primos
+C) imprime valores de 1 a 10
+D) imprime 'hello world' no terminal
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 2
+    }
+}
+**************************************************doc_id: 44
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+test_str = 'baTTab'
+
+# make test_string caseless
+test_str = test_str.casefold()
+
+# reverse the string
+rev_str = reversed(test_str)
+
+if list(test_str) == list(rev_str):
+    print('palindrome')
+else:
+    print('not palindrome')
+
+A) verifica se uma string é um palíndromo
+B) corta a string
+C) verifica se uma string tem vogais
+D) imprime a string 'baTTab' 10 vezes
+ A)
+###
+Exemplo 2:
+num = 10
+factorial = 1
+
+if num < 0:
+    print('Sorry, factorial does not exist for negative numbers')
+elif num == 0:
+    print('The factorial of 0 is 1')
+else:
+    for i in range(1,num + 1):
+        factorial = factorial*i
+    print('The factorial of',num,'is',factorial)
+
+A) imprime 'O fatorial de 10 é 3628800'
+B) imprime o fatorial do número 20
+C) verifica se um número é positivo ou negativo
+D) verifica se 20 é um número negativo
+ A)
+###
+Exemplo 3:
+x = 5
+y = 10
+
+x, y = y, x
+print(x,y)
+
+A) imprime 5 10
+B) troca os valores de x e y e imprime 10, 5
+C) concatena x e y
+D) imprime números entre x e y
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 27
+    }
+}
+**************************************************doc_id: 45
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+x = 5
+y = 10
+
+x, y = y, x
+print(x,y)
+
+A) imprime 5 10
+B) troca os valores de x e y e imprime 10, 5
+C) concatena x e y
+D) imprime números entre x e y
+ B)
+###
+Exemplo 2:
+import os
+
+path = '/home/tests/bin'
+files = os.listdir(path)
+for file in files:
+    print(file)
+
+A) retorna o diretório atual
+B) retorna o caminho do arquivo
+C) imprime a lista de arquivos em um diretório
+D) abre um arquivo
+ C)
+###
+Exemplo 3:
+num = 10
+factorial = 1
+
+if num < 0:
+    print('Sorry, factorial does not exist for negative numbers')
+elif num == 0:
+    print('The factorial of 0 is 1')
+else:
+    for i in range(1,num + 1):
+        factorial = factorial*i
+    print('The factorial of',num,'is',factorial)
+
+A) imprime 'O fatorial de 10 é 3628800'
+B) imprime o fatorial do número 20
+C) verifica se um número é positivo ou negativo
+D) verifica se 20 é um número negativo
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 37
+    }
+}
+**************************************************doc_id: 46
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+num = 10
+factorial = 1
+
+if num < 0:
+    print('Sorry, factorial does not exist for negative numbers')
+elif num == 0:
+    print('The factorial of 0 is 1')
+else:
+    for i in range(1,num + 1):
+        factorial = factorial*i
+    print('The factorial of',num,'is',factorial)
+
+A) imprime 'O fatorial de 10 é 3628800'
+B) imprime o fatorial do número 20
+C) verifica se um número é positivo ou negativo
+D) verifica se 20 é um número negativo
+ A)
+###
+Exemplo 2:
+s, t, u, v = True, True, False, False
+if not s or not v:
+    print('no')
+else:
+    print('yes')
+
+A) combina as cadeias a,b,c e d
+B) verifica se a condição not s ou not v é verdadeira e imprime não se for verdadeira, caso contrário imprime sim
+C) verifica se a é verdadeira ou não
+D) verifica se c é verdadeiro ou não
+ B)
+###
+Exemplo 3:
+text = [line.strip() for line in open('File')]
+
+A) inicializa uma lista com valores na linha
+B) lê um arquivo, remove os caracteres de espaço em branco do início e do fim e armazena o resultado em uma lista
+C) remove a linha
+D) imprime valores de 0 a 100
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 5
+    }
+}
+**************************************************doc_id: 47
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+j,b = False,True
+if j and b:
+    print('pass')
+else:
+    print('fail')
+
+A) já que tanto a quanto b são verdadeiros, imprime 'pass'
+B) as impressões falham porque j é falso
+C) combina a e b
+D) imprime o valor de a e b
+ B)
+###
+Exemplo 2:
+def sum_two(a,b):
+    return a+b
+
+A) retorna a soma de dois números
+B) retorna a e b
+C) retorna 5 e 6
+D) retorna números entre 5 e 6
+ A)
+###
+Exemplo 3:
+if value >= 0:
+    if value == 0:
+        print('Zero')
+    else:
+        print('positive')
+else:
+    print('negative')
+
+A) verifica se um número é maior que 10
+B) imprime 'zero' se o número for igual a zero, 'positivo' se for maior que zero, 'negativo' caso contrário
+C) verifica se um número é primo
+D) verifica se um número é divisível por 10
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 34
+    }
+}
+**************************************************doc_id: 48
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+x = [a for a in range(20,50)]
+print(x)
+
+A) exibe 'x'
+B) imprime números entre 30 e 50
+C) imprime uma lista de números começando em 20 e terminando em 49
+D) imprime 'a'
+ C)
+###
+Exemplo 2:
+if num == 5:
+    print('negative')
+else:
+    print('positive')
+
+A) verifica se um número é maior que zero
+B) se o número for igual a 5 imprime 'negativo', caso contrário imprime 'positivo'
+C) verifica se um número é positivo ou negativo
+D) atribui 'positivo' ou 'negativo' à variável num
+ B)
+###
+Exemplo 3:
+def greet(name):
+    print ('Hello', name)
+greet('Linda')
+
+A) exibe 'Olá Linda'
+B) imprime 'Hello World!'
+C) imprime 'python 3.7'
+D) cumprimenta Jack
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 51
+    }
+}
+**************************************************doc_id: 49
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+if num > 5:
+    print('positive')
+else:
+    print('negative')
+
+A) verifica se um número é maior que zero
+B) se o número for maior que 5 imprime 'positivo' caso contrário imprime 'negativo'
+C) verifica se um número é positivo ou negativo
+D) atribui 'positivo' ou 'negativo' à variável num
+ B)
+###
+Exemplo 2:
+text = [line.strip() for line in open('File')]
+
+A) inicializa uma lista com valores na linha
+B) lê um arquivo, remove os caracteres de espaço em branco do início e do fim e armazena o resultado em uma lista
+C) remove a linha
+D) imprime valores de 0 a 100
+ B)
+###
+Exemplo 3:
+def ascii_value(character):
+    return ord(character)
+ascii_value('a')
+
+A) calcula o valor normal de a
+B) calcula o valor ASCII do caractere 'a'
+C) retorna o caractere 'a'
+D) retorna a soma de dois números
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 43
+    }
+}
+**************************************************doc_id: 50
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+test_str = 'aaabbbaaa'
+
+# make test_string caseless
+test_str = test_str.casefold()
+
+# reverse the string
+rev_str = reversed(test_str)
+
+if list(test_str) == list(rev_str):
+    print('palindrome')
+else:
+    print('not palindrome')
+
+A) imprime 'palíndromo' já que aaabbbaaa é um palíndromo
+B) fatiar a string
+C) verifica se uma string tem vogais
+D) imprime a string 'baTTab' 10 vezes
+ A)
+###
+Exemplo 2:
+t = [s**2 for s in range(7)]
+
+A) inicializa a lista t com o quadrado dos números de 0 a 6
+B) inicializa a lista t com o quadrado dos números de 0 a 2
+C) calcula múltiplos de 2
+D) preenche a lista t com 10 números
+ A)
+###
+Exemplo 3:
+s = 'Learn Build Teach'
+print(s[0:5])
+
+A) imprime valores de 0 a 5
+B) imprime 5 palavras da string s
+C) imprime a lista de strings
+D) imprime 'Learn'
+
+--------------------Prediction--------------------
+D)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "D)",
+        "regex_pred": "D)",
+        "correct_letter": "D)",
+        "doc_id": 6
+    }
+}
+**************************************************doc_id: 51
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+class Bank(object):
+    def __init__(self, initial_balance=0):
+        self.balance = initial_balance
+    def deposit(self, amount):
+        self.balance += amount
+    def withdraw(self, amount):
+        self.balance -= amount
+my_account = Bank(15)
+
+A) cria uma classe Carro e inicializa
+B) classe de objetos
+C) cria um objeto my_account da classe Bank
+D) declara uma variável
+ C)
+###
+Exemplo 2:
+a = 20
+b = 50
+for num in range(a,b):
+    print(num)
+
+A) imprime dois números
+B) imprime inteiros de 20 a 49
+C) calcula a soma dos números
+D) insere número entre 20 e 50
+ B)
+###
+Exemplo 3:
+fruits = ['Apple','Orange','Guava','Banana']
+fruits.insert(1, 'Grape')
+
+A) insere 1 na lista frutas
+B) insere Uva na lista frutas na segunda posição
+C) cria uma lista de maçãs
+D) retorna uma lista de frutas
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 56
+    }
+}
+**************************************************doc_id: 52
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+def perfect_number(n): 
+    _sum = 1
+    x = 2
+    while x * x <= n: 
+        if n % x == 0: 
+            _sum = _sum + x + n/x
+        x += 1
+      
+    return (True if _sum == n and n!=1 else False)
+
+A) retorna um número perfeito
+B) imprime um número perfeito
+C) calcula os números primos
+D) retorna se um número é perfeito ou não
+ D)
+###
+Exemplo 2:
+def recur_fibo(n):
+    if n <= 1:
+        return n
+    else:
+        return(recur_fibo(n-1) + recur_fibo(n-2))
+
+nterms = 10
+
+for i in range(nterms):
+    print(recur_fibo(i))
+
+A) imprime os primeiros dez números de Fibonacci
+B) retorna recursão
+C) imprime número menor que 10
+D) exibe os primeiros 100 números primos
+ A)
+###
+Exemplo 3:
+x = [a for a in range(20,50)]
+print(x)
+
+A) exibe 'x'
+B) imprime números entre 30 e 50
+C) imprime uma lista de números começando em 20 e terminando em 49
+D) imprime 'a'
+
+--------------------Prediction--------------------
+C)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "C)",
+        "regex_pred": "C)",
+        "correct_letter": "C)",
+        "doc_id": 8
+    }
+}
+**************************************************doc_id: 53
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+x = {5,6,7,8}
+y = {5,6,10,11}
+print(set(x)-set(y))
+
+A) imprime o conjunto de elementos na lista x mas não na lista y
+B) imprime a diferença entre dois conjuntos x e y
+C) calcula a diferença entre dois dicionários x e y
+D) inicializa dois dicionários x e y
+ A)
+###
+Exemplo 2:
+def greet(name):
+    print ('Hello', name)
+
+greet('Jack')
+
+A) exibe 'Hello Jack'
+B) imprime 'Hello World!'
+C) imprime 'python 3.7'
+D) cumprimenta Jack
+ A)
+###
+Exemplo 3:
+def sum_two(a,b):
+    return a+b
+
+A) retorna a soma de dois números
+B) retorna a e b
+C) retorna 5 e 6
+D) retorna números entre 5 e 6
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 14
+    }
+}
+**************************************************doc_id: 54
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+def ascii_value(character):
+    return ord(character)
+ascii_value('a')
+
+A) calcula o valor normal de a
+B) calcula o valor ASCII do caractere 'a'
+C) retorna o caractere 'a'
+D) retorna a soma de dois números
+ B)
+###
+Exemplo 2:
+x = 5
+y = 10
+
+x, y = y, x
+print(x,y)
+
+A) imprime 5 10
+B) troca os valores de x e y e imprime 10, 5
+C) concatena x e y
+D) imprime números entre x e y
+ B)
+###
+Exemplo 3:
+def next_integer(a):
+    return a-1
+
+A) uma função que retorna um número um a menos que sua entrada
+B) retorna o número um a mais que a
+C) retorna números de a até 1
+D) retorna string 'a'
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 15
+    }
+}
+**************************************************doc_id: 55
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+num = 5
+factorial = 1
+for i in range(1,num + 1):
+    factorial = factorial*i
+print('The factorial of',num,'is',factorial)
+
+A) imprime 'O fatorial de 10 é 3628800'
+B) imprime o fatorial do número 5
+C) verifica se um número é positivo ou negativo
+D) verifica se 20 é um número negativo
+ B)
+###
+Exemplo 2:
+a = {'x':20,'y':30,'z':40,'s':50}
+more_than = [(k, v) for k, v in a.items() if v >= 30]
+print(more_than)
+
+A) imprime uma lista de tuplas de chave, valor do dicionário a com valores maiores ou iguais a 30
+B) imprime um dicionário de valores
+C) imprime v
+D) inicializa uma lista com valores maiores que 30
+ A)
+###
+Exemplo 3:
+a = 'xyz'
+b = 'xyz'
+c = a==b
+print(c)
+
+A) imprime a string 'b'
+B) verifica se a é igual a b e imprime True
+C) troca strings e b
+D) troca a com c
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 17
+    }
+}
+**************************************************doc_id: 56
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+a, b, c, d = True, False, False, True
+if not a or not c:
+    print('no')
+else: 
+    print('yes')
+
+A) combina as strings a,b,c e d
+B) verifica se a é verdadeira ou não
+C) verifica se um de a ou c é False, então imprime 'não' já que c é False
+D) verifica se c é verdadeiro ou não
+ C)
+###
+Exemplo 2:
+num = 5
+factorial = 1
+for i in range(1,num + 1):
+    factorial = factorial*i
+print('The factorial of',num,'is',factorial)
+
+A) imprime 'O fatorial de 10 é 3628800'
+B) imprime o fatorial do número 5
+C) verifica se um número é positivo ou negativo
+D) verifica se 20 é um número negativo
+ B)
+###
+Exemplo 3:
+test_str = 'baTTab'
+
+# make test_string caseless
+test_str = test_str.casefold()
+
+# reverse the string
+rev_str = reversed(test_str)
+
+if list(test_str) == list(rev_str):
+    print('palindrome')
+else:
+    print('not palindrome')
+
+A) verifica se uma string é um palíndromo
+B) corta a string
+C) verifica se uma string tem vogais
+D) imprime a string 'baTTab' 10 vezes
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 47
+    }
+}
+**************************************************doc_id: 57
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+import random
+print(random.randint(10))
+
+A) imprime a string 'random'
+B) imprime um valor aleatório entre 0 e 9
+C) imprime valores de 0 a 9
+D) imprime '10'
+ B)
+###
+Exemplo 2:
+if num > 5:
+    print('negative')
+else:
+    print('positive')
+
+A) verifica se um número é maior que zero
+B) se o número for maior que 5 imprime 'negativo' caso contrário imprime 'positivo'
+C) verifica se um número é positivo ou negativo
+D) atribui 'positivo' ou 'negativo' à variável num
+ B)
+###
+Exemplo 3:
+for i in range(1,101):
+    print(i)
+
+A) imprime os primeiros 100 números naturais
+B) calcula os primeiros 10 números primos
+C) imprime valores de 1 a 10
+D) imprime 'hello world' no terminal
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 1
+    }
+}
+**************************************************doc_id: 58
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+a = 'x'
+b = 'xyz'
+c = a==b
+print(c)
+
+A) imprime a string 'b'
+B) verifica se a é igual a b e imprime False
+C) troca as strings a e b
+D) troca a com c
+ B)
+###
+Exemplo 2:
+num1 = 10
+num2 = 14
+num3 = 12
+
+if (num1 >= num2) and (num1 >= num3):
+    largest = num1
+elif (num2 >= num1) and (num2 >= num3):
+    largest = num2
+else:
+    largest = num3
+
+print('The largest number is',largest)
+
+A) imprime 'O maior número é 14'
+B) encontra o menor número entre três números
+C) verifica se um número é primo ou não
+D) imprime número entre 12 e 14
+ A)
+###
+Exemplo 3:
+a = 20
+b = 50
+for num in range(a,b):
+    print(num)
+
+A) imprime dois números
+B) imprime inteiros de 20 a 49
+C) calcula a soma dos números
+D) insere número entre 20 e 50
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 7
+    }
+}
+**************************************************doc_id: 59
+------------------------prompt------------------------------------
+Selecione a alternativa que contenha a descrição em Português do código Python
+
+Exemplo 1:
+class Bank(object):
+    def __init__(self, initial_balance=0):
+        self.balance = initial_balance
+    def deposit(self, amount):
+        self.balance += amount
+    def withdraw(self, amount):
+        self.balance -= amount
+my_account = Bank(15)
+
+A) cria uma classe Carro e inicializa
+B) classe de objetos
+C) cria um objeto my_account da classe Bank
+D) declara uma variável
+ C)
+###
+Exemplo 2:
+for i in range(23):
+    print(i)
+
+A) imprime valores de 0 a 22
+B) calcula os 10 primeiros números primos
+C) imprime valores de 1 a 10
+D) imprime 'hello world' no terminal
+ A)
+###
+Exemplo 3:
+def recur_fibo(n):
+    if n <= 1:
+        return n
+    else:
+        return(recur_fibo(n-1) + recur_fibo(n-2))
+
+nterms = 10
+
+for i in range(nterms):
+    print(recur_fibo(i))
+
+A) imprime os primeiros dez números de Fibonacci
+B) retorna recursão
+C) imprime número menor que 10
+D) exibe os primeiros 100 números primos
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 40
+    }
+}

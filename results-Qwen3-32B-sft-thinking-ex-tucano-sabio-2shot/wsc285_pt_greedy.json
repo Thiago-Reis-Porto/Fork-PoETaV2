@@ -1,0 +1,24 @@
+{
+  "results": {
+    "wsc285_pt_greedy": {
+      "dynamic-random": {
+        "acc": 0.8421052631578947,
+        "acc_stderr": 0.021637538205079934,
+        "num_examples": 285
+      }
+    }
+  },
+  "versions": {
+    "wsc285_pt_greedy": 0
+  },
+  "config": {
+    "model": "vllm",
+    "model_args": "engine=Qwen3-32B-sft-thinking-ex-tucano-sabio,base_url=http://172.17.0.1:8000/v1",
+    "num_fewshot": 2,
+    "batch_size": 4,
+    "device": null,
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000
+  }
+}

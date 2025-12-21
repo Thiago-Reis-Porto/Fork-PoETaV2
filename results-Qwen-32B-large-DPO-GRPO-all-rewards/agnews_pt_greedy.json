@@ -1,0 +1,26 @@
+{
+  "results": {
+    "agnews_pt_greedy": {
+      "dynamic-random": {
+        "acc": 86.36842105263158,
+        "acc_stderr": 0.3936156426429895,
+        "f1-macro": 86.2928038835574,
+        "f1-weighted": 86.2928038835574,
+        "num_examples": 7600
+      }
+    }
+  },
+  "versions": {
+    "agnews_pt_greedy": 0
+  },
+  "config": {
+    "model": "vllm",
+    "model_args": "engine=Qwen-32B-large-DPO-GRPO-all-rewards,base_url=http://172.17.0.1:8000/v1",
+    "num_fewshot": 12,
+    "batch_size": 4,
+    "device": null,
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000
+  }
+}

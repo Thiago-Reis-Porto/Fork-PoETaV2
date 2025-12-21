@@ -1,0 +1,26 @@
+{
+  "results": {
+    "agnews_pt_greedy": {
+      "dynamic-random": {
+        "acc": 86.47368421052632,
+        "acc_stderr": 0.39233180847587057,
+        "f1-macro": 86.39401703158691,
+        "f1-weighted": 86.3940170315869,
+        "num_examples": 7600
+      }
+    }
+  },
+  "versions": {
+    "agnews_pt_greedy": 0
+  },
+  "config": {
+    "model": "maritalk",
+    "model_args": "engine=sabia-3.1,base_url=https://chat.maritaca.ai/api",
+    "num_fewshot": 2,
+    "batch_size": 4,
+    "device": null,
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000
+  }
+}

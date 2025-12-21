@@ -1,0 +1,24 @@
+{
+  "results": {
+    "bigbench_pt_simple_ethical_questions_greedy": {
+      "dynamic-random": {
+        "acc": 0.9739130434782609,
+        "acc_stderr": 0.014928610004851347,
+        "num_examples": 115
+      }
+    }
+  },
+  "versions": {
+    "bigbench_pt_simple_ethical_questions_greedy": 0
+  },
+  "config": {
+    "model": "vllm",
+    "model_args": "engine=Qwen3-32B-sft-think-base-mico-conservador,base_url=http://172.17.0.1:8000/v1",
+    "num_fewshot": 2,
+    "batch_size": 4,
+    "device": null,
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000
+  }
+}

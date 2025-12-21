@@ -1,0 +1,1683 @@
+**************************************************doc_id: 0
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O cachorro me mordeu.
+B) Eu puxei o rabo do cachorro.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Começou a chover.
+B) O motorista ligou os limpadores.
+ A)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O homem foi para a cadeia.
+B) O homem assaltou um posto de gasolina.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 25
+    }
+}
+**************************************************doc_id: 1
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O navio virou.
+B) O vento soprou forte.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O menino levantou os olhos do livro.
+B) Houve um barulho alto.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A porta estava trancada.
+B) O homem entrou pela janela.
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 23
+    }
+}
+**************************************************doc_id: 2
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A escola estava de recesso.
+B) A família saiu de férias.
+ A)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O homem tomou um gole do leite e cuspiu.
+B) O leite foi deixado fora da geladeira durante a noite.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O homem abaixou o volume da música.
+B) O homem não conseguia ouvir o que a mulher estava dizendo.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 19
+    }
+}
+**************************************************doc_id: 3
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Eu coloquei minhas roupas na máquina de lavar.
+B) Minhas roupas ficaram sujas.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A empresa registrou lucros fortes.
+B) As ações da empresa subiram.
+ A)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O refrigerante ficou sem gás.
+B) A garrafa foi deixada aberta.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 11
+    }
+}
+**************************************************doc_id: 4
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A porta estava trancada.
+B) O homem entrou pela janela.
+ A)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A família foi à praia.
+B) O ar-condicionado quebrou.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A mulher que estava andando na rua abriu seu guarda-chuva.
+B) Começou a chover.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 4
+    }
+}
+**************************************************doc_id: 5
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O laptop ficou sem bateria.
+B) George conectou o carregador do laptop.
+ A)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O piquenique foi cancelado.
+B) Choveu.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O piquenique foi cancelado.
+B) Choveu.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 45
+    }
+}
+**************************************************doc_id: 6
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A mulher que estava andando na rua abriu seu guarda-chuva.
+B) Começou a chover.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Alguém chamou o 911.
+B) Alguém desmaiou.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Acme pagou as taxas legais da Jill.
+B) Jill ganhou o processo contra a Acme.
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 26
+    }
+}
+**************************************************doc_id: 7
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O jogador de basquete foi empurrado.
+B) O jogador de basquete fez um lance livre.
+ A)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O inseto polinizou as flores de tomate.
+B) Tomates cresceram na videira.
+ A)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Ela foi à loja e comprou papel higiênico.
+B) Ela percebeu que estava sem papel higiênico.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 9
+    }
+}
+**************************************************doc_id: 8
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Bob abriu o pote e ficou frustrado.
+B) Alice comeu o último biscoito.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O homem tomou um gole do leite e cuspiu.
+B) O leite foi deixado fora da geladeira durante a noite.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Eu estudei intensamente.
+B) Eu tirei um A na prova.
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 29
+    }
+}
+**************************************************doc_id: 9
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O menino levantou os olhos do livro.
+B) Houve um barulho alto.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O inseto polinizou as flores de tomate.
+B) Tomates cresceram na videira.
+ A)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O artista saiu correndo do palco.
+B) Houve um problema de figurino.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 16
+    }
+}
+**************************************************doc_id: 10
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A garota acordou coberta de suor frio.
+B) A menina teve um pesadelo.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O navio virou.
+B) O vento soprou forte.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O motorista avançou o sinal vermelho.
+B) O motorista foi parado e multado.
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 31
+    }
+}
+**************************************************doc_id: 11
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O piloto acendeu a luz de "apertar cintos de segurança".
+B) Um pássaro atingiu o motor.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Eu estudei intensamente.
+B) Eu tirei um A na prova.
+ A)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Uma flor cresceu.
+B) O jardineiro plantou uma semente.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 21
+    }
+}
+**************************************************doc_id: 12
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Eu coloquei minhas roupas na máquina de lavar.
+B) Minhas roupas ficaram sujas.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A porta estava trancada.
+B) O homem entrou pela janela.
+ A)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O laptop ficou sem bateria.
+B) George conectou o carregador do laptop.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "A)",
+        "doc_id": 12
+    }
+}
+**************************************************doc_id: 13
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Os dinossauros foram extintos.
+B) Um grande objeto atingiu a Terra.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A porta estava trancada.
+B) O homem entrou pela janela.
+ A)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O vaso quebrou no chão.
+B) Um homem acidentalmente empurrou o vaso do balcão.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 3
+    }
+}
+**************************************************doc_id: 14
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A equipe venceu o campeonato.
+B) O time venceu o jogo.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) As cortinas foram abertas.
+B) A luz do sol encheu o quarto.
+ A)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A empresa registrou lucros fortes.
+B) As ações da empresa subiram.
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 39
+    }
+}
+**************************************************doc_id: 15
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O jogador de basquete foi empurrado.
+B) O jogador de basquete fez um lance livre.
+ A)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O piloto acendeu a luz de "apertar cintos de segurança".
+B) Um pássaro atingiu o motor.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Nós fizemos rabanada.
+B) O pão estava seco.
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 38
+    }
+}
+**************************************************doc_id: 16
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O homem processou.
+B) O chão estava molhado.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Alice perdeu o voo.
+B) Alice não acordou.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Os dinossauros foram extintos.
+B) Um grande objeto atingiu a Terra.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 10
+    }
+}
+**************************************************doc_id: 17
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Meu amigo foi promovido.
+B) Meu amigo comemorou com a família dele.
+ A)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A mulher que estava andando na rua abriu seu guarda-chuva.
+B) Começou a chover.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O navio virou.
+B) O vento soprou forte.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 24
+    }
+}
+**************************************************doc_id: 18
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Nós fizemos rabanada.
+B) O pão estava seco.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Eu coloquei minhas roupas na máquina de lavar.
+B) Minhas roupas ficaram sujas.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A escola estava de recesso.
+B) A família saiu de férias.
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 35
+    }
+}
+**************************************************doc_id: 19
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Os dinossauros foram extintos.
+B) Um grande objeto atingiu a Terra.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O cachorro me mordeu.
+B) Eu puxei o rabo do cachorro.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A criança machucou o joelho.
+B) A criança começou a chorar.
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 0
+    }
+}
+**************************************************doc_id: 20
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A garota não vestiu seu suéter.
+B) A menina pegou um resfriado.
+ A)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O motorista pisou nos freios.
+B) A garota pisou na rua.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Alice perdeu o voo.
+B) Alice não acordou.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 43
+    }
+}
+**************************************************doc_id: 21
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Os dinossauros foram extintos.
+B) Um grande objeto atingiu a Terra.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Eu estudei intensamente.
+B) Eu tirei um A na prova.
+ A)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O homem tomou um gole do leite e cuspiu.
+B) O leite foi deixado fora da geladeira durante a noite.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 18
+    }
+}
+**************************************************doc_id: 22
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O navio virou.
+B) O vento soprou forte.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O piloto acendeu a luz de "apertar cintos de segurança".
+B) Um pássaro atingiu o motor.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A luz encheu o cômodo.
+B) Eu acionei o interruptor.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 33
+    }
+}
+**************************************************doc_id: 23
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Eu coloquei minhas roupas na máquina de lavar.
+B) Minhas roupas ficaram sujas.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O homem processou.
+B) O chão estava molhado.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Bob abriu o pote e ficou frustrado.
+B) Alice comeu o último biscoito.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 49
+    }
+}
+**************************************************doc_id: 24
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A escola estava de recesso.
+B) A família saiu de férias.
+ A)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O inseto polinizou as flores de tomate.
+B) Tomates cresceram na videira.
+ A)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Meu amigo foi promovido.
+B) Meu amigo comemorou com a família dele.
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 41
+    }
+}
+**************************************************doc_id: 25
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Alice perdeu o voo.
+B) Alice não acordou.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A energia ficou cortada por dias.
+B) A carne estragou.
+ A)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O menino jogou uma pedra.
+B) A janela quebrou.
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 30
+    }
+}
+**************************************************doc_id: 26
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Bob abriu o pote e ficou frustrado.
+B) Alice comeu o último biscoito.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O vaso quebrou no chão.
+B) Um homem acidentalmente empurrou o vaso do balcão.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Os inquilinos contataram o proprietário.
+B) Os inquilinos notaram mofo no teto do banheiro.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 28
+    }
+}
+**************************************************doc_id: 27
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O inseto polinizou as flores de tomate.
+B) Tomates cresceram na videira.
+ A)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Alguém chamou o 911.
+B) Alguém desmaiou.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A energia ficou cortada por dias.
+B) A carne estragou.
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 20
+    }
+}
+**************************************************doc_id: 28
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A energia ficou cortada por dias.
+B) A carne estragou.
+ A)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O homem foi para a cadeia.
+B) O homem assaltou um posto de gasolina.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A equipe venceu o campeonato.
+B) O time venceu o jogo.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 22
+    }
+}
+**************************************************doc_id: 29
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O piloto acendeu a luz de "apertar cintos de segurança".
+B) Um pássaro atingiu o motor.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A mulher que estava andando na rua abriu seu guarda-chuva.
+B) Começou a chover.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O jogador de basquete foi empurrado.
+B) O jogador de basquete fez um lance livre.
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 42
+    }
+}
+**************************************************doc_id: 30
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) As cortinas foram abertas.
+B) A luz do sol encheu o quarto.
+ A)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A família foi à praia.
+B) O ar-condicionado quebrou.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A garota não vestiu seu suéter.
+B) A menina pegou um resfriado.
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 46
+    }
+}
+**************************************************doc_id: 31
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O piquenique foi cancelado.
+B) Choveu.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A energia ficou cortada por dias.
+B) A carne estragou.
+ A)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A família foi à praia.
+B) O ar-condicionado quebrou.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 36
+    }
+}
+**************************************************doc_id: 32
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) As cortinas foram abertas.
+B) A luz do sol encheu o quarto.
+ A)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Meu amigo foi promovido.
+B) Meu amigo comemorou com a família dele.
+ A)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A menina faltou à escola.
+B) A menina foi para a detenção.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "A)",
+        "doc_id": 32
+    }
+}
+**************************************************doc_id: 33
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O motorista avançou o sinal vermelho.
+B) O motorista foi parado e multado.
+ A)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O homem foi para a cadeia.
+B) O homem assaltou um posto de gasolina.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O homem processou.
+B) O chão estava molhado.
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 44
+    }
+}
+**************************************************doc_id: 34
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Meu amigo foi promovido.
+B) Meu amigo comemorou com a família dele.
+ A)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Eu estudei intensamente.
+B) Eu tirei um A na prova.
+ A)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) As cortinas foram abertas.
+B) A luz do sol encheu o quarto.
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 13
+    }
+}
+**************************************************doc_id: 35
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Ela foi à loja e comprou papel higiênico.
+B) Ela percebeu que estava sem papel higiênico.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O artista saiu correndo do palco.
+B) Houve um problema de figurino.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Mamãe enxaguou a bandeja.
+B) Jimmy pegou o último pedaço de bolo.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 50
+    }
+}
+**************************************************doc_id: 36
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Um homem estava coberto de uma substância pegajosa e vermelha.
+B) Uma melancia explodiu.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O motorista pisou nos freios.
+B) A garota pisou na rua.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Ted estava de ressaca.
+B) Ted saiu para beber.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 48
+    }
+}
+**************************************************doc_id: 37
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Um grupo de busca foi montado.
+B) O homem se perdeu na floresta.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A escola estava de recesso.
+B) A família saiu de férias.
+ A)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Alguém chamou o 911.
+B) Alguém desmaiou.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 2
+    }
+}
+**************************************************doc_id: 38
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O cachorro me mordeu.
+B) Eu puxei o rabo do cachorro.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O artista saiu correndo do palco.
+B) Houve um problema de figurino.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Houve uma tempestade de neve.
+B) A escola foi cancelada.
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 27
+    }
+}
+**************************************************doc_id: 39
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Um grupo de busca foi montado.
+B) O homem se perdeu na floresta.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A mãe deu à menina remédio para febre.
+B) A menina estava com febre.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A mãe deu à menina remédio para febre.
+B) A menina estava com febre.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 37
+    }
+}
+**************************************************doc_id: 40
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Houve uma tempestade de neve.
+B) A escola foi cancelada.
+ A)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A mãe deu à menina remédio para febre.
+B) A menina estava com febre.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O menino levantou os olhos do livro.
+B) Houve um barulho alto.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 5
+    }
+}
+**************************************************doc_id: 41
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O homem foi para a cadeia.
+B) O homem assaltou um posto de gasolina.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A porta estava trancada.
+B) O homem entrou pela janela.
+ A)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O cachorro me mordeu.
+B) Eu puxei o rabo do cachorro.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 34
+    }
+}
+**************************************************doc_id: 42
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O inseto polinizou as flores de tomate.
+B) Tomates cresceram na videira.
+ A)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Um homem estava coberto de uma substância pegajosa e vermelha.
+B) Uma melancia explodiu.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A garota acordou coberta de suor frio.
+B) A menina teve um pesadelo.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 6
+    }
+}
+**************************************************doc_id: 43
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A menina faltou à escola.
+B) A menina foi para a detenção.
+ A)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O motorista avançou o sinal vermelho.
+B) O motorista foi parado e multado.
+ A)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Um homem estava coberto de uma substância pegajosa e vermelha.
+B) Uma melancia explodiu.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 8
+    }
+}
+**************************************************doc_id: 44
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O menino levantou os olhos do livro.
+B) Houve um barulho alto.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Ted estava de ressaca.
+B) Ted saiu para beber.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O inseto polinizou as flores de tomate.
+B) Tomates cresceram na videira.
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 14
+    }
+}
+**************************************************doc_id: 45
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O vaso quebrou no chão.
+B) Um homem acidentalmente empurrou o vaso do balcão.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Começou a chover.
+B) O motorista ligou os limpadores.
+ A)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O motorista pisou nos freios.
+B) A garota pisou na rua.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 15
+    }
+}
+**************************************************doc_id: 46
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Ela foi à loja e comprou papel higiênico.
+B) Ela percebeu que estava sem papel higiênico.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Eu coloquei minhas roupas na máquina de lavar.
+B) Minhas roupas ficaram sujas.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O piloto acendeu a luz de "apertar cintos de segurança".
+B) Um pássaro atingiu o motor.
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 17
+    }
+}
+**************************************************doc_id: 47
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Os dinossauros foram extintos.
+B) Um grande objeto atingiu a Terra.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Mamãe enxaguou a bandeja.
+B) Jimmy pegou o último pedaço de bolo.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Um grupo de busca foi montado.
+B) O homem se perdeu na floresta.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 47
+    }
+}
+**************************************************doc_id: 48
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Alice perdeu o voo.
+B) Alice não acordou.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Houve uma tempestade de neve.
+B) A escola foi cancelada.
+ A)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Eu lavei o carro.
+B) Meu carro ficou sujo.
+
+--------------------Prediction--------------------
+B)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "B)",
+        "regex_pred": "B)",
+        "correct_letter": "B)",
+        "doc_id": 1
+    }
+}
+**************************************************doc_id: 49
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Nós fizemos rabanada.
+B) O pão estava seco.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) A mulher que estava andando na rua abriu seu guarda-chuva.
+B) Começou a chover.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Começou a chover.
+B) O motorista ligou os limpadores.
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 1,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "A)",
+        "doc_id": 7
+    }
+}
+**************************************************doc_id: 50
+------------------------prompt------------------------------------
+Responda as perguntas a seguir
+
+Exemplo 1:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) O navio virou.
+B) O vento soprou forte.
+ B)
+###
+Exemplo 2:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Nós fizemos rabanada.
+B) O pão estava seco.
+ B)
+###
+Exemplo 3:
+Selecione a alternativa que representa a causa para a outra alternativa
+A) Eu coloquei minhas roupas na máquina de lavar.
+B) Minhas roupas ficaram sujas.
+
+--------------------Prediction--------------------
+A)
+####################################################################################################
+Metrics: {
+    "acc": 0,
+    "debug_info": {
+        "pred": "A)",
+        "regex_pred": "A)",
+        "correct_letter": "B)",
+        "doc_id": 40
+    }
+}

@@ -1,0 +1,36 @@
+{
+  "results": {
+    "enem_2022_greedy": {
+      "dynamic-random": {
+        "acc": 0.8135593220338984,
+        "acc_stderr": 0.03600576301991829,
+        "2022": 0.8135593220338984,
+        "2022_stderr": 0.03600576301991829,
+        "unknown_pred": 0.0,
+        "unknown_pred_stderr": 0.0,
+        "human-sciences": 0.9459459459459459,
+        "human-sciences_stderr": 0.037687388582616,
+        "mathematics": 0.45454545454545453,
+        "mathematics_stderr": 0.10865714630312667,
+        "natural-sciences": 0.8461538461538461,
+        "natural-sciences_stderr": 0.072160242458822,
+        "languages": 0.8787878787878788,
+        "languages_stderr": 0.057695250801999276,
+        "num_examples": 118
+      }
+    }
+  },
+  "versions": {
+    "enem_2022_greedy": 0
+  },
+  "config": {
+    "model": "vllm",
+    "model_args": "engine=Qwen3-32B-sft-interacoes-2-epochs-thinking-ex,base_url=http://172.17.0.1:8000/v1",
+    "num_fewshot": 1,
+    "batch_size": 4,
+    "device": null,
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "results": {
+    "enem_2022_greedy": {
+      "dynamic-random": {
+        "acc": 0.788135593220339,
+        "acc_stderr": 0.037777789332276594,
+        "2022": 0.788135593220339,
+        "2022_stderr": 0.037777789332276594,
+        "unknown_pred": 0.0,
+        "unknown_pred_stderr": 0.0,
+        "human-sciences": 0.972972972972973,
+        "human-sciences_stderr": 0.027027027027027015,
+        "mathematics": 0.3181818181818182,
+        "mathematics_stderr": 0.10163945352271772,
+        "natural-sciences": 0.7692307692307693,
+        "natural-sciences_stderr": 0.08426500884694864,
+        "languages": 0.9090909090909091,
+        "languages_stderr": 0.050819726761358895,
+        "num_examples": 118
+      }
+    }
+  },
+  "versions": {
+    "enem_2022_greedy": 0
+  },
+  "config": {
+    "model": "vllm",
+    "model_args": "engine=Qwen3-32B-sft-interacoes-5-epochs,base_url=http://172.17.0.1:8000/v1",
+    "num_fewshot": 1,
+    "batch_size": 4,
+    "device": null,
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "results": {
+    "inferbr_greedy": {
+      "dynamic-random": {
+        "acc": 0.943108504398827,
+        "acc_stderr": 0.005611380398980563,
+        "num_examples": 1705
+      }
+    }
+  },
+  "versions": {
+    "inferbr_greedy": 0
+  },
+  "config": {
+    "model": "vllm",
+    "model_args": "engine=Qwen3-32B-sft-2e-bs32-thinking-ex,base_url=http://172.17.0.1:8000/v1",
+    "num_fewshot": 2,
+    "batch_size": 4,
+    "device": null,
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000
+  }
+}

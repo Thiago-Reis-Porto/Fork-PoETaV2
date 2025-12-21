@@ -1,0 +1,24 @@
+{
+  "results": {
+    "imdb_pt_greedy": {
+      "dynamic-random": {
+        "acc": 0.9434,
+        "acc_stderr": 0.0032682448324532244,
+        "num_examples": 5000
+      }
+    }
+  },
+  "versions": {
+    "imdb_pt_greedy": 0
+  },
+  "config": {
+    "model": "maritalk",
+    "model_args": "engine=sabia-3.1,base_url=https://chat.maritaca.ai/api",
+    "num_fewshot": 2,
+    "batch_size": 4,
+    "device": null,
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000
+  }
+}

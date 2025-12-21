@@ -1,0 +1,24 @@
+{
+  "results": {
+    "bigbench_pt_cause_and_effect_two_sentences_greedy": {
+      "dynamic-random": {
+        "acc": 0.9411764705882353,
+        "acc_stderr": 0.03327561323230811,
+        "num_examples": 51
+      }
+    }
+  },
+  "versions": {
+    "bigbench_pt_cause_and_effect_two_sentences_greedy": 0
+  },
+  "config": {
+    "model": "vllm",
+    "model_args": "engine=Qwen3-32B-sft-thinking-ex-tucano-sabio-1-epoch,base_url=http://172.17.0.1:8000/v1",
+    "num_fewshot": 2,
+    "batch_size": 4,
+    "device": null,
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000
+  }
+}

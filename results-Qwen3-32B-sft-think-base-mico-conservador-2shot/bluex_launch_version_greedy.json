@@ -1,0 +1,62 @@
+{
+  "results": {
+    "bluex_launch_version_greedy": {
+      "dynamic-random": {
+        "acc": 0.7688679245283019,
+        "acc_stderr": 0.016728966775792914,
+        "2021": 0.7837837837837838,
+        "2021_stderr": 0.03395342589002034,
+        "unknown_pred": 0.0,
+        "unknown_pred_stderr": 0.0,
+        "UNICAMP": 0.7692307692307693,
+        "UNICAMP_stderr": 0.02295103760830757,
+        "physics": 0.7391304347826086,
+        "physics_stderr": 0.053249777017025594,
+        "2019": 0.7191011235955056,
+        "2019_stderr": 0.04791027333833943,
+        "USP": 0.7684563758389261,
+        "USP_stderr": 0.02447641442014661,
+        "history": 0.905511811023622,
+        "history_stderr": 0.026058568209814864,
+        "2020": 0.7657657657657657,
+        "2020_stderr": 0.04038097636567096,
+        "2023": 0.8390804597701149,
+        "2023_stderr": 0.039623877256794074,
+        "mathematics": 0.4537037037037037,
+        "mathematics_stderr": 0.04812917324536824,
+        "english": 0.8571428571428571,
+        "english_stderr": 0.05050762722761053,
+        "2018": 0.7433628318584071,
+        "2018_stderr": 0.04127158873048146,
+        "portuguese": 0.7358490566037735,
+        "portuguese_stderr": 0.035074533884423276,
+        "geography": 0.9354838709677419,
+        "geography_stderr": 0.031454833121021784,
+        "2022": 0.7613636363636364,
+        "2022_stderr": 0.04569879517348112,
+        "BK": 0.797752808988764,
+        "BK_stderr": 0.04281875979310153,
+        "biology": 0.8857142857142857,
+        "biology_stderr": 0.03830171786284782,
+        "chemistry": 0.8,
+        "chemistry_stderr": 0.06405126152203486,
+        "philosophy": 1.0,
+        "philosophy_stderr": 0.0,
+        "num_examples": 636
+      }
+    }
+  },
+  "versions": {
+    "bluex_launch_version_greedy": 0
+  },
+  "config": {
+    "model": "vllm",
+    "model_args": "engine=Qwen3-32B-sft-think-base-mico-conservador,base_url=http://172.17.0.1:8000/v1",
+    "num_fewshot": 1,
+    "batch_size": 4,
+    "device": null,
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000
+  }
+}

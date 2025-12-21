@@ -1,0 +1,28 @@
+{
+  "results": {
+    "mkqa_greedy": {
+      "dynamic-random": {
+        "best_em": 22.11,
+        "best_f1": 29.84,
+        "best_answerable_em": 22.11,
+        "best_answerable_f1": 29.84,
+        "best_unanswerable_em": NaN,
+        "best_f1_threshold": 0,
+        "num_examples": 6758
+      }
+    }
+  },
+  "versions": {
+    "mkqa_greedy": 1
+  },
+  "config": {
+    "model": "vllm",
+    "model_args": "engine=Qwen3-32B-sft-interacoes-5-epochs,base_url=http://172.17.0.1:8000/v1",
+    "num_fewshot": 2,
+    "batch_size": 4,
+    "device": null,
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000
+  }
+}

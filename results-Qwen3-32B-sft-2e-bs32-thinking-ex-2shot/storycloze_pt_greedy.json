@@ -1,0 +1,26 @@
+{
+  "results": {
+    "storycloze_pt_greedy": {
+      "dynamic-random": {
+        "acc": 0.9841164791528789,
+        "acc_stderr": 0.0032174230374222633,
+        "f1-macro": 98.40451929676364,
+        "f1-weighted": 98.41051862918503,
+        "num_examples": 1511
+      }
+    }
+  },
+  "versions": {
+    "storycloze_pt_greedy": 0
+  },
+  "config": {
+    "model": "vllm",
+    "model_args": "engine=Qwen3-32B-sft-2e-bs32-thinking-ex,base_url=http://172.17.0.1:8000/v1",
+    "num_fewshot": 2,
+    "batch_size": 4,
+    "device": null,
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000
+  }
+}
