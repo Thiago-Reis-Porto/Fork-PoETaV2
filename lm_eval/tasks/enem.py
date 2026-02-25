@@ -15,6 +15,7 @@ import collections
 import datasets
 from io import BytesIO
 import json
+import math
 import numpy as np
 import os
 import re
@@ -77,6 +78,8 @@ class ENEM(MultipleChoicePromptSelectionTask):
     VERSION = 0
     DATASET_PATH = 'data/enem'
     DATASET_NAME = None
+    pass_k = 1
+    pass_n = 1
 
     KEYS_TO_INDEX = ['context', 'question']
     SEARCHER_K = 10
@@ -112,6 +115,16 @@ class ENEM(MultipleChoicePromptSelectionTask):
 
     # list of top-10 largest documents (> 600 tokens), that will not be used as prompt
     too_large = ['2013_59', '2010_121', '2009_132', '2009_133', '2016_2__104', '2009_130', '2015_108', '2009_131', '2011_128', '2014_135']
+
+    def set_pass_k(self, pass_k):
+        self.pass_k = max(1, int(pass_k))
+
+    def set_pass_n(self, pass_n):
+        self.pass_n = max(1, int(pass_n))
+
+    def set_pass_params(self, pass_k, pass_n):
+        self.set_pass_k(pass_k)
+        self.set_pass_n(pass_n)
 
     def download(self, data_dir=None, cache_dir=None, download_mode=None):
 
@@ -291,7 +304,7 @@ class ENEM(MultipleChoicePromptSelectionTask):
         }
     
     def higher_is_better(self):
-        return {
+        metrics = {
             "acc": True,
             "acc_norm": True,
             '2009': True,
@@ -305,9 +318,22 @@ class ENEM(MultipleChoicePromptSelectionTask):
             '2016_2_': True,
             '2017': True,
         }
+        if self.pass_n > 1 or self.pass_k > 1:
+            metrics[f"acc_pass@{self.pass_k}"] = True
+            metrics[f"2009_pass@{self.pass_k}"] = True
+            metrics[f"2010_pass@{self.pass_k}"] = True
+            metrics[f"2011_pass@{self.pass_k}"] = True
+            metrics[f"2012_pass@{self.pass_k}"] = True
+            metrics[f"2013_pass@{self.pass_k}"] = True
+            metrics[f"2014_pass@{self.pass_k}"] = True
+            metrics[f"2015_pass@{self.pass_k}"] = True
+            metrics[f"2016_pass@{self.pass_k}"] = True
+            metrics[f"2016_2__pass@{self.pass_k}"] = True
+            metrics[f"2017_pass@{self.pass_k}"] = True
+        return metrics
     
     def aggregation(self):
-        return {
+        metrics = {
             "acc": mean,
             "acc_norm": mean,
             '2009': mean,
@@ -322,14 +348,64 @@ class ENEM(MultipleChoicePromptSelectionTask):
             '2017': mean,
             "unknown_pred": mean,
         }
+        if self.pass_n > 1 or self.pass_k > 1:
+            metrics[f"acc_pass@{self.pass_k}"] = mean
+            metrics[f"2009_pass@{self.pass_k}"] = mean
+            metrics[f"2010_pass@{self.pass_k}"] = mean
+            metrics[f"2011_pass@{self.pass_k}"] = mean
+            metrics[f"2012_pass@{self.pass_k}"] = mean
+            metrics[f"2013_pass@{self.pass_k}"] = mean
+            metrics[f"2014_pass@{self.pass_k}"] = mean
+            metrics[f"2015_pass@{self.pass_k}"] = mean
+            metrics[f"2016_pass@{self.pass_k}"] = mean
+            metrics[f"2016_2__pass@{self.pass_k}"] = mean
+            metrics[f"2017_pass@{self.pass_k}"] = mean
+            metrics[f"unknown_pred_pass@{self.pass_k}"] = mean
+            metrics["c_mean"] = mean
+            metrics["n"] = mean
+            metrics["k"] = mean
+        return metrics
 
     def fewshot_examples(self, k, rnd, prompt_mode, doc):
+        def as_prompt_doc(candidate):
+            # ENEM_FULL training docs can be raw HF rows; convert to prompt format on demand.
+            if "query" in candidate and "choices" in candidate:
+                return candidate
+            label = str(candidate.get("label", "")).upper()
+            if label not in {"A", "B", "C", "D", "E"}:
+                return None
+            return self._process_doc(candidate)
+
         # For each doc, limit the self._training_docs to examples from other exams.
         # We also remove the top-10 largest documents from the list of prompt candidates.
         self._training_docs = []
         for d in self.training_docs():
+            d = as_prompt_doc(d)
+            if d is None:
+                continue
             if d['exam'] != doc['exam'] and d['id'] not in self.too_large:
                 self._training_docs.append(d)
+
+        # Some splits (e.g. ENEM full yearly tasks) can have only one exam in training docs.
+        # If cross-exam filtering empties candidates, fallback to any other prompt candidate
+        # except the current document and oversized items.
+        if len(self._training_docs) < k:
+            fallback_docs = []
+            for d in self.training_docs():
+                d = as_prompt_doc(d)
+                if d is None:
+                    continue
+                if d['id'] != doc['id'] and d['id'] not in self.too_large:
+                    fallback_docs.append(d)
+            if len(fallback_docs) >= len(self._training_docs):
+                self._training_docs = fallback_docs
+
+        if len(self._training_docs) < k:
+            print(
+                f"WARNING: only {len(self._training_docs)} few-shot candidates available "
+                f"for doc {doc['id']} (requested {k}). Using all available candidates."
+            )
+            k = len(self._training_docs)
 
         if prompt_mode == 'dynamic-random':
             return rnd.sample(self._training_docs, k)
@@ -348,6 +424,8 @@ class ENEM(MultipleChoicePromptSelectionTask):
             return rnd.sample(_manual_docs, k)
             
         elif prompt_mode == 'dynamic-similar':
+            if k == 0:
+                return []
             if self.searcher is None:
                 from pyserini.search.lucene import LuceneSearcher
                 
@@ -381,10 +459,10 @@ class ENEM(MultipleChoicePromptSelectionTask):
             # check if we have enough similar examples. If not, complete with 
             # random examples.
             i = 0
-            while len(selected_hits) < k:
+            while len(selected_hits) < k and i < len(self._training_docs):
                 if self._training_docs[i] not in selected_hits:
                     selected_hits.append(self._training_docs[i])
-                i+=1
+                i += 1
             
             # move the most relevant examples to the end.
             selected_hits.reverse() 
@@ -437,13 +515,16 @@ class ENEM_2022(ENEM):
         area = ['languages', 'human-sciences', 'natural-sciences', 'mathematics'][int(np.ceil(q_id/45))-1]
 
         results[area] = results['acc']
+        pass_at_k_key = f"acc_pass@{self.pass_k}"
+        if pass_at_k_key in results:
+            results[f"{area}_pass@{self.pass_k}"] = results[pass_at_k_key]
         return results
 
     def test_docs(self):
         return self.dataset['test']
 
     def higher_is_better(self):
-        return {
+        metrics = {
             "acc": True,
             "acc_norm": True,
             '2022': True,
@@ -456,9 +537,17 @@ class ENEM_2022(ENEM):
             'c_natural-sciences': True,
             'c_mathematics': True,
         }
+        if self.pass_n > 1 or self.pass_k > 1:
+            metrics[f"acc_pass@{self.pass_k}"] = True
+            metrics[f"2022_pass@{self.pass_k}"] = True
+            metrics[f"languages_pass@{self.pass_k}"] = True
+            metrics[f"human-sciences_pass@{self.pass_k}"] = True
+            metrics[f"natural-sciences_pass@{self.pass_k}"] = True
+            metrics[f"mathematics_pass@{self.pass_k}"] = True
+        return metrics
     
     def aggregation(self):
-        return {
+        metrics = {
             "acc": mean,
             "acc_norm": mean,
             '2022': mean,
@@ -472,6 +561,18 @@ class ENEM_2022(ENEM):
             'c_mathematics': sum,
             "unknown_pred": mean,
         }
+        if self.pass_n > 1 or self.pass_k > 1:
+            metrics[f"acc_pass@{self.pass_k}"] = mean
+            metrics[f"2022_pass@{self.pass_k}"] = mean
+            metrics[f"languages_pass@{self.pass_k}"] = mean
+            metrics[f"human-sciences_pass@{self.pass_k}"] = mean
+            metrics[f"natural-sciences_pass@{self.pass_k}"] = mean
+            metrics[f"mathematics_pass@{self.pass_k}"] = mean
+            metrics[f"unknown_pred_pass@{self.pass_k}"] = mean
+            metrics["c_mean"] = mean
+            metrics["n"] = mean
+            metrics["k"] = mean
+        return metrics
 
 
 class ENEM_FULL(ENEM):
@@ -541,13 +642,16 @@ class ENEM_FULL(ENEM):
         area = ['languages', 'human-sciences', 'natural-sciences', 'mathematics'][int(np.ceil(q_id/45))-1]
 
         results[area] = results['acc']
+        pass_at_k_key = f"acc_pass@{self.pass_k}"
+        if pass_at_k_key in results:
+            results[f"{area}_pass@{self.pass_k}"] = results[pass_at_k_key]
         return results
 
     def test_docs(self):
         return self.dataset['test']
 
     def higher_is_better(self):
-        return {
+        metrics = {
             "acc": True,
             "acc_norm": True,
             'languages': True,
@@ -559,9 +663,16 @@ class ENEM_FULL(ENEM):
             'c_natural-sciences': True,
             'c_mathematics': True,
         }
+        if self.pass_n > 1 or self.pass_k > 1:
+            metrics[f"acc_pass@{self.pass_k}"] = True
+            metrics[f"languages_pass@{self.pass_k}"] = True
+            metrics[f"human-sciences_pass@{self.pass_k}"] = True
+            metrics[f"natural-sciences_pass@{self.pass_k}"] = True
+            metrics[f"mathematics_pass@{self.pass_k}"] = True
+        return metrics
     
     def aggregation(self):
-        return {
+        metrics = {
             "acc": mean,
             "acc_norm": mean,
             'languages': mean,
@@ -574,6 +685,17 @@ class ENEM_FULL(ENEM):
             'c_mathematics': sum,
             "unknown_pred": mean,
         }
+        if self.pass_n > 1 or self.pass_k > 1:
+            metrics[f"acc_pass@{self.pass_k}"] = mean
+            metrics[f"languages_pass@{self.pass_k}"] = mean
+            metrics[f"human-sciences_pass@{self.pass_k}"] = mean
+            metrics[f"natural-sciences_pass@{self.pass_k}"] = mean
+            metrics[f"mathematics_pass@{self.pass_k}"] = mean
+            metrics[f"unknown_pred_pass@{self.pass_k}"] = mean
+            metrics["c_mean"] = mean
+            metrics["n"] = mean
+            metrics["k"] = mean
+        return metrics
 
 
 class ENEM_GREEDY(ENEM):
@@ -592,8 +714,42 @@ class ENEM_GREEDY(ENEM):
             language description, as well as the few shot examples, and the question
             part of the document for `doc`. 
         """
-        continuation = rf.greedy_until(ctx, ['\n'])
-        return continuation
+        if self.pass_n > 1 or self.pass_k > 1:
+            return [rf.greedy_until(ctx, ['\n']) for _ in range(self.pass_n)]
+        return rf.greedy_until(ctx, ['\n'])
+
+    @staticmethod
+    def _pass_at_k_estimator(n, c, k):
+        if c <= 0:
+            return 0.0
+        if n - c < k:
+            return 1.0
+        return 1.0 - (math.comb(n - c, k) / math.comb(n, k))
+
+    def _process_single_prediction(self, doc, gold, pred):
+        pred = "" if pred is None else str(pred)
+        unknown = False
+
+        # regex processing. Useful for zero-shot
+        match_1 = re.findall(r"(?:|[Ll]etra |[Aa]lternativa )([ABCDE])\.", pred)
+        match_2 = re.findall(r"(?:|[Ll]etra |[Aa]lternativa )([ABCDEabcde])\)", pred)
+        match_3 = re.findall(r"(?:|[Ll]etra |[Aa]lternativa )([ABCDEabcde])", pred)
+        if len(match_1) > 0:
+            pred = match_1[-1].upper() + "."
+        elif len(match_2) > 0:
+            pred = match_2[-1].upper() + "."
+        elif len(match_3) > 0:
+            pred = match_3[-1].upper() + "."
+        # if the pred matches an alternative text, convert to respective letter
+        elif pred.strip() in [choice.strip() for choice in doc['choices']]:
+            ind = [choice.strip() for choice in doc['choices']].index(pred.strip())
+            pred = ['A.', 'B.', 'C.', 'D.', 'E.'][ind]
+        else:
+            print(f"Regex failed at processing {pred}")
+            print(f'{gold=}, {pred=}, exam={doc["exam"]}')
+            unknown = True
+            pred = ""
+        return pred, unknown
 
     def process_results(self, doc, results):
         """Take a single document and the LM results and evaluates, returning a
@@ -606,39 +762,42 @@ class ENEM_GREEDY(ENEM):
             The results of the requests created in construct_requests.
         """
         gold = ['A.', 'B.', 'C.', 'D.', 'E.'][doc['gold']]
-        pred = results[0]
-        unknown=False
-        # regex processing. Useful for zero-shot
-        match_1 = re.findall(r"(?:|[Ll]etra |[Aa]lternativa )([ABCDE])\.", pred)
-        match_2 = re.findall(r"(?:|[Ll]etra |[Aa]lternativa )([ABCDEabcde])\)", pred)
-        match_3 = re.findall(r"(?:|[Ll]etra |[Aa]lternativa )([ABCDE])", pred)
-        if len(match_1) > 0:
-            pred = match_1[-1] + "."
-        elif len(match_2) > 0:
-            pred = match_2[-1].upper() + "."
-        elif len(match_3) > 0:
-            pred = match_3[-1] + "."
-        # if the pred matches an alternative text, convert to respective letter
-        elif pred in doc['choices']:
-            ind = doc['choices'].index(pred)
-            pred = ['A.', 'B.', 'C.', 'D.', 'E.'][ind]
-        else:
-            print(f"Regex failed at processing {pred}")
-            print(f'{gold=}, {pred=}, {doc["exam"]=}')
-            unknown = True
-            pred=""
+        preds = list(results) if isinstance(results, (list, tuple)) else [results]
+        target_n = self.pass_n if (self.pass_n > 1 or self.pass_k > 1) else 1
+        preds = preds[:target_n]
 
-        acc = 1. if pred == gold else 0.
+        parsed_preds = []
+        unknown_preds = []
+        for pred in preds:
+            parsed_pred, unknown = self._process_single_prediction(doc, gold, pred)
+            parsed_preds.append(parsed_pred)
+            unknown_preds.append(unknown)
 
-        return {
+        primary_pred = parsed_preds[0]
+        primary_unknown = unknown_preds[0]
+        acc = 1.0 if primary_pred == gold else 0.0
+
+        output = {
             "acc": acc,
             doc['exam']: acc,
-            "unknown_pred": 1 if unknown else 0,
+            "unknown_pred": 1 if primary_unknown else 0,
             "debug_info":{
                 "gold": gold,
-                "pred": pred,
+                "pred": primary_pred,
             }
         }
+
+        if self.pass_n > 1 or self.pass_k > 1:
+            c = sum(1 for pred in parsed_preds if pred == gold)
+            pass_at_k_acc = self._pass_at_k_estimator(n=target_n, c=c, k=self.pass_k)
+            output[f"acc_pass@{self.pass_k}"] = pass_at_k_acc
+            output[f"{doc['exam']}_pass@{self.pass_k}"] = pass_at_k_acc
+            output[f"unknown_pred_pass@{self.pass_k}"] = 1.0 if all(unknown_preds) else 0.0
+            output["c_mean"] = float(c)
+            output["n"] = float(target_n)
+            output["k"] = float(self.pass_k)
+
+        return output
 
 
 class ENEM_2022_GREEDY(ENEM_2022, ENEM_GREEDY):
@@ -651,7 +810,10 @@ class ENEM_FULL_2022_GREEDY(ENEM_FULL, ENEM_GREEDY):
         result = super().process_results(doc, results)
         # Remove exam, because we no more compute metric for each exam. 
         # Instead, we use a specific task.
-        del result[doc['exam']]  
+        del result[doc['exam']]
+        pass_at_k_exam_key = f"{doc['exam']}_pass@{self.pass_k}"
+        if pass_at_k_exam_key in result:
+            del result[pass_at_k_exam_key]
         return result
 
 class ENEM_FULL_2023_GREEDY(ENEM_FULL, ENEM_GREEDY):
@@ -662,6 +824,9 @@ class ENEM_FULL_2023_GREEDY(ENEM_FULL, ENEM_GREEDY):
         # Remove exam, because we no more compute metric for each exam. 
         # Instead, we use a specific task.
         del result[doc['exam']]
+        pass_at_k_exam_key = f"{doc['exam']}_pass@{self.pass_k}"
+        if pass_at_k_exam_key in result:
+            del result[pass_at_k_exam_key]
         return result
 
 class ENEM_FULL_2024_GREEDY(ENEM_FULL, ENEM_GREEDY):
@@ -672,4 +837,7 @@ class ENEM_FULL_2024_GREEDY(ENEM_FULL, ENEM_GREEDY):
         # Remove exam, because we no more compute metric for each exam. 
         # Instead, we use a specific task.
         del result[doc['exam']]
+        pass_at_k_exam_key = f"{doc['exam']}_pass@{self.pass_k}"
+        if pass_at_k_exam_key in result:
+            del result[pass_at_k_exam_key]
         return result

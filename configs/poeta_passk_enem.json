@@ -1,0 +1,23 @@
+{
+    "prompt_mode": "dynamic-random",
+    "tasks": [
+        {
+            "lm_eval_task": "enem_full_2024_greedy",
+            "metrics": ["acc", "languages", "human-sciences", "natural-sciences", "mathematics"],
+            "preferred_metric": "acc",
+            "random_score": 0.2,
+            "max_score": 1.0,
+            "translated": false,
+            "num_fewshot": 1
+        },
+        {
+            "lm_eval_task": "enem_2022_greedy",
+            "metrics": ["acc"],
+            "preferred_metric": "acc",
+            "random_score": 0.2,
+            "max_score": 1.0,
+            "translated": false,
+            "num_fewshot": 1
+        }
+    ]
+}

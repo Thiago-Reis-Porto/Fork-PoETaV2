@@ -94,6 +94,66 @@ python main.py --model gpt --model_args pretrained=$YOUR_MODEL_PATH --tasks assi
 
 You can find the names for each task in the `configs/poeta_v2_full.json` file.
 
+### Current scoring mode
+
+Most tasks in `configs/poeta_v2_full*.json` use `*_greedy` task variants. Those are generation-based (`greedy_until`) and then parsed/scored by each task.
+
+Non-greedy task variants (without `_greedy`) use log-likelihood scoring (`loglikelihood`) when implemented.
+
+## Pass@k (ENEM pilot)
+
+Pass@k is available for ENEM tasks including `enem_full_2024_greedy` and `enem_2022_greedy`.
+
+For ENEM, we use the formal estimator per question:
+
+\[
+\text{Pass@k} = 1 - \frac{\binom{n-c}{k}}{\binom{n}{k}}
+\]
+
+Where:
+- `n` is the number of generated attempts (`--pass_n`)
+- `c` is the number of correct attempts among `n`
+- `k` is the Pass@k target (`--pass_k`)
+
+The final score is the mean of per-question estimator values.
+
+Single-task example:
+
+```bash
+python main.py \
+  --model vllm \
+  --model_args "engine=$YOUR_MODEL_PATH,base_url=$YOUR_BASE_URL" \
+  --tasks enem_full_2024_greedy \
+  --num_fewshot 1 \
+  --prompt_modes dynamic-random \
+  --pass_k 5 \
+  --pass_n 20 \
+  --temperature 0.7 \
+  --top_p 0.95 \
+  --output_path results/enem_passk.json \
+  --description_dict_path description.json \
+  --no_cache
+```
+
+Recommended task config for ENEM pass@k aggregate runs:
+
+```bash
+python scripts/bulk_evaluation.py \
+  --model_config configs/vllm_qwen32b.json \
+  --task_configs configs/poeta_passk_enem.json \
+  --experiment_name poeta_passk_enem_k5
+```
+
+Compute pass@k NPM:
+
+```bash
+python scripts/calculate_npm.py \
+  --results_folder results/poeta_passk_enem_k5 \
+  --task_configs configs/poeta_passk_enem.json \
+  --metric_variant passk \
+  --pass_k 5
+```
+
 ## Running all tasks
 
 We provide a script to run all poeta v2 tasks. To use it, first, create a config for your model. 
@@ -113,7 +173,7 @@ experiment_label="poeta_v2_full_model_X"
 model_config="configs/hf_model_template.json"
 task_config="configs/poeta_v2_full.json"
 
-python scripts/bulk_evaluation.py --model_config $model_config --task_config $task_config --experiment_name $experiment_label
+python scripts/bulk_evaluation.py --model_config $model_config --task_configs $task_config --experiment_name $experiment_label
 ```
 
 ## Docker support
@@ -157,5 +217,3 @@ docker compose --profile gpu run --rm poeta-gpu --model gpt --model_args pretrai
 - Hugging Face caches live in the named volume `poeta_cache`; evaluation outputs default to the `poeta_results` volume.
 - You can still mount additional host paths (e.g., datasets) with `-v /data:/workspace/data` when invoking `docker compose run` or add them under `services.poeta.volumes`.
 - Environment variables from `.env` (WANDB, OpenAI, Maritaca, etc.) are automatically injected. Leave them blank if you do not need the corresponding integration.
-
-

@@ -16,6 +16,8 @@ def process_chunk(
     response_format_obj,
     max_gen_toks=None,
     supports_temperature_stop=True,
+    temperature=0.0,
+    top_p=1.0,
 ):
     chunk, until = chunk_until
     chunk_res = []
@@ -34,7 +36,7 @@ def process_chunk(
 
         kwargs = {"model": engine}
         if supports_temperature_stop and not use_completion_tokens:
-            kwargs.update({"temperature": 0.0, "stop": []})
+            kwargs.update({"temperature": temperature, "top_p": top_p, "stop": []})
 
         if use_completion_tokens:
             kwargs["max_completion_tokens"] = max_gen_toks
@@ -132,7 +134,9 @@ class OpenaiCompatibleModel(BaseLM):
         key_env_var="OPENAI_API_SECRET_KEY",
         batch_size=1,
         response_format_obj=None,
-        supports_temperature_stop=True
+        supports_temperature_stop=True,
+        temperature=0.0,
+        top_p=1.0,
     ):
         """
         Initialize an OpenAI-compatible model.
@@ -157,6 +161,8 @@ class OpenaiCompatibleModel(BaseLM):
         if engine in {"o1", "o3"}:
             supports_temperature_stop = False
         self.supports_temperature_stop = supports_temperature_stop
+        self.temperature = float(temperature)
+        self.top_p = float(top_p)
         self.base_url = base_url
         self.response_format_obj = response_format_obj
         self.client = openai.OpenAI(
@@ -200,12 +206,13 @@ class OpenaiCompatibleModel(BaseLM):
     def greedy_until(self, requests):
         if not requests:
             return []
-        res = []
+        stochastic_mode = self.temperature > 0
 
         def _collate(x):
             return len(x[0]), x[0]
 
         re_ord = utils.Reorderer(requests, _collate)
+        reordered_requests = requests if stochastic_mode else re_ord.get_reordered()
 
         def sameuntil_chunks(xs, size):
             ret = []
@@ -227,23 +234,29 @@ class OpenaiCompatibleModel(BaseLM):
             response_format_obj=self.response_format_obj,
             max_gen_toks=self.max_gen_toks,
             supports_temperature_stop=self.supports_temperature_stop,
+            temperature=self.temperature,
+            top_p=self.top_p,
         )
 
-        chunk_results = [None] * len(re_ord.get_reordered())
+        chunks_to_run = list(sameuntil_chunks(reordered_requests, self.REQ_CHUNK_SIZE))
+        chunk_results = [None] * len(chunks_to_run)
         with ThreadPoolExecutor(max_workers=self.parallel_requests) as executor:
-            futures = []
-            for chunk in sameuntil_chunks(re_ord.get_reordered(), self.REQ_CHUNK_SIZE):
-                futures.append(executor.submit(process_chunk_partial, chunk))
+            future_to_idx = {}
+            for idx, chunk in enumerate(chunks_to_run):
+                future = executor.submit(process_chunk_partial, chunk)
+                future_to_idx[future] = idx
 
-            for future in tqdm(as_completed(futures), total=len(futures)):
-                chunk_results[futures.index(future)] = future.result()
+            for future in tqdm(as_completed(future_to_idx), total=len(future_to_idx)):
+                chunk_results[future_to_idx[future]] = future.result()
 
         res = [item for sublist in chunk_results for item in sublist]
 
         # partial caching
-        for i, (context, until) in enumerate(re_ord.get_reordered()):
+        for i, (context, until) in enumerate(reordered_requests):
             self.cache_hook.add_partial("greedy_until", (context, until), res[i])
 
+        if stochastic_mode:
+            return res
         return re_ord.get_original(res)
 
     def _model_call(self, inps):
@@ -262,9 +275,11 @@ class OpenaiAPI(OpenaiCompatibleModel):
         base_url="https://api.openai.com/v1",
         key_env_var="OPENAI_API_SECRET_KEY",
         batch_size=1,
-        response_format_obj=None
+        response_format_obj=None,
+        temperature=0.0,
+        top_p=1.0,
     ):
-        super().__init__(engine, base_url, key_env_var, batch_size, response_format_obj)
+        super().__init__(engine, base_url, key_env_var, batch_size, response_format_obj, temperature=temperature, top_p=top_p)
 
 
 class MaritalkAPI(OpenaiCompatibleModel):
@@ -274,9 +289,11 @@ class MaritalkAPI(OpenaiCompatibleModel):
         base_url="https://chat.maritaca.ai/api",
         key_env_var="MARITALK_API_SECRET_KEY",
         batch_size=1,
-        response_format_obj=None
+        response_format_obj=None,
+        temperature=0.0,
+        top_p=1.0,
     ):
-        super().__init__(engine, base_url, key_env_var, batch_size, response_format_obj)
+        super().__init__(engine, base_url, key_env_var, batch_size, response_format_obj, temperature=temperature, top_p=top_p)
 
 
 class DeekseekAPI(OpenaiCompatibleModel):
@@ -286,9 +303,11 @@ class DeekseekAPI(OpenaiCompatibleModel):
         base_url="https://api.deepseek.com",
         key_env_var="DEEPSEEK_API_SECRET_KEY",
         batch_size=1,
-        response_format_obj=None
+        response_format_obj=None,
+        temperature=0.0,
+        top_p=1.0,
     ):
-        super().__init__(engine, base_url, key_env_var, batch_size, response_format_obj)
+        super().__init__(engine, base_url, key_env_var, batch_size, response_format_obj, temperature=temperature, top_p=top_p)
 
 
 class TogetherAPI(OpenaiCompatibleModel):
@@ -298,9 +317,11 @@ class TogetherAPI(OpenaiCompatibleModel):
         base_url="https://api.together.xyz/v1",
         key_env_var="TOGETHER_API_SECRET_KEY",
         batch_size=1,
-        response_format_obj=None
+        response_format_obj=None,
+        temperature=0.0,
+        top_p=1.0,
     ):
-        super().__init__(engine, base_url, key_env_var, batch_size, response_format_obj)
+        super().__init__(engine, base_url, key_env_var, batch_size, response_format_obj, temperature=temperature, top_p=top_p)
 
 
 class FireworksAPI(OpenaiCompatibleModel):
@@ -310,9 +331,11 @@ class FireworksAPI(OpenaiCompatibleModel):
         base_url="https://api.fireworks.ai/inference/v1",
         key_env_var="FIREWORKS_API_KEY",
         batch_size=1,
-        response_format_obj=None
+        response_format_obj=None,
+        temperature=0.0,
+        top_p=1.0,
     ):
-        super().__init__(engine, base_url, key_env_var, batch_size, response_format_obj)
+        super().__init__(engine, base_url, key_env_var, batch_size, response_format_obj, temperature=temperature, top_p=top_p)
 
 
 class DeepinfraAPI(OpenaiCompatibleModel):
@@ -322,9 +345,11 @@ class DeepinfraAPI(OpenaiCompatibleModel):
         base_url="https://api.deepinfra.com/v1/openai",
         key_env_var="DEEPINFRA_API_KEY",
         batch_size=1,
-        response_format_obj=None
+        response_format_obj=None,
+        temperature=0.0,
+        top_p=1.0,
     ):
-        super().__init__(engine, base_url, key_env_var, batch_size, response_format_obj)
+        super().__init__(engine, base_url, key_env_var, batch_size, response_format_obj, temperature=temperature, top_p=top_p)
 
 class TGIAPI(OpenaiCompatibleModel):
     def __init__(
@@ -333,10 +358,12 @@ class TGIAPI(OpenaiCompatibleModel):
         base_url="http://localhost:8080/v1",
         key_env_var="TGI_API_SECRET_KEY",
         batch_size=1,
-        response_format_obj=None
+        response_format_obj=None,
+        temperature=0.0,
+        top_p=1.0,
     ):
         os.environ["TGI_API_SECRET_KEY"] = "-"
-        super().__init__(engine, base_url, key_env_var, batch_size, response_format_obj)
+        super().__init__(engine, base_url, key_env_var, batch_size, response_format_obj, temperature=temperature, top_p=top_p)
 
 
 class VLLMAPI(OpenaiCompatibleModel):
@@ -346,10 +373,20 @@ class VLLMAPI(OpenaiCompatibleModel):
         base_url="http://localhost:8000/v1",
         key_env_var="VLLM_API_SECRET_KEY",
         batch_size=1,
-        response_format_obj=None
+        response_format_obj=None,
+        temperature=0.0,
+        top_p=1.0,
     ):
         os.environ["VLLM_API_SECRET_KEY"] = "-"
-        super().__init__(engine, base_url, key_env_var, batch_size, response_format_obj=response_format_obj)
+        super().__init__(
+            engine,
+            base_url,
+            key_env_var,
+            batch_size,
+            response_format_obj=response_format_obj,
+            temperature=temperature,
+            top_p=top_p,
+        )
 
 
 class GeminiAPI(OpenaiCompatibleModel):
@@ -359,7 +396,9 @@ class GeminiAPI(OpenaiCompatibleModel):
         base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
         key_env_var="GEMINI_API_KEY",
         batch_size=1,
-        response_format_obj=None
+        response_format_obj=None,
+        temperature=0.0,
+        top_p=1.0,
     ):
         super().__init__(
             engine,
@@ -367,5 +406,7 @@ class GeminiAPI(OpenaiCompatibleModel):
             key_env_var,
             batch_size,
             supports_temperature_stop=False,
-            response_format_obj=response_format_obj
+            response_format_obj=response_format_obj,
+            temperature=temperature,
+            top_p=top_p,
         )

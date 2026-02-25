@@ -27,8 +27,23 @@ parser.add_argument(
 parser.add_argument("--task_configs", type=str, required=True, help="If set, use greedy mapping.")
 parser.add_argument("--wandb_run", default=None, type=str, help="Wandb run name (optional), specified as <entity/project-name/run-name>")
 parser.add_argument("--checkpoint_number", default=-1, type=int, help="Checkpoint number.")
+parser.add_argument(
+    "--metric_variant",
+    choices=["default", "passk"],
+    default="default",
+    help="Metric variant to aggregate. Use `passk` to read *_pass@k metrics.",
+)
+parser.add_argument(
+    "--pass_k",
+    type=int,
+    default=None,
+    help="Value of k for pass@k metrics. Required when --metric_variant passk.",
+)
 
 args = parser.parse_args()
+
+if args.metric_variant == "passk" and (args.pass_k is None or args.pass_k < 1):
+    parser.error("--pass_k must be a positive integer when --metric_variant passk.")
 
 task_configs = json.load(open(args.task_configs))
 
@@ -46,6 +61,17 @@ task_examples_count = []
 
 normalized_metric_per_task = {}
 
+
+def passk_random_baseline(random_score, max_score, pass_k):
+    # pass@k random baseline is only well-defined on probability metrics [0,1].
+    if max_score == 1.0 and 0.0 <= random_score <= 1.0:
+        return 1 - (1 - random_score) ** pass_k
+    print(
+        f"WARNING: could not transform random baseline for pass@k with "
+        f"{random_score=}, {max_score=}. Using the original baseline."
+    )
+    return random_score
+
 prompt_mode = task_configs['prompt_mode']
 for task_config in task_configs["tasks"]:
     task_name = task_config["lm_eval_task"]
@@ -56,8 +82,18 @@ for task_config in task_configs["tasks"]:
     with open(os.path.join(args.results_folder, f"{fname}.json")) as f:
         data = json.load(f)
         for task in task_name.split(','):
-            raw_metric = data["results"][task][prompt_mode][task_config["preferred_metric"]]
-            normalized_metric = 100 * (raw_metric - task_config["random_score"]) / (task_config["max_score"] - task_config["random_score"])
+            metric_name = task_config["preferred_metric"]
+            random_score = task_config["random_score"]
+            if args.metric_variant == "passk":
+                metric_name = f"{metric_name}_pass@{args.pass_k}"
+                random_score = passk_random_baseline(
+                    random_score=task_config["random_score"],
+                    max_score=task_config["max_score"],
+                    pass_k=args.pass_k,
+                )
+
+            raw_metric = data["results"][task][prompt_mode][metric_name]
+            normalized_metric = 100 * (raw_metric - random_score) / (task_config["max_score"] - random_score)
             normalized_metrics.append((normalized_metric, task_config["translated"]))
             normalized_metric_per_task[task_name] = normalized_metric
             raw_metrics.append((100 * raw_metric, task_config["translated"]))
@@ -76,14 +112,17 @@ total_examples = sum(task_examples_count)
 print("Total examples: ", total_examples)
 
 print("           All | Translated | Native")
-print(f"NPM:     {npm:.2f} | {npm_translated:.2f} | {npm_native:.2f}")
+npm_prefix = "NPM" if args.metric_variant == "default" else f"NPM_pass@{args.pass_k}"
+print(f"{npm_prefix}:     {npm:.2f} | {npm_translated:.2f} | {npm_native:.2f}")
 
-results = {
-    "NPM.All": npm, 
-    "NPM.Translated": npm_translated, 
-    "NPM.Native": npm_native,
-    "NPMPerTask": normalized_metric_per_task
-}
+results = {}
+results[f"{npm_prefix}.All"] = npm
+results[f"{npm_prefix}.Translated"] = npm_translated
+results[f"{npm_prefix}.Native"] = npm_native
+if args.metric_variant == "default":
+    results["NPMPerTask"] = normalized_metric_per_task
+else:
+    results[f"NPMPerTask_pass@{args.pass_k}"] = normalized_metric_per_task
 
 with open(f"{args.results_folder}/npm.json", "w") as fout:
     json.dump(results, fout, indent=4)

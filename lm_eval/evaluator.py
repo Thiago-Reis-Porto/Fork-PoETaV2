@@ -19,7 +19,8 @@ def simple_evaluate(model, model_args=None, tasks=[],
                     limit=None, bootstrap_iters=100000,
                     description_dict=None, conversation_template=None,
                     prompt_as_single_user_message=False,
-                    check_integrity=False, output_dir=None):
+                    check_integrity=False, output_dir=None,
+                    pass_k=1, pass_n=1, temperature=0.7, top_p=0.95):
     """Instantiate and evaluate a model on a list of tasks.
 
     :param model: Union[str, LM]
@@ -58,11 +59,26 @@ def simple_evaluate(model, model_args=None, tasks=[],
    
     if isinstance(model, str):
         if model_args is None: model_args = ""
+
+        additional_model_config = {'batch_size': batch_size, 'device': device}
+
+        # Sampling params are supported by OpenAI-compatible endpoints used for pass@k.
+        if model in {"chatgpt", "deepinfra", "deepseek", "fireworks", "gemini", "maritalk", "tgi", "together", "vllm"}:
+            has_temperature_in_model_args = "temperature=" in model_args
+            has_top_p_in_model_args = "top_p=" in model_args
+            if pass_k > 1 or pass_n > 1:
+                if not has_temperature_in_model_args:
+                    additional_model_config['temperature'] = temperature
+                if not has_top_p_in_model_args:
+                    additional_model_config['top_p'] = top_p
+            else:
+                if not has_temperature_in_model_args:
+                    additional_model_config['temperature'] = 0.0
+                if not has_top_p_in_model_args:
+                    additional_model_config['top_p'] = 1.0
         
         # no response format
-        lm = lm_eval.models.get_model(model).create_from_arg_string(model_args, {
-            'batch_size': batch_size, 'device': device
-        })
+        lm = lm_eval.models.get_model(model).create_from_arg_string(model_args, additional_model_config)
     else:
         assert isinstance(model, lm_eval.base.LM)
         lm = model
@@ -84,6 +100,13 @@ def simple_evaluate(model, model_args=None, tasks=[],
     # let each task know what kind of model we are using for inference
     for task in task_dict.values():
         task.set_inference_model_category(model_category)
+        if hasattr(task, "set_pass_params"):
+            task.set_pass_params(pass_k, pass_n)
+        else:
+            if hasattr(task, "set_pass_k"):
+                task.set_pass_k(pass_k)
+            if hasattr(task, "set_pass_n"):
+                task.set_pass_n(pass_n)
 
     if check_integrity:
         run_task_tests(task_list=tasks)
@@ -110,6 +133,11 @@ def simple_evaluate(model, model_args=None, tasks=[],
         "no_cache": no_cache,
         "limit": limit,
         "bootstrap_iters": bootstrap_iters,
+        "pass_k": pass_k,
+        "pass_n": pass_n,
+        "temperature": temperature,
+        "top_p": top_p,
+        "passk_estimator": "combinatorial",
     }
 
     return results

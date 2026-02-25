@@ -14,6 +14,7 @@ Homepage: https://allenai.org/data/arc
 """
 from lm_eval.base import MultipleChoicePromptSelectionTask
 import inspect
+import math
 import re
 import lm_eval.datasets.gsm8k.gsm8k
 from pathlib import Path
@@ -62,6 +63,26 @@ class ARC_CHALLENGE_greedy(MultipleChoicePromptSelectionTask):
     cot=False
 
     manual_examples = []
+    pass_k = 1
+    pass_n = 1
+
+    def set_pass_k(self, pass_k):
+        self.pass_k = max(1, int(pass_k))
+
+    def set_pass_n(self, pass_n):
+        self.pass_n = max(1, int(pass_n))
+
+    def set_pass_params(self, pass_k, pass_n):
+        self.set_pass_k(pass_k)
+        self.set_pass_n(pass_n)
+
+    @staticmethod
+    def _pass_at_k_estimator(n, c, k):
+        if c <= 0:
+            return 0.0
+        if n - c < k:
+            return 1.0
+        return 1.0 - (math.comb(n - c, k) / math.comb(n, k))
 
     def download(self, data_dir=None, cache_dir=None, download_mode=None):
         dataset = load_dataset(self.DATASET_PATH, self.DATASET_CONFIG)["test"]
@@ -161,8 +182,9 @@ class ARC_CHALLENGE_greedy(MultipleChoicePromptSelectionTask):
             language description, as well as the few shot examples, and the question
             part of the document for `doc`.
         """
-        continuation = rf.greedy_until(ctx, ["\n"])
-        return continuation
+        if self.pass_n > 1 or self.pass_k > 1:
+            return [rf.greedy_until(ctx, ["\n"]) for _ in range(self.pass_n)]
+        return rf.greedy_until(ctx, ["\n"])
     
     
     def best_effort_match(self, gold, pred):
@@ -192,6 +214,18 @@ class ARC_CHALLENGE_greedy(MultipleChoicePromptSelectionTask):
         return False, pred
         
 
+    def _score_prediction(self, doc, pred_answer):
+        pred_answer = "" if pred_answer is None else str(pred_answer).strip()
+        gold = doc["gold_letter"]
+        match_result, best_pred = self.best_effort_match(gold, pred_answer)
+        unknown = False
+        debug_info = {
+            "gold": gold,
+            "pred": pred_answer,
+            "best_effort_pred": best_pred,
+        }
+        return match_result, unknown, debug_info
+
     def process_results(self, doc, results):
         """Take a single document and the LM results and evaluates, returning a
         dict where keys are the names of submetrics and values are the values of
@@ -201,47 +235,57 @@ class ARC_CHALLENGE_greedy(MultipleChoicePromptSelectionTask):
         :param results:
             The results of the requests created in construct_requests.
         """
-        pred_answer = results[0].strip()
-        
-        unknown=False
-        
-            
-        gold = doc["gold_letter"]
+        preds = list(results) if isinstance(results, (list, tuple)) else [results]
+        target_n = self.pass_n if (self.pass_n > 1 or self.pass_k > 1) else 1
+        preds = preds[:target_n]
 
-        match_result, best_pred=self.best_effort_match(gold,pred_answer)
-        acc = 1.0 if match_result else 0.0
-
-        debug_info = {
-            "gold": gold,
-            "pred": pred_answer,
-            "best_effort_pred": best_pred,
+        scored = [self._score_prediction(doc, pred) for pred in preds]
+        primary_correct, primary_unknown, primary_debug = scored[0]
+        output = {
+            "acc": 1.0 if primary_correct else 0.0,
+            "debug_info": primary_debug,
+            "unknown_pred": 1.0 if primary_unknown else 0.0,
         }
 
-        results = {
-            "acc": acc,
-            "debug_info": debug_info,
-            "unknown_pred": 1.0 if unknown else 0.0,
-        }
+        if self.pass_n > 1 or self.pass_k > 1:
+            c = sum(1 for is_correct, _, _ in scored if is_correct)
+            output[f"acc_pass@{self.pass_k}"] = self._pass_at_k_estimator(
+                n=target_n, c=c, k=self.pass_k
+            )
+            output[f"unknown_pred_pass@{self.pass_k}"] = (
+                1.0 if all(is_unknown for _, is_unknown, _ in scored) else 0.0
+            )
+            output["c_mean"] = float(c)
+            output["n"] = float(target_n)
+            output["k"] = float(self.pass_k)
 
-
-        return results
+        return output
 
     def higher_is_better(self):
-
-    
-        
-        return {
+        metrics = {
             "acc": True,
             "unknown_pred": False,
         }
+        if self.pass_n > 1 or self.pass_k > 1:
+            metrics[f"acc_pass@{self.pass_k}"] = True
+            metrics[f"unknown_pred_pass@{self.pass_k}"] = False
+            metrics["c_mean"] = True
+            metrics["n"] = False
+            metrics["k"] = False
+        return metrics
 
     def aggregation(self):
-        
-
-        return {
+        metrics = {
             "acc": mean,
             "unknown_pred": mean,
         }
+        if self.pass_n > 1 or self.pass_k > 1:
+            metrics[f"acc_pass@{self.pass_k}"] = mean
+            metrics[f"unknown_pred_pass@{self.pass_k}"] = mean
+            metrics["c_mean"] = mean
+            metrics["n"] = mean
+            metrics["k"] = mean
+        return metrics
 
     def fewshot_examples(self, k, rnd, prompt_mode, doc):
         # For each doc, limit the self._training_docs to examples from other exams.

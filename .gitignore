@@ -14,3 +14,4 @@ Portuguese-Hate-Speech-Dataset/*
 BRoverbs/*
 bigbench_pt/*
 results2/
+.env

@@ -42,6 +42,13 @@ def eval_hf_checkpoint_or_api(args, model_config, model_name_or_path=None, check
     conversation_template = model_config.get('conversation_template', None)
     prompt_as_single_user_message = model_config.get('prompt_as_single_user_message', False)
     batch_size = model_config.get("batch_size", None)
+    pass_k = int(model_config.get("pass_k", 1))
+    pass_n = int(model_config.get("pass_n", 1))
+    temperature = float(model_config.get("temperature", 0.7))
+    top_p = float(model_config.get("top_p", 0.95))
+
+    # Adapter path is expected to be the inference model path for adapter-based runs.
+    hf_checkpoint_save_path = model_name_or_path or model_config.get("model_for_inference", "")
 
     dtype_in_config = model_config.get("dtype", None)
     dtype_for_eval = ""
@@ -54,7 +61,6 @@ def eval_hf_checkpoint_or_api(args, model_config, model_name_or_path=None, check
     for task_config in task_configs["tasks"]:
         task_name = task_config['lm_eval_task']
         limit = task_config.get("limit", None)
-        response_format = task_config.get("response_format", None)
         
         ### CHANGED: make num_fewshot 2, unless task_config['num_fewshot'] < 2, then use that value
         num_fewshot = 2 if task_config.get('num_fewshot', 2) >= 2 else task_config.get('num_fewshot', 2)
@@ -81,16 +87,19 @@ def eval_hf_checkpoint_or_api(args, model_config, model_name_or_path=None, check
                 f"{',adapter=' + hf_checkpoint_save_path if use_adapters else ''}"
                 f"{',revision=' + revision_for_lm_eval if revision_for_lm_eval else ''} "
                 f"{f'--device {device}' if device else ''} "
-                f"--task {task_name} "
+                f"--tasks {task_name} "
                 f"--num_fewshot {num_fewshot} "
-                f"--prompt_mode {prompt_mode} "
+                f"--prompt_modes {prompt_mode} "
                 f"{f'--limit {limit}' if limit else ''} "
                 f"--description_dict_path {description_path} "
                 f"{f'--conversation_template {conversation_template}' if conversation_template else ''} "
                 f"{'--prompt_as_single_user_message' if prompt_as_single_user_message else ''} "
                 f"{f'--batch_size {batch_size}' if batch_size else ''} "
+                f"--pass_k {pass_k} "
+                f"--pass_n {pass_n} "
+                f"--temperature {temperature} "
+                f"--top_p {top_p} "
                 f"--output_path {results_save_file} "
-                f"{f'--response_format {response_format}' if response_format else ''} "
                 f"--no_cache "
             )
             run(eval_command, shell=True, check=True)
@@ -124,6 +133,8 @@ def eval_hf_checkpoint_or_api(args, model_config, model_name_or_path=None, check
         f"--task_configs {args.task_configs} "
         f"--checkpoint_number {checkpoint_number} "
     )
+    if pass_k > 1:
+        npm_command += f"--metric_variant passk --pass_k {pass_k} "
     run(npm_command, shell=True, check=True)
     if model_config.get("log_to_wandb", False):
         # log npm results

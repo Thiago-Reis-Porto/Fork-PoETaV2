@@ -139,6 +139,9 @@ TASK_REGISTRY = {
     "enem_2022": enem.ENEM_2022,
     "enem_greedy": enem.ENEM_GREEDY,
     "enem_2022_greedy": enem.ENEM_2022_GREEDY,
+    "enem_full_2022_greedy": enem.ENEM_FULL_2022_GREEDY,
+    "enem_full_2023_greedy": enem.ENEM_FULL_2023_GREEDY,
+    "enem_full_2024_greedy": enem.ENEM_FULL_2024_GREEDY,
 
     "massive": massive.MASSIVE,
     "massive_greedy": massive.MASSIVE_GREEDY,

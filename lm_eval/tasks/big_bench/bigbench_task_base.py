@@ -3,6 +3,7 @@ The Unified National Public Competition, also called the Unified National Compet
 """
 
 import collections
+import math
 import numpy as np
 import re
 from lm_eval import utils
@@ -285,6 +286,26 @@ class BigBenchJsonTaskBase(MultipleChoicePromptSelectionTask):
 
 
 class BigBenchTaskBaseGreedy(BigBenchJsonTaskBase):
+    pass_k = 1
+    pass_n = 1
+
+    def set_pass_k(self, pass_k):
+        self.pass_k = max(1, int(pass_k))
+
+    def set_pass_n(self, pass_n):
+        self.pass_n = max(1, int(pass_n))
+
+    def set_pass_params(self, pass_k, pass_n):
+        self.set_pass_k(pass_k)
+        self.set_pass_n(pass_n)
+
+    @staticmethod
+    def _pass_at_k_estimator(n, c, k):
+        if c <= 0:
+            return 0.0
+        if n - c < k:
+            return 1.0
+        return 1.0 - (math.comb(n - c, k) / math.comb(n, k))
 
     def doc_to_text(self, doc):
         text_to_return = ""
@@ -315,69 +336,101 @@ class BigBenchTaskBaseGreedy(BigBenchJsonTaskBase):
             language description, as well as the few shot examples, and the question
             part of the document for `doc`.
         """
-        continuation = rf.greedy_until(ctx, ["\n"])
-        return continuation
+        if self.pass_n > 1 or self.pass_k > 1:
+            return [rf.greedy_until(ctx, ["\n"]) for _ in range(self.pass_n)]
+        return rf.greedy_until(ctx, ["\n"])
 
-    def process_results(self, doc, results):
-
-        pred = results[0].strip()
+    def _score_prediction(self, doc, pred):
+        pred = "" if pred is None else str(pred).strip()
+        unknown = False
 
         if self.task_type == "target_scores_to_alternatives":
-
             correct_letter = doc["gold"]
-
-            full_pred = pred
-
-            # search for LETTER) in pred
             letter_match = re.search(r"[A-Z]\)", pred)
-            if letter_match:
-                regex_pred = letter_match.group(0)
-            else:
-                regex_pred = ""
-            if pred.lower().strip() == correct_letter.lower().strip():
-                acc = 1
-            elif regex_pred.lower().strip() == correct_letter.lower().strip():
-                acc = 1
-            else:
-                acc = 0
-
+            regex_pred = letter_match.group(0) if letter_match else ""
+            is_correct = (
+                pred.lower().strip() == correct_letter.lower().strip()
+                or regex_pred.lower().strip() == correct_letter.lower().strip()
+            )
+            if not is_correct and regex_pred == "":
+                unknown = True
             debug_info = {
                 "pred": pred,
                 "regex_pred": regex_pred,
                 "correct_letter": correct_letter,
                 "doc_id": doc["id"],
             }
-            return {
-                "acc": acc,
-                "debug_info": debug_info,
-            }
-        elif self.task_type == "spelled_classification":
-            if pred.strip() == doc["gold"].strip():
-                acc = 1
-            else:
-                acc = 0
+            return is_correct, unknown, debug_info
 
+        if self.task_type == "spelled_classification":
             valid_classes = self.possible_classes
             normalized_classes = [c.strip().lower() for c in valid_classes]
             regex_string = "|".join(normalized_classes)
-            regex_pred = re.search(regex_string, pred.strip().lower())
-            if regex_pred:
-                regex_pred = regex_pred.group(0)
-            else:
-                regex_pred = ""
-
-            if regex_pred.strip().lower() == doc["gold"].strip().lower():
-                acc = 1
-            else:
-                acc = 0
-
+            regex_match = re.search(regex_string, pred.strip().lower())
+            regex_pred = regex_match.group(0) if regex_match else ""
+            is_correct = regex_pred.strip().lower() == doc["gold"].strip().lower()
+            if not is_correct and regex_pred == "":
+                unknown = True
             debug_info = {
                 "pred": pred,
                 "regex_pred": regex_pred,
                 "correct_class": doc["gold"],
                 "doc_id": doc["id"],
             }
-            return {
-                "acc": acc,
-                "debug_info": debug_info,
-            }
+            return is_correct, unknown, debug_info
+
+        raise ValueError(f"Unsupported task_type for greedy scoring: {self.task_type}")
+
+    def process_results(self, doc, results):
+        preds = list(results) if isinstance(results, (list, tuple)) else [results]
+        target_n = self.pass_n if (self.pass_n > 1 or self.pass_k > 1) else 1
+        preds = preds[:target_n]
+
+        scored = [self._score_prediction(doc, pred) for pred in preds]
+        primary_correct, primary_unknown, primary_debug = scored[0]
+
+        output = {
+            "acc": 1.0 if primary_correct else 0.0,
+            "unknown_pred": 1.0 if primary_unknown else 0.0,
+            "debug_info": primary_debug,
+        }
+
+        if self.pass_n > 1 or self.pass_k > 1:
+            c = sum(1 for is_correct, _, _ in scored if is_correct)
+            output[f"acc_pass@{self.pass_k}"] = self._pass_at_k_estimator(
+                n=target_n, c=c, k=self.pass_k
+            )
+            output[f"unknown_pred_pass@{self.pass_k}"] = (
+                1.0 if all(is_unknown for _, is_unknown, _ in scored) else 0.0
+            )
+            output["c_mean"] = float(c)
+            output["n"] = float(target_n)
+            output["k"] = float(self.pass_k)
+
+        return output
+
+    def higher_is_better(self):
+        metrics = {
+            "acc": True,
+            "unknown_pred": False,
+        }
+        if self.pass_n > 1 or self.pass_k > 1:
+            metrics[f"acc_pass@{self.pass_k}"] = True
+            metrics[f"unknown_pred_pass@{self.pass_k}"] = False
+            metrics["c_mean"] = True
+            metrics["n"] = False
+            metrics["k"] = False
+        return metrics
+
+    def aggregation(self):
+        metrics = {
+            "acc": mean,
+            "unknown_pred": mean,
+        }
+        if self.pass_n > 1 or self.pass_k > 1:
+            metrics[f"acc_pass@{self.pass_k}"] = mean
+            metrics[f"unknown_pred_pass@{self.pass_k}"] = mean
+            metrics["c_mean"] = mean
+            metrics["n"] = mean
+            metrics["k"] = mean
+        return metrics
