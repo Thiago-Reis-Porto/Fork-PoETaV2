@@ -29,6 +29,7 @@ from zipfile import ZipFile
 from pathlib import Path
 import subprocess
 from datasets import load_dataset
+from datasets.exceptions import DatasetNotFoundError
 import textwrap
 from lm_eval.base import rf, MultipleChoicePromptSelectionTask
 from lm_eval.metrics import mean
@@ -84,8 +85,30 @@ class ARC_CHALLENGE_greedy(MultipleChoicePromptSelectionTask):
             return 1.0
         return 1.0 - (math.comb(n - c, k) / math.comb(n, k))
 
+    def _arc_dataset_error_message(self, error):
+        return (
+            "Failed to load ARC dataset.\n"
+            f"Dataset path: '{self.DATASET_PATH}'\n"
+            f"Dataset config: '{self.DATASET_CONFIG}'\n"
+            f"Original error: {type(error).__name__}: {error}\n\n"
+            "This task is strict and does not auto-fallback to another dataset.\n"
+            "Options:\n"
+            "1) Switch to English ARC task:\n"
+            "   --tasks arc_challenge_greedy\n"
+            "2) Remove PT ARC tasks from --tasks and keep ENEM/logiqa/balanced_copa runs.\n"
+            "3) For pass@k sanity only, run:\n"
+            "   --tasks enem_greedy,enem_2022_greedy,enem_full_2022_greedy,enem_full_2023_greedy,enem_full_2024_greedy,logiqa_greedy,balanced_copa_greedy\n"
+        )
+
     def download(self, data_dir=None, cache_dir=None, download_mode=None):
-        dataset = load_dataset(self.DATASET_PATH, self.DATASET_CONFIG)["test"]
+        try:
+            dataset = load_dataset(self.DATASET_PATH, self.DATASET_CONFIG)["test"]
+        except DatasetNotFoundError as e:
+            raise RuntimeError(self._arc_dataset_error_message(e)) from e
+        except Exception as e:
+            if self.DATASET_PATH == "maritaca-ai/ai2_arc_pt":
+                raise RuntimeError(self._arc_dataset_error_message(e)) from e
+            raise
 
         self.dataset = collections.defaultdict(list)
         

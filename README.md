@@ -100,6 +100,10 @@ Most tasks in `configs/poeta_v2_full*.json` use `*_greedy` task variants. Those 
 
 Non-greedy task variants (without `_greedy`) use log-likelihood scoring (`loglikelihood`) when implemented.
 
+ARC dataset note:
+- `arc_challenge_greedy_pt` depends on `maritaca-ai/ai2_arc_pt`.
+- If it is unavailable/private in your environment, switch explicitly to `arc_challenge_greedy` for pipeline sanity checks. Do not compare those scores as language-equivalent.
+
 ## Pass@k (ENEM pilot)
 
 Pass@k is available for ENEM tasks including `enem_full_2024_greedy` and `enem_2022_greedy`.
